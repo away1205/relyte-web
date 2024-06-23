@@ -10,19 +10,19 @@ const careList = [
     title: 'Website',
     isDown: true,
     text: 'It is frustating to stand out in a crowded market. A unique and creative website can sets you apart from the competition.',
-    bgColor: '#C1E693',
+    bgColor: 'bg-[#C1E693]',
   },
   {
     title: 'People',
     isDown: false,
     text: 'Your website serves as more than just a digital presence; it serves as a showcase for your brand and the caliber of the work you provide to people.',
-    bgColor: '#9AACEF',
+    bgColor: 'bg-[#9AACEF]',
   },
   {
     title: 'Trust',
     isDown: true,
     text: 'Reputation is everything in the architectural world. Our mission is to create a website that not only showcases your projects but also builds a strong, trustworthy brand.',
-    bgColor: '#C6B9EE',
+    bgColor: 'bg-[#C6B9EE]',
   },
 ];
 
@@ -200,7 +200,7 @@ function CarePin() {
                     title={title}
                     key={i}
                     bgColor={bgColor}
-                    className='care-main-card'
+                    className={`care-main-card`}
                   />
                 );
               })}
@@ -212,18 +212,14 @@ function CarePin() {
   );
 }
 
-function Card({
-  isDown = false,
-  text,
-  title,
-  className = '',
-  bgColor = '#9AACEF',
-}) {
+function Card({ isDown = false, text, title, className = '', bgColor = 0 }) {
+  const colorList = ['#C1E693', '#9AACEF', '#E8E2F8'];
+
   return (
     <div
-      className={`flex flex-col gap-4 w-[19.5rem] h-[25rem] py-12 px-7 rounded-3xl bg-[${bgColor}]  ${
+      className={`flex flex-col gap-4 w-[19.5rem] h-[25rem] py-12 px-7 rounded-3xl ${
         isDown && 'justify-end'
-      } ${className}`}
+      } ${className} ${bgColor}`}
     >
       <h5 className='fsd font-semibold'>{title}</h5>
       <p className='font-normal'>{text}</p>
