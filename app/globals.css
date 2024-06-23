@@ -18,6 +18,16 @@ body {
   background: var(--background-color);
   overflow-x: hidden;
 
+  h3 {
+    /* Heading/H3 */
+    font-family: var(--font-urbanist);
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 3.125rem */
+    letter-spacing: 0.05rem;
+  }
+
   h5 {
     font-family: var(--font-jakarta);
     font-size: 1.75rem;

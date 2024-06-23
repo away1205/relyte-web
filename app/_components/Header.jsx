@@ -8,7 +8,10 @@ function Header() {
   ];
 
   return (
-    <header className='fixed bg-white w-full border-b border-[#e0e0e0] z-40'>
+    <header
+      className='fixed bg-white w-full border-b border-[#e0e0e0] z-40'
+      id='header'
+    >
       <div className='flex justify-between items-center max-screen mx-auto py-6'>
         <img src='relyte-logo.svg' alt='Relyte Logo' />
 

@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import Header from './_components/Header';
 import HeroSection from './_components/HeroSection';
 import Preloader from './_components/Preloader';
-import CarePin from './_components/CarePin';
+import WhatWeDoSection from './_components/WhatWeDoSection';
 
 function Home() {
   useEffect(() => {
@@ -19,10 +19,10 @@ function Home() {
       id='main'
       className='relative flex flex-col items-center max-screen mx-auto cursor-wait'
     >
-      {/* <Preloader /> */}
-      {/* <Header /> */}
+      <Preloader />
+      <Header />
       <HeroSection />
-      {/* <CarePin /> */}
+      <WhatWeDoSection />
     </main>
   );
 }
