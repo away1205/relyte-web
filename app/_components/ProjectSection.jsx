@@ -3,6 +3,29 @@ import gsap from 'gsap';
 import useEmblaCarousel from 'embla-carousel-react';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
+const projectList = [
+  {
+    title: 'Project 1',
+    year: 2000,
+    text: 'We decided to go with Relyte as our web designer due to their ability to make beautiful things happen',
+  },
+  {
+    title: 'Project 2',
+    year: 2000,
+    text: 'We decided to go with Relyte as our web designer due to their ability to make beautiful things happen',
+  },
+  {
+    title: 'Project 3',
+    year: 2000,
+    text: 'We decided to go with Relyte as our web designer due to their ability to make beautiful things happen',
+  },
+  {
+    title: 'Project 4',
+    year: 2000,
+    text: 'We decided to go with Relyte as our web designer due to their ability to make beautiful things happen',
+  },
+];
+
 function ProjectSection() {
   const [emblaRef, emblaApi] = useEmblaCarousel();
 
@@ -40,21 +63,13 @@ function ProjectSection() {
 
         <div className='embla__viewport' ref={emblaRef}>
           <div className='embla__container gap-7'>
-            <div className='embla__slide'>
-              <Card />
-            </div>
-            <div className='embla__slide'>
-              <Card />
-            </div>
-            <div className='embla__slide'>
-              <Card />
-            </div>
-            <div className='embla__slide'>
-              <Card />
-            </div>
-            <div className='embla__slide'>
-              <Card />
-            </div>
+            {projectList.map(({ title, text, year }, i) => {
+              return (
+                <div className='embla__slide'>
+                  <Card key={i} id={i} title={title} text={text} />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -62,7 +77,7 @@ function ProjectSection() {
   );
 }
 
-function Card({ id = 0 }) {
+function Card({ id = 0, title, text }) {
   const [hiddenTextHeight, setHiddenTextHeight] = useState(0);
   const hiddenText = useRef(null);
   const hoverCard = useRef(null);
@@ -87,7 +102,6 @@ function Card({ id = 0 }) {
 
     hoverCard.current.addEventListener('mouseenter', hoverAnim);
     hoverCard.current.addEventListener('mouseleave', hoverAnimOut);
-    // hoverCard.current.addEventListener('mouseleave', hoverAnim);
 
     // return () => {
     //   hoverCard.current.removeEventListener('mouseenter', () =>
@@ -111,16 +125,13 @@ function Card({ id = 0 }) {
         />
 
         <div className='flex flex-col py-6 px-6 gap-3'>
-          <h3 className='text-3xl font-medium font'>Project Name</h3>
+          <h3 className='text-3xl font-medium font'>{title}</h3>
           <p>2023</p>
         </div>
       </div>
 
       <div className='flex gap-6 justify-start' ref={hiddenText}>
-        <p>
-          We decided to go with Relyte as our web designer due to their ability
-          to make beautiful things happen
-        </p>
+        <p>{text}</p>
 
         <img src='./arrow.svg' alt='arrow' className='h-fit w-fit' />
       </div>
