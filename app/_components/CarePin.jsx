@@ -5,24 +5,37 @@ import { useRef } from 'react';
 import { FlipWords } from '../ui/FlipWords';
 import { FlipSentence } from '../ui/FlipSentence';
 
+import bgPeople from '../../public/bg-people.svg';
+import handPeople from '../../public/hand-people.svg';
+import bgWebsite from '../../public/bg-website.svg';
+import handWebsite from '../../public/hand-website.svg';
+import bgTrust from '../../public/bg-trust.svg';
+import handTrust from '../../public/hand-trust.svg';
+
 const careList = [
   {
     title: 'Website',
     isDown: true,
     text: 'It is frustating to stand out in a crowded market. A unique and creative website can sets you apart from the competition.',
     bgColor: 'bg-[#C1E693]',
+    bgImg: bgWebsite,
+    handImg: handWebsite,
   },
   {
     title: 'People',
     isDown: false,
-    text: 'Your website serves as more than just a digital presence; it serves as a showcase for your brand and the caliber of the work you provide to people.',
+    text: "We closely consider your visitors' needs and preferences, ensuring an engaging and intuitive experience for your target audience.",
     bgColor: 'bg-[#9AACEF]',
+    bgImg: bgPeople,
+    handImg: handPeople,
   },
   {
     title: 'Trust',
     isDown: true,
     text: 'Reputation is everything in the architectural world. Our mission is to create a website that not only showcases your projects but also builds a strong, trustworthy brand.',
-    bgColor: 'bg-[#C6B9EE]',
+    bgColor: 'bg-[#E8E2F8]',
+    bgImg: bgTrust,
+    handImg: handTrust,
   },
 ];
 
@@ -92,7 +105,6 @@ function CarePin() {
     });
 
     tl3
-      .to('#header', { opacity: 0, y: -200 })
       .to('.hidden-word', { opacity: 0, delay: 2, duration: 3 }, '<')
       .to('.unhidden-word', { opacity: 1 }, '<+3')
       .to('.anim-green', { color: '#C1E693', delay: 1, duration: 6 }, '<')
@@ -192,18 +204,22 @@ function CarePin() {
             </h5>
 
             <div className='flex gap-12 w-fit z-10'>
-              {careList.map(({ title, isDown, text, bgColor }, i) => {
-                return (
-                  <Card
-                    isDown={isDown}
-                    text={text}
-                    title={title}
-                    key={i}
-                    bgColor={bgColor}
-                    className='care-main-card'
-                  />
-                );
-              })}
+              {careList.map(
+                ({ title, isDown, text, bgColor, bgImg, handImg }, i) => {
+                  return (
+                    <Card
+                      isDown={isDown}
+                      text={text}
+                      title={title}
+                      key={i}
+                      bgColor={bgColor}
+                      className='care-main-card'
+                      bgImg={bgImg}
+                      handImg={handImg}
+                    />
+                  );
+                }
+              )}
             </div>
           </div>
         </div>
@@ -218,15 +234,28 @@ function Card({
   title,
   className = '',
   bgColor = 'bg-[#9AACEF]',
+  bgImg,
+  handImg,
 }) {
   return (
     <div
       className={`flex flex-col gap-4 w-[19.5rem] h-[25rem] py-12 px-7 rounded-3xl ${bgColor}  ${
         isDown && 'justify-end'
-      } ${className}`}
+      } ${className} bg-cover bg-no-repeat relative`}
+      style={{
+        backgroundImage: `url(${bgImg.src})`,
+        // backgroundSize: '24.5rem',
+      }}
     >
       <h5 className='fsd font-semibold'>{title}</h5>
-      <p className='font-normal'>{text}</p>
+      <p className='font-normal text-pretty'>{text}</p>
+      <img
+        src={handImg.src}
+        alt='hand image'
+        className={`absolute right-0 ${
+          title == 'People' ? 'bottom-0' : 'top-0'
+        }`}
+      />
     </div>
   );
 }
