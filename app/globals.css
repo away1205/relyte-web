@@ -21,11 +21,11 @@ body {
   h2 {
     /* Heading/H2 */
     font-family: var(--font-jakarta);
-    font-size: 4rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 125%; /* 5rem */
-    text-transform: uppercase;
+    line-height: 125%; /* 3.75rem */
+    letter-spacing: 0.06rem;
   }
 
   h3 {
@@ -102,5 +102,10 @@ body {
 
   .max-screen {
     max-width: 1200px;
+  }
+
+  .bento-grid {
+    grid-template-areas: 'design changes cost' 'design service service';
+    gap: 1.5rem;
   }
 }

@@ -30,6 +30,10 @@ module.exports = {
         },
         primary: {
           DEFAULT: '#5F7FF8',
+          100: '#9AACEF',
+        },
+        tertiary: {
+          DEFAULT: '#C6B9EE',
         },
       },
     },
