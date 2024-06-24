@@ -29,6 +29,8 @@ function Card({ id = 0 }) {
   const hiddenText = useRef(null);
   const hoverCard = useRef(null);
 
+  console.log(hiddenTextHeight);
+
   useEffect(() => {
     setHiddenTextHeight(hiddenText.current?.offsetHeight + 16);
   }, []);
