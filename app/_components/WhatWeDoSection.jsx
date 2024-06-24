@@ -17,8 +17,8 @@ const cardList = [
   },
   {
     id: 3,
-    title: 'Hosting & Support',
-    text: 'We provide fast, fully supported, cloud-based hosting services in 8 big countries around the world: Lithuania, Brazil ,Singapore, France, Netherlands, United Kingdom, Indonesia, and United States.',
+    title: 'Web Design',
+    text: 'We transform your online presence with custom-designed websites that are not only visually stunning but also incredibly fast and easy to update. We blend functionality with flair, ensuring your website stands out and performs seamlessly.',
     image: iHosting,
   },
 ];
@@ -26,7 +26,7 @@ const cardList = [
 function WhatWeDoSection() {
   return (
     <section className='min-h-screen flex flex-col items-center'>
-      <h2 className='uppercase font-medium text-[3.5rem]'>What we do</h2>
+      <h2 className='uppercase'>What we do</h2>
 
       <div className='flex'>
         {cardList.map(({ id, image, text, title }) => {
@@ -47,7 +47,7 @@ function WhatWeDoSection() {
 
 function Card({ title, text, image, id }) {
   return (
-    <div className='flex flex-col px-6 py-8 gap-9 md:w-[30rem] rounded-2xl border-2 border-gray-300'>
+    <div className='flex flex-col px-6 py-8 gap-9 md:w-[30rem] rounded-2xl border border-gray-400'>
       <div className='mx-auto flex'>
         <div className='flex flex-col justify-between items-start gap-14'>
           <h3 className='uppercase'>{title}</h3>

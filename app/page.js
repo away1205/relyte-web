@@ -5,6 +5,7 @@ import Header from './_components/Header';
 import HeroSection from './_components/HeroSection';
 import Preloader from './_components/Preloader';
 import WhatWeDoSection from './_components/WhatWeDoSection';
+import ProjectSection from './_components/ProjectSection';
 
 function Home() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function Home() {
       <Header />
       <HeroSection />
       <WhatWeDoSection />
+      <ProjectSection />
     </main>
   );
 }

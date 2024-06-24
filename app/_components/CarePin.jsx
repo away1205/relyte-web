@@ -200,7 +200,7 @@ function CarePin() {
                     title={title}
                     key={i}
                     bgColor={bgColor}
-                    className={`care-main-card`}
+                    className='care-main-card'
                   />
                 );
               })}
@@ -212,14 +212,18 @@ function CarePin() {
   );
 }
 
-function Card({ isDown = false, text, title, className = '', bgColor = 0 }) {
-  const colorList = ['#C1E693', '#9AACEF', '#E8E2F8'];
-
+function Card({
+  isDown = false,
+  text,
+  title,
+  className = '',
+  bgColor = 'bg-[#9AACEF]',
+}) {
   return (
     <div
-      className={`flex flex-col gap-4 w-[19.5rem] h-[25rem] py-12 px-7 rounded-3xl ${
+      className={`flex flex-col gap-4 w-[19.5rem] h-[25rem] py-12 px-7 rounded-3xl ${bgColor}  ${
         isDown && 'justify-end'
-      } ${className} ${bgColor}`}
+      } ${className}`}
     >
       <h5 className='fsd font-semibold'>{title}</h5>
       <p className='font-normal'>{text}</p>
