@@ -46,6 +46,19 @@ body {
     font-weight: 400;
     line-height: 110%; /* 1.925rem */
   }
+
+  .embla {
+    overflow: hidden;
+  }
+
+  .embla__container {
+    display: flex;
+  }
+
+  .embla__slide {
+    flex: 0 0 auto;
+    min-width: 0;
+  }
 }
 
 @layer utilities {

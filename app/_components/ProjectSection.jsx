@@ -1,24 +1,62 @@
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import { useEffect, useRef, useState } from 'react';
-
-// import {
-//   Carousel,
-//   CarouselContent,
-//   CarouselItem,
-//   CarouselNext,
-//   CarouselPrevious,
-// } from '@/components/ui/carousel';
+import useEmblaCarousel from 'embla-carousel-react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 function ProjectSection() {
-  return (
-    <section className='min-h-screen'>
-      <h2>Our Latest Projects</h2>
+  const [emblaRef, emblaApi] = useEmblaCarousel();
 
-      <div className='flex'>
-        <Card id={1} />
-        <Card />
-        <Card />
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
+  return (
+    <section className='min-h-screen max-screen pt-6'>
+      <h2>
+        Our Latest <br />
+        Projects
+      </h2>
+
+      <div className='embla flex flex-col'>
+        <div className='flex gap-10 ml-auto mb-4'>
+          <button
+            className='embla__prev bg-slate-200 rounded-full px-2 py-2'
+            onClick={scrollPrev}
+          >
+            <img src='./arrow-back-24px.svg' alt='arrow left' />
+          </button>
+
+          <button
+            className='embla__next bg-slate-200 rounded-full px-2 py-2 rotate-180'
+            onClick={scrollNext}
+          >
+            <img src='./arrow-back-24px.svg' alt='arrow right' />
+          </button>
+        </div>
+
+        <div className='embla__viewport' ref={emblaRef}>
+          <div className='embla__container gap-7'>
+            <div className='embla__slide'>
+              <Card />
+            </div>
+            <div className='embla__slide'>
+              <Card />
+            </div>
+            <div className='embla__slide'>
+              <Card />
+            </div>
+            <div className='embla__slide'>
+              <Card />
+            </div>
+            <div className='embla__slide'>
+              <Card />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
