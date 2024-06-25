@@ -52,7 +52,8 @@ function ProjectSection() {
       <div className='max-screen h-full flex flex-col items-center my-[4rem]'>
         <h2 className='uppercase text-white'>Our Latest Projects</h2>
 
-        <div className='embla flex flex-col'>
+        {/* Carousel Version */}
+        {/* <div className='embla flex flex-col'>
           <div className='flex gap-10 ml-auto mb-4'>
             <button
               className='embla__prev bg-slate-200 rounded-full px-2 py-2'
@@ -79,6 +80,18 @@ function ProjectSection() {
                 );
               })}
             </div>
+          </div>
+        </div> */}
+
+        <div className='flex items-start justify-start my-[6.5rem] gap-6'>
+          <div className='flex flex-col gap-8'>
+            <Card id={0} title={'Project 1'} />
+            <Card id={1} title={'Project 2'} />
+          </div>
+
+          <div className='flex flex-col gap-8 mt-[15%]'>
+            <Card id={2} title={'Project 2'} />
+            <Card id={3} title={'Project 2'} />
           </div>
         </div>
       </div>
@@ -121,10 +134,10 @@ function Card({ id = 0, title, text }) {
   }, [hiddenTextHeight]);
 
   return (
-    <div className='flex flex-col gap-4 w-[22rem]' ref={hoverCard}>
+    <div className='flex flex-col gap-4 w-full' ref={hoverCard}>
       <div
         className={`flex flex-col border-2 border-gray-300 rounded-xl relative  z-10 bg-white hover-anim${id}`}
-        style={{ top: `${hiddenTextHeight}px` }}
+        // style={{ top: `${hiddenTextHeight}px` }} // it might be for mobile ver
       >
         <img
           src='./illustration-coding.svg'
@@ -138,11 +151,11 @@ function Card({ id = 0, title, text }) {
         </div>
       </div>
 
-      <div className='flex gap-6 justify-start' ref={hiddenText}>
+      {/* <div className='flex gap-6 justify-start' ref={hiddenText}>
         <p>{text}</p>
 
         <img src='./arrow.svg' alt='arrow' className='h-fit w-fit' />
-      </div>
+      </div> */}
     </div>
   );
 }
