@@ -7,7 +7,7 @@ const FadeInAnim = ({
   children,
   duration = 1,
   delay = 0,
-  direction = 'left',
+  direction = 'up',
   toggleActions = 'play none none none',
 }) => {
   const elementRef = useRef(null);
