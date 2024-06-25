@@ -45,7 +45,12 @@ function WhatWeDoSection() {
       <div className='flex flex-col w-full gap-8'>
         {cardList.map(({ id, image, text, title, color, direction }) => {
           return (
-            <FadeInAnim key={id} direction={direction}>
+            <FadeInAnim
+              key={id}
+              direction={direction}
+              duration={1.5}
+              toggleActions='play none none none'
+            >
               <Card
                 key={id}
                 title={title}
