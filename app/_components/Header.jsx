@@ -1,3 +1,7 @@
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 function Header() {
   const navList = [
     { label: 'How it works', value: 'how' },
@@ -6,6 +10,28 @@ function Header() {
     { label: 'Contact', value: 'contact' },
     { label: 'FAQ', value: 'faq' },
   ];
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: 'html',
+        start: 'top top',
+        end: 99999,
+        onUpdate: (self) =>
+          self.direction === -1 ? showHeader.play() : showHeader.reverse(),
+      },
+    });
+
+    const showHeader = gsap
+      .from('#header', {
+        yPercent: -100,
+        paused: true,
+        duration: 0.3,
+      })
+      .progress(1);
+  }, []);
 
   return (
     <header
