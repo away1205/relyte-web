@@ -3,6 +3,8 @@ import gsap from 'gsap';
 import useEmblaCarousel from 'embla-carousel-react';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
+import bgProject from '../../public/bg-projects.svg';
+
 const projectList = [
   {
     title: 'Project 1',
@@ -38,38 +40,45 @@ function ProjectSection() {
   }, [emblaApi]);
 
   return (
-    <section className='min-h-screen max-screen pt-6'>
-      <h2>
-        Our Latest <br />
-        Projects
-      </h2>
+    <section className='min-h-screen w-screen pt-6 relative flex justify-center'>
+      <div
+        className='bg-[#111111] w-screen h-[40%] absolute top-0 left-0 bg-cover bg-no-repeat bg-[left] -z-10'
+        style={{
+          backgroundImage: `url(${bgProject.src})`,
+          backgroundSize: '105rem',
+        }}
+      ></div>
 
-      <div className='embla flex flex-col'>
-        <div className='flex gap-10 ml-auto mb-4'>
-          <button
-            className='embla__prev bg-slate-200 rounded-full px-2 py-2'
-            onClick={scrollPrev}
-          >
-            <img src='./arrow-back-24px.svg' alt='arrow left' />
-          </button>
+      <div className='max-screen h-full flex flex-col items-center my-[4rem]'>
+        <h2 className='uppercase text-white'>Our Latest Projects</h2>
 
-          <button
-            className='embla__next bg-slate-200 rounded-full px-2 py-2 rotate-180'
-            onClick={scrollNext}
-          >
-            <img src='./arrow-back-24px.svg' alt='arrow right' />
-          </button>
-        </div>
+        <div className='embla flex flex-col'>
+          <div className='flex gap-10 ml-auto mb-4'>
+            <button
+              className='embla__prev bg-slate-200 rounded-full px-2 py-2'
+              onClick={scrollPrev}
+            >
+              <img src='./arrow-back-24px.svg' alt='arrow left' />
+            </button>
 
-        <div className='embla__viewport' ref={emblaRef}>
-          <div className='embla__container gap-7'>
-            {projectList.map(({ title, text, year }, i) => {
-              return (
-                <div className='embla__slide'>
-                  <Card key={i} id={i} title={title} text={text} />
-                </div>
-              );
-            })}
+            <button
+              className='embla__next bg-slate-200 rounded-full px-2 py-2 rotate-180'
+              onClick={scrollNext}
+            >
+              <img src='./arrow-back-24px.svg' alt='arrow right' />
+            </button>
+          </div>
+
+          <div className='embla__viewport' ref={emblaRef}>
+            <div className='embla__container gap-7'>
+              {projectList.map(({ title, text, year }, i) => {
+                return (
+                  <div className='embla__slide'>
+                    <Card key={i} id={i} title={title} text={text} />
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
@@ -82,11 +91,9 @@ function Card({ id = 0, title, text }) {
   const hiddenText = useRef(null);
   const hoverCard = useRef(null);
 
-  console.log(hiddenTextHeight);
-
   useEffect(() => {
     setHiddenTextHeight(hiddenText.current?.offsetHeight + 16);
-  }, []);
+  }, [hiddenText]);
 
   useGSAP(() => {
     const hoverAnim = () =>
@@ -116,7 +123,8 @@ function Card({ id = 0, title, text }) {
   return (
     <div className='flex flex-col gap-4 w-[22rem]' ref={hoverCard}>
       <div
-        className={`flex flex-col border-2 border-gray-300 rounded-xl relative top-[${hiddenTextHeight}px] z-10 bg-white hover-anim${id}`}
+        className={`flex flex-col border-2 border-gray-300 rounded-xl relative  z-10 bg-white hover-anim${id}`}
+        style={{ top: `${hiddenTextHeight}px` }}
       >
         <img
           src='./illustration-coding.svg'
