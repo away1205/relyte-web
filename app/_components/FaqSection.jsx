@@ -37,7 +37,7 @@ const faqList = [
 
 function FaqSection() {
   return (
-    <section className='dot-bg h-screen w-screen flex justify-center py-24'>
+    <section className='dot-bg w-screen flex justify-center py-24'>
       <div className='flex flex-col items-center max-screen gap-28'>
         <h2 className='relative'>
           Frequently Asked Questions?{' '}
