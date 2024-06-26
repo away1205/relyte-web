@@ -95,7 +95,7 @@ function HeroSection() {
 
         <a
           // href='#care-section'
-          className='uppercase py-3 px-6 bg-primary rounded-3xl text-white font-semibold mt-24'
+          className='uppercase rounded-3xl text-white font-semibold mt-24 relative'
           onClick={() => {
             gsap.to(window, {
               duration: 1,
@@ -107,6 +107,12 @@ function HeroSection() {
           }}
         >
           {isExplored ? 'Exploring' : "Let's Explore"}
+          <img
+            src='./scroll-anim.gif'
+            alt='scroll down'
+            width={75}
+            className='absolute -top-8 cursor-pointer'
+          />
         </a>
 
         <div className='relative top-[10%]'>
