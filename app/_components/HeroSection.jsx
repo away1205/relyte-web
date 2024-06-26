@@ -13,7 +13,6 @@ import CarePin from './CarePin';
 
 function HeroSection() {
   const textList = ['BUILD', 'GROW', 'LEAD'];
-  const [isExplored, setIsExplored] = useState(false);
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
   useGSAP(() => {
@@ -95,23 +94,20 @@ function HeroSection() {
 
         <a
           // href='#care-section'
-          className='uppercase rounded-3xl text-white font-semibold mt-24 relative'
+          className='uppercase rounded-3xl text-white  h-[100px] w-[100px] font-semibold mt-20 relative'
           onClick={() => {
             gsap.to(window, {
               duration: 1,
               scrollTo: { y: '#care-section' },
               ease: 'power2',
             });
-
-            setIsExplored(true);
           }}
         >
-          {isExplored ? 'Exploring' : "Let's Explore"}
           <img
             src='./scroll-anim.gif'
             alt='scroll down'
             width={75}
-            className='absolute -top-8 cursor-pointer'
+            className='absolute top-0 left-[50%] -translate-x-1/2 cursor-pointer'
           />
         </a>
 
