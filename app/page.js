@@ -7,6 +7,7 @@ import Preloader from './_components/Preloader';
 import WhatWeDoSection from './_components/WhatWeDoSection';
 import ProjectSection from './_components/ProjectSection';
 import BenefitSection from './_components/BenefitSection';
+import FaqSection from './_components/FaqSection';
 
 function Home() {
   useEffect(() => {
@@ -21,12 +22,13 @@ function Home() {
       id='main'
       className='relative flex flex-col items-center max-screen mx-auto cursor-wait'
     >
-      <Preloader />
+      {/* <Preloader />
       <Header />
       <HeroSection />
       <WhatWeDoSection />
       <ProjectSection />
-      <BenefitSection />
+      <BenefitSection /> */}
+      <FaqSection />
     </main>
   );
 }
