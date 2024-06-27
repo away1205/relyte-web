@@ -52,8 +52,8 @@ function FaqSection() {
             <path
               d='M8 15.058C87.0556 15.058 166.235 8.84965 245.333 8.10202C322.99 7.36801 400.407 10.8375 478.024 10.8375C518.971 10.8375 641.7 16.4648 600.753 16.4648'
               stroke='#C1E693'
-              stroke-width='14.108'
-              stroke-linecap='round'
+              strokeWidth='14.108'
+              strokeLinecap='round'
             />
           </svg>
         </h2>

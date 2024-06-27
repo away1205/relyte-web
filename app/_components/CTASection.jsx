@@ -1,0 +1,56 @@
+import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
+
+import HoverWords from '../ui/HoverWords';
+
+function CTASection() {
+  const [buttonHeight, setButtonHeight] = useState(0);
+  const buttonRef = useRef(null);
+
+  useEffect(() => {
+    setButtonHeight(buttonRef.current.offsetHeight / 2);
+  }, []);
+
+  return (
+    <section className='w-screen h-screen bg-[#111] flex flex-col items-center justify-center rounded-tl-[3.125rem] rounded-tr-[3.125rem]'>
+      <div className='relative' id='cursor-card'>
+        <div className='relative w-fit h-fit px-[8rem] py-[8rem] border border-dashed'>
+          <div className='relative px-4 py-4'>
+            <h2 className='text-center text-white font-semibold text-[4.5rem] uppercase'>
+              <div className='flex gap-6'>
+                <HoverWords words='READY' />
+                <HoverWords words='TO' />
+                <HoverWords words='START' />
+              </div>
+              Your website?
+            </h2>
+
+            <div className='w-6 h-6 bg-primary absolute top-0 -right-2 rounded-full' />
+          </div>
+        </div>
+
+        <div className='w-4 h-4 bg-white absolute -top-2 -left-2'></div>
+        <div className='w-4 h-4 bg-white absolute -bottom-2 -left-2'></div>
+        <div className='w-4 h-4 bg-white absolute -top-2 -right-2'></div>
+        <div className='w-4 h-4 bg-white absolute -bottom-2 -right-2'></div>
+
+        <button
+          ref={buttonRef}
+          className={`py-4 px-10 text-white bg-primary rounded-full font-semibold text-lg absolute -bottom-[${buttonHeight}px] left-1/2 -translate-x-1/2`}
+        >
+          Let's make it happen
+        </button>
+      </div>
+
+      <footer>
+        <div className='text-white'>
+          <Link href='#about'>About</Link>
+          <Link href='#blog'>Blog</Link>
+          <Link href='#portfolio'>Portfolio</Link>
+        </div>
+      </footer>
+    </section>
+  );
+}
+
+export default CTASection;

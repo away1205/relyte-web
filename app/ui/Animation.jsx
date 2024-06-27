@@ -37,8 +37,6 @@ const FadeInAnim = ({
       dirObj = 0;
   }
 
-  console.log(dirObj);
-
   useEffect(() => {
     const element = elementRef.current;
 

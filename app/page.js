@@ -8,6 +8,7 @@ import WhatWeDoSection from './_components/WhatWeDoSection';
 import ProjectSection from './_components/ProjectSection';
 import BenefitSection from './_components/BenefitSection';
 import FaqSection from './_components/FaqSection';
+import CTASection from './_components/CTASection';
 
 function Home() {
   useEffect(() => {
@@ -29,6 +30,7 @@ function Home() {
       <ProjectSection />
       <BenefitSection /> */}
       <FaqSection />
+      <CTASection />
     </main>
   );
 }
