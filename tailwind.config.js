@@ -1,5 +1,3 @@
-const { Urbanist } = require('next/font/google');
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -8,9 +6,6 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    fontFamily: {
-      'text-ticker': [Urbanist],
-    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

@@ -53,14 +53,14 @@ function TextTicker({ children }) {
       <div className='flex w-max flex-nowrap whitespace-nowrap' ref={slider}>
         <div
           ref={firstText}
-          className='font-[text-ticker] font-medium text-white text-2xl flex text-nowrap w-max'
+          className='font-medium text-white text-xl flex text-nowrap w-max'
         >
           {children}
         </div>
 
         <div
           ref={secondText}
-          className='font-[text-ticker] font-medium text-white text-2xl flex text-nowrap w-max'
+          className='font-medium text-white text-xl flex text-nowrap w-max'
         >
           {children}
         </div>
