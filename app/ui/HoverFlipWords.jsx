@@ -2,7 +2,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { useRef } from 'react';
 
-function HoverFlipWords({ inText = 'Intext', upText = 'Uptext' }) {
+function HoverFlipWords({ inText = 'Intext', upText = '' }) {
   const initialText = useRef(null);
   const upcomingText = useRef(null);
   const container = useRef(null);
@@ -10,7 +10,7 @@ function HoverFlipWords({ inText = 'Intext', upText = 'Uptext' }) {
   useGSAP(() => {
     const tl = gsap.timeline({ paused: true });
 
-    tl.to(initialText.current, { yPercent: -100, duration: 0.4 });
+    tl.to(initialText.current, { yPercent: -100, opacity: 0.2, duration: 0.4 });
     tl.fromTo(
       upcomingText.current,
       {},
@@ -23,11 +23,11 @@ function HoverFlipWords({ inText = 'Intext', upText = 'Uptext' }) {
   }, []);
   return (
     <div ref={container} className='relative w-min overflow-hidden'>
-      <span className='inline-block leading-none' ref={initialText}>
+      <span className='inline-block leading-none text-nowrap' ref={initialText}>
         {inText}
       </span>
-      <span className='block absolute top-full' ref={upcomingText}>
-        {upText}
+      <span className='block absolute top-full text-nowrap' ref={upcomingText}>
+        {upText === '' ? inText : upText}
       </span>
     </div>
   );
