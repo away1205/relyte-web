@@ -168,13 +168,14 @@ function CarePin() {
         </div>
 
         <div className='sticky top-0 h-[100vh]'>
-          <div className='care-card2 flex flex-col card-container px-20 py-20 bg-black-100 justify-center items-center rounded-2xl gap-8 z-[2] relative top-[20%] md:w-[36rem] mb-[100vh]'>
+          <div className='care-card2 flex flex-col card-container px-20 py-20 bg-black-100 justify-center items-center rounded-2xl gap-8 z-[2] relative top-[20%] md:w-[40rem] mb-[100vh]'>
             <div className='relative' id='cursor-card'>
               <h5 className='text-center text-white border border-dashed px-20 py-20 relative'>
                 <span>
-                  Are you ever facing <br /> the{' '}
+                  Seeking someone <br />
+                  who can steer clear <br />
                 </span>
-                <span className='text-green mt-[50vh]'>same problem?</span>
+                <span className='text-green mt-[50vh]'>this problem?</span>
               </h5>
 
               <div className='w-4 h-4 bg-white absolute -top-2 -left-2'></div>
@@ -187,7 +188,7 @@ function CarePin() {
 
         <div className='relative top-0 min-h-[100vh] care-card3 pb-96 bg-black-100'>
           <div className='card-container px-20 py-20 rounded-2xl z-[3] relative w-[100vw] min-h-[100vh] flex flex-col items-center justify-center'>
-            <h5 className='text-center text-white leading-[125%]'>
+            <h1 className='text-center text-white leading-[125%] text-[3.5rem]'>
               <span className='absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 hidden-word'>
                 Dont worry, <br /> let us tell you a secret
               </span>
@@ -201,7 +202,7 @@ function CarePin() {
               <span className='opacity-0 absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 unhidden-word2'>
                 and here is the 3 things that we care the most.
               </span>
-            </h5>
+            </h1>
 
             <div className='flex gap-12 w-fit z-10'>
               {careList.map(
