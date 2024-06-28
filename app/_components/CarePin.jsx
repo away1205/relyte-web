@@ -14,25 +14,25 @@ import handTrust from '../../public/hand-trust.svg';
 
 const careList = [
   {
-    title: 'Website',
+    title: 'Drive Traffic',
     isDown: true,
-    text: 'It is frustating to stand out in a crowded market. A unique and creative website can sets you apart from the competition.',
+    text: 'Standing out in a crowded market is tough, but with our data-driven, unique, and creative design, we can drive traffic to your website and set you apart.',
     bgColor: 'bg-[#C1E693]',
     bgImg: bgWebsite,
     handImg: handWebsite,
   },
   {
-    title: 'People',
+    title: 'Engage Leads',
     isDown: false,
-    text: "We closely consider your visitors' needs and preferences, ensuring an engaging and intuitive experience for your target audience.",
+    text: "We closely consider your visitors' needs and preferences, ensuring an engaging and intuitive experience that increases conversion rates",
     bgColor: 'bg-[#9AACEF]',
     bgImg: bgPeople,
     handImg: handPeople,
   },
   {
-    title: 'Trust',
+    title: 'Convert Clients',
     isDown: true,
-    text: 'Reputation is everything in the architectural world. Our mission is to create a website that not only showcases your projects but also builds a strong, trustworthy brand.',
+    text: 'Lastly, we ensure your website builds a reliable brand, showcases your expertise, and converts visitors into loyal customers.',
     bgColor: 'bg-[#E8E2F8]',
     bgImg: bgTrust,
     handImg: handTrust,
@@ -200,7 +200,7 @@ function CarePin() {
               </span>
 
               <span className='opacity-0 absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 unhidden-word2'>
-                and here is the 3 things that we care the most.
+                and here are the 3 things we know you care the most.
               </span>
             </h1>
 
@@ -249,13 +249,11 @@ function Card({
       }}
     >
       <h5 className='fsd font-semibold'>{title}</h5>
-      <p className='font-normal text-pretty'>{text}</p>
+      <p className={`font-normal text-wrap`}>{text}</p>
       <img
         src={handImg.src}
         alt='hand image'
-        className={`absolute right-0 ${
-          title == 'People' ? 'bottom-0' : 'top-0'
-        }`}
+        className={`absolute right-0 ${!isDown ? 'bottom-0' : 'top-0'}`}
       />
     </div>
   );
