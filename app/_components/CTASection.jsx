@@ -3,13 +3,14 @@ import { useEffect, useRef, useState } from 'react';
 
 import HoverWords from '../ui/HoverWords';
 import HoverFlipWords from '../ui/HoverFlipWords';
+import MagneticAnim from '../ui/MagneticAnim';
 
 function CTASection() {
   const [buttonHeight, setButtonHeight] = useState(0);
   const buttonRef = useRef(null);
 
   useEffect(() => {
-    setButtonHeight(buttonRef.current.offsetHeight / 2);
+    setButtonHeight(buttonRef.current?.offsetHeight / 2);
   }, []);
 
   return (
@@ -40,13 +41,17 @@ function CTASection() {
         <div className='w-4 h-4 bg-white absolute -top-2 -right-2'></div>
         <div className='w-4 h-4 bg-white absolute -bottom-2 -right-2'></div>
 
-        <button
-          ref={buttonRef}
-          className={`py-4 px-10 text-white bg-primary rounded-full font-semibold text-lg absolute left-1/2 -translate-x-1/2`}
-          style={{ bottom: `-${buttonHeight}px` }}
-        >
-          Let's make it happen
-        </button>
+        <MagneticAnim>
+          <div>
+            <button
+              ref={buttonRef}
+              className={`py-4 px-10 text-white bg-primary rounded-full font-semibold text-lg absolute left-1/2 -translate-x-1/2 hover:bg-white hover:text-black-100 transition-all duration-500 ease-in-out`}
+              style={{ bottom: `-${buttonHeight}px` }}
+            >
+              Let's make it happen
+            </button>
+          </div>
+        </MagneticAnim>
       </div>
     </section>
   );

@@ -10,6 +10,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
 import { useState } from 'react';
 import CarePin from './CarePin';
+import MagneticAnim from '../ui/MagneticAnim';
 
 function HeroSection() {
   const textList = ['BUILD', 'GROW', 'LEAD'];
@@ -92,24 +93,26 @@ function HeroSection() {
 
         <h1 className='hero-anim-card'>Website For Architectural Company</h1>
 
-        <a
-          // href='#care-section'
-          className='uppercase rounded-3xl text-white  h-[100px] w-[100px] font-semibold mt-20 relative'
-          onClick={() => {
-            gsap.to(window, {
-              duration: 1,
-              scrollTo: { y: '#care-section' },
-              ease: 'power2',
-            });
-          }}
-        >
-          <img
-            src='./scroll-anim.gif'
-            alt='scroll down'
-            width={75}
-            className='absolute top-0 left-[50%] -translate-x-1/2 cursor-pointer'
-          />
-        </a>
+        <MagneticAnim>
+          <a
+            // href='#care-section'
+            className='uppercase rounded-3xl text-white  h-[100px] w-[100px] font-semibold mt-20 relative'
+            onClick={() => {
+              gsap.to(window, {
+                duration: 1,
+                scrollTo: { y: '#care-section' },
+                ease: 'power2',
+              });
+            }}
+          >
+            <img
+              src='./scroll-anim.gif'
+              alt='scroll down'
+              width={75}
+              className='absolute top-0 left-[50%] -translate-x-1/2 cursor-pointer'
+            />
+          </a>
+        </MagneticAnim>
 
         <div className='relative top-[10%]'>
           <TextTicker>

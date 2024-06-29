@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import HoverFlipWords from '../ui/HoverFlipWords';
+import MagneticAnim from '../ui/MagneticAnim';
 
 function Footer() {
   return (
@@ -115,7 +116,7 @@ function Footer() {
         </div>
 
         <Link href={'#'} className='mt-16 mb-10'>
-          *Privacy & Policy
+          <HoverFlipWords inText='*Privacy & Policy' />
         </Link>
       </div>
     </footer>
