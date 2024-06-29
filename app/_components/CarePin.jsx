@@ -198,7 +198,7 @@ function CarePin() {
               <span className='opacity-0 absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 unhidden-word'>
                 We're not just building <br /> websites - We're crafting your{' '}
                 <br />
-                <span className='anim-green'>reliable client generator</span>
+                <span className='anim-green'>reliable lead generation</span>
               </span>
 
               <span className='opacity-0 absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 unhidden-word2'>
