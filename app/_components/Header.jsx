@@ -38,19 +38,20 @@ function Header() {
       id='header'
     >
       <div className='flex justify-between items-center max-screen mx-auto py-6'>
-        <img
-          src='relyte-logo.svg'
-          alt='Relyte Logo'
-          className='cursor-pointer'
-          onClick={() => {
-            gsap.to(window, {
-              duration: 1,
-              scrollTo: { y: `#home` },
-              ease: 'power2',
-            });
-          }}
-        />
-
+        <MagneticAnim>
+          <img
+            src='relyte-logo.svg'
+            alt='Relyte Logo'
+            className='cursor-pointer'
+            onClick={() => {
+              gsap.to(window, {
+                duration: 1,
+                scrollTo: { y: `#home` },
+                ease: 'power2',
+              });
+            }}
+          />
+        </MagneticAnim>
         <ul className='flex gap-14'>
           {navList.map((item) => {
             return (
@@ -73,7 +74,6 @@ function Header() {
             );
           })}
         </ul>
-
         <MagneticAnim>
           <button
             className='px-6 py-2 border-black border rounded-3xl'
