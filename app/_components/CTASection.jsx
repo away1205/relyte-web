@@ -14,7 +14,10 @@ function CTASection() {
   }, []);
 
   return (
-    <section className='w-screen h-screen bg-[#111] flex flex-col items-center justify-center rounded-tl-[3.125rem] rounded-tr-[3.125rem]'>
+    <section
+      id='CTA-section'
+      className='w-screen h-screen bg-[#111] flex flex-col items-center justify-center rounded-tl-[3.125rem] rounded-tr-[3.125rem]'
+    >
       <div className='relative' id='cursor-card'>
         <div className='relative w-fit h-fit px-[8rem] py-[8rem] border border-dashed'>
           <div className='relative px-4 py-4 flex flex-col justify-center items-center'>

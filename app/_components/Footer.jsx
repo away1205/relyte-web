@@ -4,7 +4,7 @@ import MagneticAnim from '../ui/MagneticAnim';
 
 function Footer() {
   return (
-    <footer className='bg-black-100 w-screen flex justify-center'>
+    <footer className='bg-black-100 w-screen flex justify-center' id='footer'>
       <div className='max-screen text-[#888888] flex flex-col justify-between w-full mt-16'>
         <div className='flex justify-between'>
           <div className='flex flex-col gap-2'>

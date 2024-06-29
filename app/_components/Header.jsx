@@ -5,9 +5,9 @@ import MagneticAnim from '../ui/MagneticAnim';
 
 function Header() {
   const navList = [
-    { label: 'Projects', value: 'projects' },
-    { label: 'Contact', value: 'contact' },
-    { label: 'FAQ', value: 'faq' },
+    { label: 'Projects', value: 'projects-section' },
+    { label: 'Contact', value: 'footer' },
+    { label: 'FAQ', value: 'faq-section' },
   ];
 
   gsap.registerPlugin(ScrollTrigger);
@@ -38,7 +38,18 @@ function Header() {
       id='header'
     >
       <div className='flex justify-between items-center max-screen mx-auto py-6'>
-        <img src='relyte-logo.svg' alt='Relyte Logo' />
+        <img
+          src='relyte-logo.svg'
+          alt='Relyte Logo'
+          className='cursor-pointer'
+          onClick={() => {
+            gsap.to(window, {
+              duration: 1,
+              scrollTo: { y: `#home` },
+              ease: 'power2',
+            });
+          }}
+        />
 
         <ul className='flex gap-14'>
           {navList.map((item) => {
@@ -64,7 +75,16 @@ function Header() {
         </ul>
 
         <MagneticAnim>
-          <button className='px-6 py-2 border-black border rounded-3xl'>
+          <button
+            className='px-6 py-2 border-black border rounded-3xl'
+            onClick={() => {
+              gsap.to(window, {
+                duration: 1,
+                scrollTo: { y: `#CTA-section` },
+                ease: 'power2',
+              });
+            }}
+          >
             Start A Project
           </button>
         </MagneticAnim>

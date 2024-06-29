@@ -40,7 +40,10 @@ function ProjectSection() {
   }, [emblaApi]);
 
   return (
-    <section className='min-h-screen w-screen pt-6 relative flex justify-center'>
+    <section
+      className='min-h-screen w-screen pt-6 relative flex justify-center'
+      id='projects-section'
+    >
       <div
         className='bg-[#111111] w-screen h-[40%] absolute top-0 left-0 bg-cover bg-no-repeat bg-[left] -z-10'
         style={{
