@@ -105,6 +105,7 @@ function CarePin() {
     });
 
     tl3
+      .to('.anim-green2', { color: '#C1E693', duration: 2 }, '<')
       .to('.hidden-word', { opacity: 0, delay: 2, duration: 3 }, '<')
       .to('.unhidden-word', { opacity: 1 }, '<+3')
       .to('.anim-green', { color: '#C1E693', delay: 1, duration: 6 }, '<')
@@ -190,17 +191,18 @@ function CarePin() {
           <div className='card-container px-20 py-20 rounded-2xl z-[3] relative w-[100vw] min-h-[100vh] flex flex-col items-center justify-center'>
             <h1 className='text-center text-white leading-[125%] text-[3.5rem]'>
               <span className='absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 hidden-word'>
-                Dont worry, <br /> let us tell you a secret
+                Dont worry, <br /> you just found{' '}
+                <span className='anim-green2'>one</span>.
               </span>
 
               <span className='opacity-0 absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 unhidden-word'>
-                We’re not just building <br /> websites - We’re building your{' '}
+                We're not just building <br /> websites - We're crafting your{' '}
                 <br />
-                <span className='anim-green'>potential client’s trust</span>
+                <span className='anim-green'>reliable client generator</span>
               </span>
 
               <span className='opacity-0 absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 unhidden-word2'>
-                and here are the 3 things we know you care the most.
+                and here are the 3 steps to make that happen.
               </span>
             </h1>
 
