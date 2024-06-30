@@ -114,7 +114,7 @@ function HeroSection() {
           </a>
         </MagneticAnim>
 
-        <div className='relative top-[10%]'>
+        <div className='relative -bottom-8'>
           <TextTicker>
             <div className='flex gap-8 ml-4'>
               <img src='trending-up.svg' alt='Trending icon' />
