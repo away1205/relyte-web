@@ -32,7 +32,7 @@ const cardList = [
 
 function WhatWeDoSection() {
   return (
-    <section className='max-screen w-full flex flex-col items-start gap-[4.5rem] my-32'>
+    <section className='max-screen w-full flex flex-col items-start gap-[4.5rem] my-32 max-lg:px-glob-25'>
       <FadeInAnim direction='' toggleActions='play none restart none'>
         <div className='flex flex-col justify-start gap-2'>
           <p className='uppercase h8'>Our Services</p>
@@ -71,21 +71,20 @@ function Card({ title, text, image, id, bgColor }) {
   return (
     <div className='flex px-8 py-8 gap-9 rounded-2xl border border-gray-400 flex-wrap flex-col md:flex-row'>
       <div className='flex basis-1/3'>
-        <div className='flex items-start mx-auto'>
-          <p className='font-semibold text-xl mr-8'>0{id}</p>
+        <div className='flex items-start mx-auto max-lg:flex-col'>
+          <p className='font-semibold lg:text-xl mr-8 max-lg:mb-6'>0{id}</p>
 
-          <div className='flex flex-col items-start gap-8'>
-            <h3 className='uppercase'>{title}</h3>
-            <p className='text-balance text-[0.9rem]'>{text}</p>
+          <div className='flex flex-col items-start md:gap-4 lg:gap-8'>
+            <h3 className='uppercase max-lg:text-[20px]'>{title}</h3>
+            <p className='text-balance max-lg:text-[0.75rem] lg:text-[0.9rem]'>
+              {text}
+            </p>
           </div>
         </div>
-
-        {/* <p className='font-semibold text-xl'>0{id}</p> */}
       </div>
 
-      {/* <img src={image} alt='Ilustrasi' className='' /> */}
       <div
-        className={`${bgColor} w-auto min-h-[14rem] grow shrink bg-auto bg-no-repeat ${
+        className={`${bgColor} w-auto min-h-[14rem] grow shrink md:bg-[length:400px_300px] lg:bg-auto bg-no-repeat  ${
           title == 'Coding & Dev' ? 'bg-[left]' : 'bg-[center]'
         } rounded-2xl`}
         style={{ backgroundImage: `url(${image})` }}

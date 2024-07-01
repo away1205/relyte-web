@@ -110,6 +110,10 @@ body {
       line-height: 120%;
       letter-spacing: -0.05rem;
     }
+
+    .px-glob-25 {
+      padding: 0 2.5rem;
+    }
   }
 
   .h8 {
@@ -123,7 +127,7 @@ body {
   }
 
   .max-screen {
-    max-width: 1280px;
+    max-width: 1200px;
   }
 
   .bento-grid {
