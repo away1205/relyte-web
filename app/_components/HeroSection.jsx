@@ -143,7 +143,7 @@ function HeroSection() {
         </div>
       </div>
 
-      {/* <CarePin /> */}
+      <CarePin />
     </section>
   );
 }
