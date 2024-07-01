@@ -8,26 +8,25 @@ import { FadeInAnim } from '../ui/Animation';
 function BenefitSection() {
   return (
     <section
-      className='min-h-screen bg-black flex flex-col w-screen items-center justify-center bg-cover bg-no-repeat bg-[center_bottom_-10rem]'
+      className='min-h-screen bg-black flex flex-col w-screen items-center justify-center bg-no-repeat bg-[center_bottom_-4rem] lg:bg-[center_bottom_-10rem] bg-[length:48rem_20rem] lg:bg-[length:90rem_37rem] max-lg:px-glob-25'
       style={{
         backgroundImage: `url(${bgBenefit.src})`,
-        backgroundSize: '90rem 37rem',
       }}
     >
-      <div className='flex flex-col max-screen items-center justify-center gap-[4rem] md:py-40'>
+      <div className='flex flex-col max-screen items-center justify-center gap-[4rem] py-28 lg:py-40'>
         <FadeInAnim direction='up' duration={1.5}>
           <div className='flex flex-col items-center'>
             <p className='text-white'>We help to provide</p>
-            <h2 className='text-white'>
+            <h2 className='text-white text-center'>
               Everything you need to grow your bussiness
             </h2>
           </div>
         </FadeInAnim>
 
         <FadeInAnim direction='down' duration={1.5}>
-          <div className='grid grid-cols-3 grid-rows-2 bento-grid'>
+          <div className='grid grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-6'>
             <div
-              className='.custom-design-card bg-green row-span-2 rounded-2xl px-6 py-6 h-[80vh] bg-cover bg-no-repeat bg-[center_bottom_30%]'
+              className='.custom-design-card bg-green row-span-2 rounded-2xl px-6 py-6 h-[35rem] lg:h-[80vh] bg-cover bg-no-repeat bg-[center_bottom_30%]'
               style={{
                 backgroundImage: `url(${bgDesign.src})`,
                 backgroundSize: '30rem',
@@ -41,7 +40,7 @@ function BenefitSection() {
             </div>
 
             <div
-              className='.unlimited-changes-card bg-tertiary rounded-2xl px-6 py-6 bg-cover bg-no-repeat bg-[right_bottom_0rem]'
+              className='.unlimited-changes-card bg-tertiary rounded-2xl px-6 py-6 bg-cover bg-no-repeat bg-[right_bottom_-3rem] lg:bg-[right_bottom_0rem]'
               style={{
                 backgroundImage: `url(${bgChanges.src})`,
                 backgroundSize: '14rem',
@@ -54,7 +53,7 @@ function BenefitSection() {
             </div>
 
             <div
-              className='.fixed-cost-card bg-[#E9E4E0] rounded-2xl px-6 py-6 flex flex-col justify-end bg-cover bg-no-repeat bg-[right_top_0rem]'
+              className='.fixed-cost-card bg-[#E9E4E0] rounded-2xl px-6 py-6 flex flex-col justify-end bg-cover bg-no-repeat bg-[right_top_-1.3rem] lg:bg-[right_top_0rem]'
               style={{
                 backgroundImage: `url(${bgCost.src})`,
                 backgroundSize: '14rem',
@@ -69,10 +68,9 @@ function BenefitSection() {
             </div>
 
             <div
-              className='.exclusive-card bg-primary-100 col-span-2 rounded-2xl px-6 py-6 bg-cover bg-no-repeat bg-[right_bottom_0rem] flex flex-col justify-end'
+              className='.exclusive-card bg-primary-100 col-span-2 rounded-2xl px-6 py-6 bg-cover bg-no-repeat bg-[right_top_-3rem] lg:bg-[right_bottom_-4rem] md:bg-[length:20rem_20rem] lg:bg-[length:24.5rem_24.5rem] flex flex-col justify-end'
               style={{
                 backgroundImage: `url(${bgService.src})`,
-                backgroundSize: '24.5rem',
               }}
             >
               <h5 className='mb-2 font-semibold'>Exclusive Service</h5>

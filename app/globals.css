@@ -129,9 +129,4 @@ body {
   .max-screen {
     max-width: 1200px;
   }
-
-  .bento-grid {
-    grid-template-areas: 'design changes cost' 'design service service';
-    gap: 1.5rem;
-  }
 }

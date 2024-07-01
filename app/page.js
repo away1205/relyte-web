@@ -27,10 +27,10 @@ function Home() {
       {/* <Preloader /> */}
       <Header />
       {/* <HeroSection /> */}
-      <WhatWeDoSection />
-      {/* <ProjectSection />
+      {/* <WhatWeDoSection /> */}
+      {/* <ProjectSection /> */}
       <BenefitSection />
-      <FaqSection />
+      {/* <FaqSection />
       <CTASection />
       <Footer /> */}
     </main>
