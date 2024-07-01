@@ -29,10 +29,10 @@ function Home() {
       {/* <HeroSection /> */}
       {/* <WhatWeDoSection /> */}
       {/* <ProjectSection /> */}
-      <BenefitSection />
+      {/* <BenefitSection /> */}
       <FaqSection />
-      {/* <CTASection />
-      <Footer /> */}
+      <CTASection />
+      {/* <Footer /> */}
     </main>
   );
 }
