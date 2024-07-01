@@ -38,10 +38,10 @@ const faqList = [
 function FaqSection() {
   return (
     <section
-      className='dot-bg w-screen flex justify-center py-24 min-h-screen'
+      className='dot-bg w-screen flex justify-center min-h-screen max-lg:px-glob-25 relative'
       id='faq-section'
     >
-      <div className='flex flex-col items-center max-screen gap-28'>
+      <div className='flex flex-col items-center max-screen gap-28 relative my-24'>
         <h2 className='relative'>
           Frequently Asked Questions?{' '}
           <div className='w-6 h-6 bg-primary rounded-full absolute -top-4 -right-6' />
