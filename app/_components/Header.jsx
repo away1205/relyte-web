@@ -77,7 +77,7 @@ function Header() {
 
         <MagneticAnim>
           <button
-            className=' md:py-1 md:px-2 lg:px-6 lg:py-2 border-black border rounded-3xl'
+            className=' md:py-1 md:px-4 lg:px-6 lg:py-2 border-black border rounded-3xl'
             onClick={() => {
               gsap.to(window, {
                 duration: 1,
