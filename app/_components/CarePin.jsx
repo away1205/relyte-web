@@ -16,7 +16,7 @@ const careList = [
   {
     title: 'Drive Traffic',
     isDown: true,
-    text: 'Standing out in a crowded market is tough, but with our data-driven, unique, and creative design, we can drive traffic to your website and set you apart.',
+    text: `Standing out in a crowded market is tough, but our data-driven, unique, and creative design, ensures your website captures attention, drives traffic and set you apart`,
     bgColor: 'bg-[#C1E693]',
     bgImg: bgWebsite,
     handImg: handWebsite,
@@ -137,8 +137,6 @@ function CarePin() {
             />
 
             <div className='flex items-start gap-4 text-white'>
-              {/* <strong className='font-d3 text-center'>70%</strong> */}
-
               <div className='w-[10rem] h-[6rem] text-center'>
                 <FlipWords
                   className={'font-d3 text-center text-white'}
@@ -159,11 +157,6 @@ function CarePin() {
                   className={'text text-gray-300 px-0'}
                 />
               </div>
-
-              {/* <h5>
-                architecture agency <br /> struggle to presenting <br /> their
-                work online
-              </h5> */}
             </div>
           </div>
         </div>
@@ -189,20 +182,20 @@ function CarePin() {
 
         <div className='relative top-0 min-h-[100vh] care-card3 pb-96 bg-black-100'>
           <div className='card-container px-20 py-20 rounded-2xl z-[3] relative w-[100vw] min-h-[100vh] flex flex-col items-center justify-center'>
-            <h1 className='text-center text-white leading-[125%] text-[3.5rem]'>
+            <h1 className='text-center text-white leading-[125%] md:text-[2.5rem] lg:text-[3.5rem]'>
               <span className='absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 hidden-word'>
                 Dont worry, <br /> you just found{' '}
                 <span className='anim-green2'>one</span>.
               </span>
 
-              <span className='opacity-0 absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 unhidden-word'>
+              <span className='opacity-0 absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 unhidden-word text-nowrap'>
                 We're not just building <br /> websites - We're crafting your{' '}
                 <br />
-                <span className='anim-green'>reliable lead generation</span>
+                <span className='anim-green'>digital revenue streams</span>
               </span>
 
               <span className='opacity-0 absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 unhidden-word2'>
-                and here are the 3 steps to make that happen.
+                here are the 3 steps we take to make it happen.
               </span>
             </h1>
 
@@ -242,7 +235,7 @@ function Card({
 }) {
   return (
     <div
-      className={`flex flex-col gap-4 w-[19.5rem] h-[25rem] py-12 px-7 rounded-3xl ${bgColor}  ${
+      className={`flex flex-col gap-4 w-[19.5rem] h-[25rem] py-12 px-6 rounded-3xl ${bgColor}  ${
         isDown && 'justify-end'
       } ${className} bg-cover bg-no-repeat relative`}
       style={{
