@@ -1,16 +1,16 @@
 'use client';
 
-import { FlipWords } from '../ui/FlipWords';
-import TextTicker from '../ui/TextTicker';
-import layersGif from '../../public/wired-outline-12-layers.gif';
-import stairsGif from '../../public/wired-outline-stairs.gif';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ScrollToPlugin from 'gsap/ScrollToPlugin';
-import { useState } from 'react';
+
 import CarePin from './CarePin';
 import MagneticAnim from '../ui/MagneticAnim';
+import { FlipWords } from '../ui/FlipWords';
+import TextTicker from '../ui/TextTicker';
+import layersGif from '../../public/wired-outline-12-layers.gif';
+import stairsGif from '../../public/wired-outline-stairs.gif';
 
 function HeroSection() {
   const textList = ['BUILD', 'GROW', 'LEAD'];
@@ -53,38 +53,33 @@ function HeroSection() {
         id='hero-1'
         className='flex flex-col justify-center items-center h-[100vh] mx-auto sticky top-0'
       >
-        <div className='flex flex-col dip-1 mt-20'>
-          <div className='hero-line-1 flex items-center justify-center gap-8'>
+        <div className={`flex flex-col mt-20 dip-3 xl:dip-1`}>
+          <div className='hero-line-1 flex items-center justify-center md:gap-6 lg:gap-8'>
             <p>TOGETHER</p>
 
             <div className='relative'>
-              <div className='hero-anim-card w-[20px] h-[20px] bg-primary rounded-full absolute right-0 bottom-[6rem]' />
+              {/* Circle top right */}
+              <div className='hero-anim-card w-[20px] h-[20px] bg-primary rounded-full absolute right-0 md:bottom-[4.8rem] xl:bottom-[6rem]' />
+
               <div
-                className='hero-anim-card bg-black rounded-[100px] flex justify-center items-center px-[125px] py-[14px] h-[6rem] bg-cover bg-no-repeat bg-[center_bottom_-4rem]'
+                className='hero-anim-card md:h-[4.6rem] xl:h-[6rem] bg-black rounded-[100px] flex justify-center items-center px-[125px] py-[14px]  bg-cover bg-no-repeat md:bg-[center_bottom_-5rem] xl:bg-[center_bottom_-4rem]'
                 style={{
                   backgroundImage: `url(${layersGif.src})`,
                   backgroundSize: '11rem 11rem',
                 }}
-              >
-                {/* // This img tag function if the flipwords position is not absolute */}
-                {/* <img
-                src=''
-                className='w-[50px] h-[7px] opacity-0'
-                alt='layers animation'
-                /> */}
-              </div>
+              />
             </div>
           </div>
 
           <div className='hero-line-2 flex items-center gap-8'>
             <div
-              className='hero-anim-card bg-green rounded-[100px] flex justify-center items-center px-[125px] py-[14px] h-[6rem] bg-cover bg-no-repeat bg-[right_-2.2rem]'
+              className='hero-anim-card md:h-[4.6rem] xl:h-[6rem] bg-green rounded-[100px] flex justify-center items-center px-[125px] py-[14px] bg-cover bg-no-repeat bg-[right_-2.2rem]'
               style={{ backgroundImage: `url(${stairsGif.src})` }}
             ></div>
 
-            <div className='flex gap-6 relative'>
+            <div className='flex relative'>
               <p>WE</p>
-              <span className='absolute w-max left-44'>
+              <span className='absolute w-max md:left-[8.6rem] xl:left-44'>
                 <FlipWords words={textList} />
               </span>
             </div>
@@ -96,7 +91,7 @@ function HeroSection() {
         <MagneticAnim>
           <a
             // href='#care-section'
-            className='uppercase rounded-3xl text-white  h-[100px] w-[100px] font-semibold mt-20 relative'
+            className='uppercase rounded-3xl text-white  md:h-[60px] md:w-[60px] xl:h-[80px] xl:w-[80px] font-semibold mt-20 relative'
             onClick={() => {
               gsap.to(window, {
                 duration: 1,
@@ -148,7 +143,7 @@ function HeroSection() {
         </div>
       </div>
 
-      <CarePin />
+      {/* <CarePin /> */}
     </section>
   );
 }
