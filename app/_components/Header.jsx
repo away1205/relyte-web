@@ -34,7 +34,7 @@ function Header() {
 
   return (
     <header
-      className='fixed bg-white w-full border-b border-[#e0e0e0] z-40'
+      className='fixed bg-white w-full border-b border-[#e0e0e0] z-40 md:px-10'
       id='header'
     >
       <div className='flex justify-between items-center max-screen mx-auto py-6'>
@@ -55,8 +55,8 @@ function Header() {
         <ul className='flex gap-14'>
           {navList.map((item) => {
             return (
-              <MagneticAnim>
-                <li key={item.value} className='cursor-pointer'>
+              <MagneticAnim key={item.value}>
+                <li className='cursor-pointer'>
                   <a
                     // href={`#${item.value}`}
                     onClick={() => {
@@ -74,9 +74,10 @@ function Header() {
             );
           })}
         </ul>
+
         <MagneticAnim>
           <button
-            className='px-6 py-2 border-black border rounded-3xl'
+            className=' md:py-1 md:px-2 lg:px-6 lg:py-2 border-black border rounded-3xl'
             onClick={() => {
               gsap.to(window, {
                 duration: 1,
