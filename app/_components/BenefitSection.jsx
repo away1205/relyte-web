@@ -1,4 +1,4 @@
-import bgBenefit from '../../public/bg-benefit.svg';
+import bgBenefit from '../../public/bg-benefit-fade.svg';
 import bgDesign from '../../public/illustration-custom-design.svg';
 import bgChanges from '../../public/illustration-changes.svg';
 import bgCost from '../../public/illustration-cost.svg';
@@ -8,7 +8,7 @@ import { FadeInAnim } from '../ui/Animation';
 function BenefitSection() {
   return (
     <section
-      className='min-h-screen bg-black flex flex-col w-screen items-center justify-center bg-no-repeat bg-[center_bottom_-4rem] lg:bg-[center_bottom_-10rem] bg-[length:48rem_20rem] lg:bg-[length:90rem_37rem] max-lg:px-glob-25'
+      className='min-h-screen bg-[#111] flex flex-col w-screen items-center justify-center bg-no-repeat bg-[center_bottom_-4rem] lg:bg-[center_bottom_-10rem] bg-[length:48rem_20rem] lg:bg-[length:90rem_37rem] max-lg:px-glob-25'
       style={{
         backgroundImage: `url(${bgBenefit.src})`,
       }}
