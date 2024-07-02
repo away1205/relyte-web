@@ -11,6 +11,9 @@ import bgWebsite from '../../public/bg-website.svg';
 import handWebsite from '../../public/hand-website.svg';
 import bgTrust from '../../public/bg-trust.svg';
 import handTrust from '../../public/hand-trust.svg';
+import trafficGif from '../../public/traffic-gif.gif';
+import leadGif from '../../public/lead-gif.gif';
+import convertGif from '../../public/convert-gif.gif';
 
 const careList = [
   {
@@ -20,6 +23,7 @@ const careList = [
     bgColor: 'bg-[#C1E693]',
     bgImg: bgWebsite,
     handImg: handWebsite,
+    gif: leadGif,
   },
   {
     title: 'Engage Leads',
@@ -28,6 +32,7 @@ const careList = [
     bgColor: 'bg-[#9AACEF]',
     bgImg: bgPeople,
     handImg: handPeople,
+    gif: trafficGif,
   },
   {
     title: 'Convert Clients',
@@ -36,6 +41,7 @@ const careList = [
     bgColor: 'bg-[#E8E2F8]',
     bgImg: bgTrust,
     handImg: handTrust,
+    gif: convertGif,
   },
 ];
 
@@ -199,11 +205,11 @@ function CarePin() {
               </span>
             </h1>
 
-            <div className='flex gap-12 w-fit z-10'>
+            <div className='grid md:max-lg:grid-cols-2 lg:flex lg:flex-row gap-12 md:max-lg:gap-40 w-fit z-10'>
               {careList.map(
-                ({ title, isDown, text, bgColor, bgImg, handImg }, i) => {
+                ({ title, isDown, text, bgColor, bgImg, handImg, gif }, i) => {
                   return (
-                    <Card
+                    <NewCard
                       isDown={isDown}
                       text={text}
                       title={title}
@@ -212,6 +218,8 @@ function CarePin() {
                       className='care-main-card'
                       bgImg={bgImg}
                       handImg={handImg}
+                      id={i + 1}
+                      gif={gif}
                     />
                   );
                 }
@@ -250,6 +258,30 @@ function Card({
         alt='hand image'
         className={`absolute right-0 ${!isDown ? 'bottom-0' : 'top-0'}`}
       />
+    </div>
+  );
+}
+
+function NewCard({ text, title, gif, id }) {
+  return (
+    <div
+      className={`flex flex-col gap-6 w-[17rem] h-[22rem] lg:w-[19.5rem] lg:h-[25rem] py-12 px-6 rounded-[2.5rem] bg-[#fff] justify-end relative care-main-card overflow-hidden ${
+        id === 2 && 'md:max-lg:row-span-2 md:max-lg:my-auto'
+      }`}
+    >
+      <div className='flex flex-col gap-2'>
+        <span className='font-semibold leading-none'>0{id}</span>
+        <h5 className='font-semibold'>{title}</h5>
+      </div>
+
+      <p className={`font-normal text-wrap`}>{text}</p>
+      <div
+        className={`absolute -right-[5px] -top-[5px] px-6 py-6 rounded-full ${
+          id === 2 ? 'bg-green' : 'bg-[#9AACEF]'
+        }`}
+      >
+        <img src={gif.src} alt={title} className={`w-[3.5rem] h-[3.5rem]`} />
+      </div>
     </div>
   );
 }

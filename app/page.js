@@ -24,15 +24,15 @@ function Home() {
       id='main'
       className='relative flex flex-col items-center max-screen mx-auto cursor-wait'
     >
-      <Preloader />
+      {/* <Preloader /> */}
       <Header />
       <HeroSection />
-      <WhatWeDoSection />
+      {/* <WhatWeDoSection />
       <ProjectSection />
       <BenefitSection />
       <FaqSection />
       <CTASection />
-      <Footer />
+      <Footer /> */}
     </main>
   );
 }
