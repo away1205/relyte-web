@@ -51,35 +51,36 @@ function HeroSection() {
     >
       <div
         id='hero-1'
-        className='flex flex-col justify-center items-center h-[100vh] mx-auto sticky top-0'
+        className='flex flex-col justify-center items-center h-[100vh] mx-auto sticky top-0 max-sm:gap-2'
       >
-        <div className={`flex flex-col mt-20 dip-3 xl:dip-1`}>
-          <div className='hero-line-1 flex items-center justify-center md:gap-6 lg:gap-8'>
-            <p>TOGETHER</p>
+        <div className={`flex flex-col mt-20 dip-3 xl:dip-1 max-sm:gap-2`}>
+          <div className='hero-line-1 flex items-center justify-center gap-2 sm:gap-6 lg:gap-8'>
+            <p className='max-sm:text-[2.25rem] max-sm:leading-none'>
+              TOGETHER
+            </p>
 
             <div className='relative'>
               {/* Circle top right */}
-              <div className='hero-anim-card w-[20px] h-[20px] bg-primary rounded-full absolute right-0 md:bottom-[4.8rem] xl:bottom-[6rem]' />
+              <div className='hero-anim-card w-[10px] h-[10px] sm:w-[20px] sm:h-[20px] bg-primary rounded-full absolute right-0 bottom-[2rem] sm:bottom-[4.8rem] xl:bottom-[6rem]' />
 
               <div
-                className='hero-anim-card md:h-[4.6rem] xl:h-[6rem] bg-black rounded-[100px] flex justify-center items-center px-[125px] py-[14px]  bg-cover bg-no-repeat md:bg-[center_bottom_-5rem] xl:bg-[center_bottom_-4rem]'
+                className='hero-anim-card max-sm:w-[5.75rem] h-[1.88rem] sm:h-[4.6rem] xl:h-[6rem] bg-black rounded-[100px] flex justify-center items-center sm:px-[125px] sm:py-[14px] bg-no-repeat bg-[center_bottom_-1.2rem] sm:bg-[center_bottom_-3rem] xl:bg-[center_bottom_-4rem] bg-[length:3.5rem_3.5rem] sm:bg-[length:8.5rem_8.5rem] xl:bg-[length:11rem_11rem]'
                 style={{
                   backgroundImage: `url(${layersGif.src})`,
-                  backgroundSize: '11rem 11rem',
                 }}
               />
             </div>
           </div>
 
-          <div className='hero-line-2 flex items-center gap-8'>
+          <div className='hero-line-2 flex items-center gap-2 sm:gap-8'>
             <div
-              className='hero-anim-card md:h-[4.6rem] xl:h-[6rem] bg-green rounded-[100px] flex justify-center items-center px-[125px] py-[14px] bg-cover bg-no-repeat bg-[right_-2.2rem]'
+              className='hero-anim-card h-[1.85rem] max-sm:w-[7rem] sm:h-[4.6rem] xl:h-[6rem] bg-green rounded-[100px] flex justify-center items-center sm:px-[125px] sm:py-[14px] bg-no-repeat bg-[right_-2.2rem] bg-[length:5.5rem_5.5rem] sm:bg-[length:12rem_12rem] xl:bg-cover'
               style={{ backgroundImage: `url(${stairsGif.src})` }}
             ></div>
 
             <div className='flex relative'>
-              <p>WE</p>
-              <span className='absolute w-max md:left-[8.6rem] xl:left-44'>
+              <p className='max-sm:text-[2.25rem] max-sm:leading-none'>WE</p>
+              <span className='absolute w-max left-[3.2rem] sm:left-[8.6rem] xl:left-44 max-sm:text-[2.25rem] max-sm:leading-none'>
                 <FlipWords words={textList} />
               </span>
             </div>
@@ -90,8 +91,7 @@ function HeroSection() {
 
         <MagneticAnim>
           <a
-            // href='#care-section'
-            className='uppercase rounded-3xl text-white  md:h-[60px] md:w-[60px] xl:h-[80px] xl:w-[80px] font-semibold mt-20 relative'
+            className='uppercase rounded-3xl text-white h-[50px] w-[50px] md:h-[60px] md:w-[60px] xl:h-[80px] xl:w-[80px] font-semibold mt-20 relative'
             onClick={() => {
               gsap.to(window, {
                 duration: 1,
