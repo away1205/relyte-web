@@ -23,7 +23,7 @@ const cardList = [
   {
     id: 3,
     title: 'Hosting & Support',
-    text: 'We provide fast, fully supported, cloud-based hosting services in 8 big countries around the world: Lithuania, Brazil ,Singapore, France, Netherlands, United Kingdom, Indonesia, and United States',
+    text: 'We provide fast, fully supported, cloud-based hosting and maintenance services in 8 big countries around the world: Lithuania, Australia, Singapore, France, Netherlands, United Kingdom, Indonesia, and United States',
     image: iHosting,
     color: 'bg-[#F2F2F2]',
     direction: 'left',
@@ -32,11 +32,11 @@ const cardList = [
 
 function WhatWeDoSection() {
   return (
-    <section className='max-screen w-full flex flex-col items-start gap-[4.5rem] my-32 max-lg:px-glob-25'>
+    <section className='max-screen w-full flex flex-col items-start gap-[4.5rem] my-[3.4rem] sm:my-32 max-lg:px-glob-25'>
       <FadeInAnim direction='' toggleActions='play none restart none'>
         <div className='flex flex-col justify-start gap-2'>
-          <p className='uppercase h8'>Our Services</p>
-          <h2 className='uppercase'>
+          <p className='uppercase h8 max-sm:font-normal'>Our Services</p>
+          <h2 className='uppercase max-sm:text-[1.25rem]'>
             What We Can <br /> Do For You?
           </h2>
         </div>
@@ -74,7 +74,7 @@ function Card({ title, text, image, id, bgColor }) {
         <div className='flex items-start mx-auto max-lg:flex-col'>
           <p className='font-semibold lg:text-xl mr-8 max-lg:mb-6'>0{id}</p>
 
-          <div className='flex flex-col items-start md:gap-4 lg:gap-8'>
+          <div className='flex flex-col items-start gap-2 sm:gap-4 lg:gap-8'>
             <h3 className='uppercase max-lg:text-[20px]'>{title}</h3>
             <p className='text-balance max-lg:text-[0.75rem] lg:text-[0.9rem]'>
               {text}

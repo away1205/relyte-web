@@ -203,7 +203,7 @@ function CarePin() {
               </span>
 
               <span className='opacity-0 absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 unhidden-word2'>
-                Here are the 3 steps we take to make it happen.
+                Here are the 3 key steps we take to make it happen.
               </span>
             </h2>
 
