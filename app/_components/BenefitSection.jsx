@@ -13,7 +13,7 @@ function BenefitSection() {
         backgroundImage: `url(${bgBenefit.src})`,
       }}
     >
-      <div className='flex flex-col max-screen items-center justify-center gap-[4rem] py-28 lg:py-40'>
+      <div className='flex flex-col max-screen items-center justify-center gap-[4rem] pb-28 pt-12 sm:py-28 lg:py-40'>
         <FadeInAnim direction='up' duration={1.5}>
           <div className='flex flex-col items-center gap-2'>
             <p className='text-white max-sm:font-b5'>We help to provide</p>
