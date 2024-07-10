@@ -179,7 +179,7 @@ body {
     .font-b5 {
       /* Body/B5 | 10/regular */
       font-family: var(--font-urbanist);
-      font-size: 0.625rem;
+      font-size: 0.75rem;
       font-style: normal;
       font-weight: 400;
       line-height: 150%; /* 0.9375rem */

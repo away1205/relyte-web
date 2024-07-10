@@ -1,44 +1,44 @@
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useRef } from 'react';
-import { FlipWords } from '../ui/FlipWords';
-import { FlipSentence } from '../ui/FlipSentence';
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
+import { FlipWords } from "../ui/FlipWords";
+import { FlipSentence } from "../ui/FlipSentence";
 
-import bgPeople from '../../public/bg-people.svg';
-import handPeople from '../../public/hand-people.svg';
-import bgWebsite from '../../public/bg-website.svg';
-import handWebsite from '../../public/hand-website.svg';
-import bgTrust from '../../public/bg-trust.svg';
-import handTrust from '../../public/hand-trust.svg';
-import trafficGif from '../../public/traffic-gif.gif';
-import leadGif from '../../public/lead-gif.gif';
-import convertGif from '../../public/convert-gif.gif';
+import bgPeople from "../../public/bg-people.svg";
+import handPeople from "../../public/hand-people.svg";
+import bgWebsite from "../../public/bg-website.svg";
+import handWebsite from "../../public/hand-website.svg";
+import bgTrust from "../../public/bg-trust.svg";
+import handTrust from "../../public/hand-trust.svg";
+import trafficGif from "../../public/traffic-gif.gif";
+import leadGif from "../../public/lead-gif.gif";
+import convertGif from "../../public/convert-gif.gif";
 
 const careList = [
   {
-    title: 'Drive Traffic',
+    title: "Drive Traffic",
     isDown: true,
     text: `Standing out in a crowded market is tough, but our data-driven, unique, and creative design, ensures your website captures attention, drives traffic and set you apart`,
-    bgColor: 'bg-[#C1E693]',
+    bgColor: "bg-[#C1E693]",
     bgImg: bgWebsite,
     handImg: handWebsite,
     gif: leadGif,
   },
   {
-    title: 'Engage Leads',
+    title: "Engage Leads",
     isDown: false,
-    text: 'We closely consider your target audience needs and preferences, ensuring an engaging and intuitive experience that increases conversion rates',
-    bgColor: 'bg-[#9AACEF]',
+    text: "We closely consider your target audience needs and preferences, ensuring an engaging and intuitive experience that increases conversion rates",
+    bgColor: "bg-[#9AACEF]",
     bgImg: bgPeople,
     handImg: handPeople,
     gif: trafficGif,
   },
   {
-    title: 'Convert Clients',
+    title: "Convert Clients",
     isDown: true,
-    text: 'Lastly, we ensure your website builds a reliable brand, showcases your expertise, and converts visitors into loyal customers.',
-    bgColor: 'bg-[#E8E2F8]',
+    text: "Lastly, we ensure your website builds a reliable brand, showcases your expertise, and converts visitors into loyal customers.",
+    bgColor: "bg-[#E8E2F8]",
     bgImg: bgTrust,
     handImg: handTrust,
     gif: convertGif,
@@ -47,19 +47,19 @@ const careList = [
 
 const infoList = [
   {
-    text: 'architectural websites have poor design, hurting conversion.',
-    number: '70%',
-    source: '- Launch North',
+    text: "architectural websites have poor design, hurting conversion.",
+    number: "70%",
+    source: "- Launch North",
   },
   {
     text: "users will leave a site if they don't find what they need in 5 seconds.",
-    number: '61%',
-    source: '- Forbes',
+    number: "61%",
+    source: "- Forbes",
   },
   {
-    text: 'of online users won’t return to a website after a bad experience',
-    number: '88%',
-    source: '- Sweor',
+    text: "of online users won’t return to a website after a bad experience",
+    number: "88%",
+    source: "- Sweor",
   },
 ];
 
@@ -71,37 +71,37 @@ function CarePin() {
   useGSAP(() => {
     let tl = gsap.timeline({
       scrollTrigger: {
-        trigger: '.care-container',
-        start: 'top+=200 top',
-        end: 'bottom bottom',
+        trigger: ".care-container",
+        start: "top+=200 top",
+        end: "bottom bottom",
         scrub: 1,
       },
     });
-    tl.to('.care-card1', { scale: 0.95, opacity: 0.3, duration: 2 });
-    tl.to('.care-card2', {
+    tl.to(".care-card1", { scale: 0.95, opacity: 0.3, duration: 2 });
+    tl.to(".care-card2", {
       scale: 0.95,
       opacity: 0.3,
       duration: 3,
     });
-    tl.to('.care-card1', { opacity: 0 }, '<');
+    tl.to(".care-card1", { opacity: 0 }, "<");
 
     let tl2 = gsap.timeline({
       scrollTrigger: {
-        trigger: '.care-card3',
-        start: 'top-=200 top',
-        end: 'bottom+=600 bottom',
+        trigger: ".care-card3",
+        start: "top-=200 top",
+        end: "bottom+=600 bottom",
         scrub: 1,
         // markers: true,
       },
     });
-    tl2.to('.care-card3', { scale: 1, duration: 3 });
+    tl2.to(".care-card3", { scale: 1, duration: 3 });
     // tl2.to('.care-card3 h5', { opacity: 0.1, duration: 3 });
 
     let tl3 = gsap.timeline({
       scrollTrigger: {
-        trigger: '.care-card3',
-        start: 'top top',
-        end: 'bottom+=200% bottom',
+        trigger: ".care-card3",
+        start: "top top",
+        end: "bottom+=200% bottom",
         scrub: 1,
         // markers: true,
         pin: true,
@@ -111,17 +111,17 @@ function CarePin() {
     });
 
     tl3
-      .to('.anim-green2', { color: '#C1E693', duration: 2 }, '<')
-      .to('.hidden-word', { opacity: 0, delay: 2, duration: 3 }, '<')
-      .to('.unhidden-word', { opacity: 1 }, '<+3')
-      .to('.anim-green', { color: '#C1E693', delay: 1, duration: 6 }, '<')
-      .to('.unhidden-word', { opacity: 0, delay: 2, duration: 3 }, '<3')
-      .to('.unhidden-word2', { opacity: 1 })
-      .to('.unhidden-word2', { opacity: 0.3, delay: 2, duration: 3 }, '<3')
+      .to(".anim-green2", { color: "#C1E693", duration: 2 }, "<")
+      .to(".hidden-word", { opacity: 0, delay: 2, duration: 3 }, "<")
+      .to(".unhidden-word", { opacity: 1 }, "<+3")
+      .to(".anim-green", { color: "#C1E693", delay: 1, duration: 6 }, "<")
+      .to(".unhidden-word", { opacity: 0, delay: 2, duration: 3 }, "<3")
+      .to(".unhidden-word2", { opacity: 1 })
+      .to(".unhidden-word2", { opacity: 0.3, delay: 2, duration: 3 }, "<3")
       .fromTo(
-        '.care-main-card',
+        ".care-main-card",
         { opacity: 0, y: 200 },
-        { opacity: 1, y: 0, duration: 3, stagger: 0.2 }
+        { opacity: 1, y: 0, duration: 3, stagger: 0.2 },
       );
 
     // gsap.to('.anim-green', {
@@ -132,82 +132,82 @@ function CarePin() {
   });
 
   return (
-    <section ref={container} id='care-section'>
-      <div className='care-container flex flex-col items-center'>
-        <div className='h-[100vh] sticky top-0'>
-          <div className='flex flex-col card-container care-card1 px-8 py-6 sm:px-20 sm:pt-12 sm:py-20 bg-black-100 justify-center items-start rounded-2xl gap-8 relative top-[15%] min-w-fit overflow-hidden'>
+    <section ref={container} id="care-section">
+      <div className="care-container flex flex-col items-center">
+        <div className="sticky top-0 h-[100vh]">
+          <div className="card-container care-card1 relative top-[20%] flex min-w-fit flex-col items-start justify-center gap-8 overflow-hidden rounded-2xl bg-black-100 px-8 py-6 sm:top-[15%] sm:px-20 sm:py-20 sm:pt-12">
             <img
-              src='./illustration-percentage.svg'
-              alt='percentage illustration'
-              className='relative -left-[3rem] sm:-left-24 max-sm:w-[5rem]'
+              src="./illustration-percentage.svg"
+              alt="percentage illustration"
+              className="relative -left-[3rem] max-sm:w-[5rem] sm:-left-24"
             />
 
-            <div className='flex items-start gap-4 text-white max-md:flex-col'>
-              <div className='w-fit sm:w-[10rem] sm:h-[6rem] text-center'>
+            <div className="flex items-start gap-4 text-white max-md:flex-col">
+              <div className="w-fit text-center sm:h-[6rem] sm:w-[10rem]">
                 <FlipWords
                   className={
-                    'font-d3 text-center text-white max-sm:text-[1.75rem] max-sm:px-0'
+                    "font-d3 text-center text-white max-sm:px-0 max-sm:text-[1.75rem]"
                   }
                   words={infoList.map((item) => item.number)}
                   duration={4000}
                 />
               </div>
 
-              <div className='w-[12rem] sm:w-[20rem] text-wrap flex flex-col gap-2'>
+              <div className="flex w-[12rem] flex-col gap-2 text-wrap sm:w-[20rem]">
                 <FlipSentence
                   words={infoList.map((item) => item.text)}
-                  className={'font-h5 text-white max-sm:text-[0.875rem]'}
+                  className={"font-h5 text-white max-sm:text-[0.875rem]"}
                   duration={4000}
                 />
                 <FlipWords
                   words={infoList.map((item) => item.source)}
                   duration={4000}
-                  className={'text-gray-300 px-0 max-sm:text-[0.65rem]'}
+                  className={"px-0 text-gray-300 max-sm:text-[0.65rem]"}
                 />
               </div>
             </div>
           </div>
         </div>
 
-        <div className='sticky top-0 h-[100vh]'>
-          <div className='care-card2 flex flex-col card-container px-8 py-8 sm:px-20 sm:py-20 bg-black-100 justify-center items-center rounded-[0.9rem] sm:rounded-2xl gap-8 z-[2] relative top-[20%] md:w-[40rem] mb-[100vh]'>
-            <div className='relative' id='cursor-card'>
-              <h2 className='font-h5 text-center text-white border border-dashed py-[5rem] px-6 sm:px-20 sm:py-20 relative max-sm:text-[0.875rem]'>
+        <div className="sticky top-0 h-[100vh]">
+          <div className="care-card2 card-container relative top-[20%] z-[2] mb-[100vh] flex flex-col items-center justify-center gap-8 rounded-[0.9rem] bg-black-100 px-8 py-8 sm:rounded-2xl sm:px-20 sm:py-20 md:w-[40rem]">
+            <div className="relative" id="cursor-card">
+              <h2 className="font-h5 relative border border-dashed px-6 py-[5rem] text-center text-white max-sm:text-[0.875rem] sm:px-20 sm:py-20">
                 <span>
                   Seeking someone <br />
                   who can steer clear <br />
                 </span>
-                <span className='text-green mt-[50vh]'>this problem?</span>
+                <span className="mt-[50vh] text-green">this problem?</span>
               </h2>
 
-              <div className='w-4 h-4 bg-white absolute -top-2 -left-2'></div>
-              <div className='w-4 h-4 bg-white absolute -bottom-2 -left-2'></div>
-              <div className='w-4 h-4 bg-white absolute -top-2 -right-2'></div>
-              <div className='w-4 h-4 bg-white absolute -bottom-2 -right-2'></div>
+              <div className="absolute -left-2 -top-2 h-4 w-4 bg-white"></div>
+              <div className="absolute -bottom-2 -left-2 h-4 w-4 bg-white"></div>
+              <div className="absolute -right-2 -top-2 h-4 w-4 bg-white"></div>
+              <div className="absolute -bottom-2 -right-2 h-4 w-4 bg-white"></div>
             </div>
           </div>
         </div>
 
-        <div className='relative top-0 min-h-[100vh] care-card3 pb-[4rem] sm:pb-[20rem] bg-black-100'>
-          <div className='card-container px-20 py-20 rounded-2xl z-[3] relative w-[100vw] min-h-[100vh] flex flex-col items-center justify-center'>
-            <h2 className='text-center text-white leading-[125%] text-[1.25rem] sm:text-[2.5rem] lg:text-[3.5rem] font-normal'>
-              <span className='absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 hidden-word'>
-                Dont worry, <br /> you just found{' '}
-                <span className='anim-green2'>one</span>.
+        <div className="care-card3 relative top-0 min-h-[100vh] bg-black-100 pb-[4rem] sm:pb-[20rem]">
+          <div className="card-container relative z-[3] flex min-h-[100vh] w-[100vw] flex-col items-center justify-center rounded-2xl px-20 py-20">
+            <h2 className="text-center text-[1.25rem] font-normal leading-[125%] text-white sm:text-[2.5rem] lg:text-[3.5rem]">
+              <span className="hidden-word absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2">
+                Dont worry, <br /> you just found{" "}
+                <span className="anim-green2">one</span>.
               </span>
 
-              <span className='opacity-0 absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 unhidden-word text-nowrap'>
-                We're not just building <br /> websites - We're crafting your{' '}
+              <span className="unhidden-word absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 text-nowrap opacity-0">
+                We're not just building <br /> websites - We're crafting your{" "}
                 <br />
-                <span className='anim-green'>digital revenue streams</span>
+                <span className="anim-green">digital revenue streams</span>
               </span>
 
-              <span className='opacity-0 absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 unhidden-word2'>
+              <span className="unhidden-word2 absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 opacity-0">
                 Here are the 3 key steps we take to make it happen.
               </span>
             </h2>
 
-            <div className='flex max-sm:flex-col max-sm:absolute max-sm:top-32 sm:grid md:max-lg:grid-cols-2 lg:flex lg:flex-row gap-6 sm:gap-12 md:max-lg:gap-40 w-fit z-10'>
+            <div className="z-10 flex w-fit gap-6 max-sm:absolute max-sm:top-32 max-sm:flex-col sm:grid sm:gap-12 md:max-lg:grid-cols-2 md:max-lg:gap-40 lg:flex lg:flex-row">
               {careList.map(
                 ({ title, isDown, text, bgColor, bgImg, handImg, gif }, i) => {
                   return (
@@ -217,14 +217,14 @@ function CarePin() {
                       title={title}
                       key={i}
                       bgColor={bgColor}
-                      className='care-main-card'
+                      className="care-main-card"
                       bgImg={bgImg}
                       handImg={handImg}
                       id={i + 1}
                       gif={gif}
                     />
                   );
-                }
+                },
               )}
             </div>
           </div>
@@ -238,27 +238,27 @@ function Card({
   isDown = false,
   text,
   title,
-  className = '',
-  bgColor = 'bg-[#9AACEF]',
+  className = "",
+  bgColor = "bg-[#9AACEF]",
   bgImg,
   handImg,
 }) {
   return (
     <div
-      className={`flex flex-col gap-4 w-[19.5rem] h-[25rem] py-12 px-6 rounded-3xl ${bgColor}  ${
-        isDown && 'justify-end'
-      } ${className} bg-cover bg-no-repeat relative`}
+      className={`flex h-[25rem] w-[19.5rem] flex-col gap-4 rounded-3xl px-6 py-12 ${bgColor} ${
+        isDown && "justify-end"
+      } ${className} relative bg-cover bg-no-repeat`}
       style={{
         backgroundImage: `url(${bgImg.src})`,
         // backgroundSize: '24.5rem',
       }}
     >
-      <h5 className='fsd font-semibold'>{title}</h5>
-      <p className={`font-normal text-wrap`}>{text}</p>
+      <h5 className="fsd font-semibold">{title}</h5>
+      <p className={`text-wrap font-normal`}>{text}</p>
       <img
         src={handImg.src}
-        alt='hand image'
-        className={`absolute right-0 ${!isDown ? 'bottom-0' : 'top-0'}`}
+        alt="hand image"
+        className={`absolute right-0 ${!isDown ? "bottom-0" : "top-0"}`}
       />
     </div>
   );
@@ -267,30 +267,30 @@ function Card({
 function NewCard({ text, title, gif, id }) {
   return (
     <div
-      className={`shadow-[-3.538px_3.538px_22.115px_0px_rgba(255,255,255,0.3)] flex flex-col gap-[0.75rem] sm:gap-6 w-[18rem] h-[8.2rem] sm:h-[22rem] lg:w-[19.5rem] lg:h-[25rem] py-4 px-4 sm:py-12 sm:px-6 rounded-[0.75rem] sm:rounded-[2.5rem] bg-[#fff] justify-end relative care-main-card overflow-hidden ${
-        id === 2 && 'md:max-lg:row-span-2 md:max-lg:my-auto'
+      className={`care-main-card relative flex h-[9rem] w-[18rem] flex-col justify-end gap-[0.75rem] overflow-hidden rounded-[0.75rem] bg-[#fff] px-4 py-4 shadow-[-3.538px_3.538px_22.115px_0px_rgba(255,255,255,0.3)] sm:h-[22rem] sm:gap-6 sm:rounded-[2.5rem] sm:px-6 sm:py-12 lg:h-[25rem] lg:w-[19.5rem] ${
+        id === 2 && "md:max-lg:row-span-2 md:max-lg:my-auto"
       }`}
     >
-      <div className='flex flex-col gap-0 sm:gap-2'>
-        <span className='sm:font-semibold leading-none max-sm:text-[0.625rem]'>
+      <div className="flex flex-col gap-0 sm:gap-2">
+        <span className="leading-none max-sm:text-[0.625rem] sm:font-semibold">
           0{id}
         </span>
-        <h5 className='font-semibold max-sm:h8'>{title}</h5>
+        <h5 className="max-sm:h8 font-semibold">{title}</h5>
       </div>
 
-      <p className={`font-normal text-pretty max-sm:font-b5 max-sm:opacity-50`}>
+      <p className={`max-sm:font-b5 text-pretty font-normal max-sm:opacity-50`}>
         {text}
       </p>
 
       <div
-        className={`absolute -right-[3px] -top-[3px] sm:-right-[5px] sm:-top-[5px] px-2 py-2 sm:px-6 sm:py-6 rounded-full ${
-          id === 2 ? 'bg-green' : 'bg-[#9AACEF]'
+        className={`absolute -right-[3px] -top-[3px] rounded-full px-2 py-2 sm:-right-[5px] sm:-top-[5px] sm:px-6 sm:py-6 ${
+          id === 2 ? "bg-green" : "bg-[#9AACEF]"
         }`}
       >
         <img
           src={gif.src}
           alt={title}
-          className='w-[1.4rem] h-[1.4rem] sm:w-[3.5rem] sm:h-[3.5rem]'
+          className="h-[1.4rem] w-[1.4rem] sm:h-[3.5rem] sm:w-[3.5rem]"
         />
       </div>
     </div>
