@@ -145,6 +145,15 @@ body {
       letter-spacing: 0.015rem;
     }
 
+    .font-b4 {
+      /* Body/B4 | 12/regular */
+      font-family: var(--font-urbanist);
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 125%; /* 0.9375rem */
+    }
+
     .font-b5 {
       /* Body/B5 | 10/regular */
       font-family: var(--font-urbanist);

@@ -30,9 +30,9 @@ function Home() {
       <WhatWeDoSection /> */}
       {/* <ProjectSection /> */}
       <BenefitSection />
-      {/* <FaqSection />
+      <FaqSection />
       <CTASection />
-      <Footer /> */}
+      <Footer />
     </main>
   );
 }

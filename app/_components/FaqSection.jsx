@@ -41,16 +41,16 @@ function FaqSection() {
       className='dot-bg w-screen flex justify-center min-h-screen max-lg:px-glob-25 relative'
       id='faq-section'
     >
-      <div className='flex flex-col items-center max-screen gap-28 relative my-24'>
-        <h2 className='relative'>
+      <div className='flex flex-col items-center max-screen gap-20 sm:gap-28 relative my-24'>
+        <h2 className='relative max-sm:font-h7'>
           Frequently Asked Questions?{' '}
-          <div className='w-6 h-6 bg-primary rounded-full absolute -top-4 -right-6' />
+          <div className='w-4 h-4 sm:w-6 sm:h-6 bg-primary rounded-full absolute -top-4 -right-4 sm:-right-6' />
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            width='617'
             height='24'
             viewBox='0 0 617 24'
             fill='none'
+            className='w-[16rem] sm:w-[617px]'
           >
             <path
               d='M8 15.058C87.0556 15.058 166.235 8.84965 245.333 8.10202C322.99 7.36801 400.407 10.8375 478.024 10.8375C518.971 10.8375 641.7 16.4648 600.753 16.4648'
