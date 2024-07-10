@@ -22,7 +22,7 @@ function Home() {
   return (
     <main
       id='main'
-      className='relative flex flex-col items-center max-screen mx-auto cursor-wait max-sm:overflow-x-hidden'
+      className='relative flex flex-col items-center max-screen mx-auto cursor-wait max-sm:overflow-x-clip'
     >
       {/* <Preloader /> */}
       <Header />

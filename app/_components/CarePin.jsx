@@ -188,7 +188,7 @@ function CarePin() {
           </div>
         </div>
 
-        <div className='relative top-0 min-h-[100vh] care-card3 pb-[36rem] sm:pb-[20rem] bg-black-100'>
+        <div className='relative top-0 min-h-[100vh] care-card3 pb-[46rem] sm:pb-[20rem] bg-black-100'>
           <div className='card-container px-20 py-20 rounded-2xl z-[3] relative w-[100vw] min-h-[100vh] flex flex-col items-center justify-center'>
             <h2 className='text-center text-white leading-[125%] text-[1.25rem] sm:text-[2.5rem] lg:text-[3.5rem] font-normal'>
               <span className='absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 hidden-word'>

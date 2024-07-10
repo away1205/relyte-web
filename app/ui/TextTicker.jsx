@@ -49,7 +49,7 @@ function TextTicker({ children }) {
 
   // VERY IMPORTANT NOTE: GAP SPACING IS MAKING THE POSITION OF THE TEXT ELEMENT MESSED UP
   return (
-    <div className='bg-primary py-4 px-8 overflow-x-hidden flex container-ticker -skew-y-1 w-[100vw]'>
+    <div className='bg-primary py-2 sm:py-4 sm:px-8 overflow-x-hidden flex container-ticker -skew-y-1 w-[100vw]'>
       <div className='flex w-max flex-nowrap whitespace-nowrap' ref={slider}>
         <div
           ref={firstText}

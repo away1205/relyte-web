@@ -111,7 +111,20 @@ function HeroSection() {
 
         <div className='relative -bottom-8'>
           <TextTicker>
-            <div className='flex gap-8 ml-4'>
+            {Array(7)
+              .fill()
+              .map((_, index) => (
+                <div className='flex gap-2 sm:gap-8 ml-2 sm:ml-4' key={index}>
+                  <img
+                    src='trending-up.svg'
+                    alt='Trending icon'
+                    className='max-sm:w-[0.75rem]'
+                  />
+                  <p className='max-sm:text-[0.75rem]'>We Create. Not Copy</p>
+                </div>
+              ))}
+
+            {/* <div className='flex gap-8 ml-4 max-sm:font-[0.75rem]'>
               <img src='trending-up.svg' alt='Trending icon' />
               <p>We Create. Not Copy</p>
             </div>
@@ -138,7 +151,7 @@ function HeroSection() {
             <div className='flex gap-8 ml-4'>
               <img src='trending-up.svg' alt='Trending icon' />
               <p>We Create. Not Copy</p>
-            </div>
+            </div> */}
           </TextTicker>
         </div>
       </div>
