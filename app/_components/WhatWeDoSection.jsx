@@ -32,11 +32,13 @@ const cardList = [
 
 function WhatWeDoSection() {
   return (
-    <section className='max-screen w-full flex flex-col items-start gap-[4.5rem] my-[3.4rem] sm:my-32 max-lg:px-glob-25'>
+    <section className='max-screen w-full flex flex-col items-start gap-5 sm:gap-[4.5rem] my-[3.4rem] sm:my-32 max-lg:px-glob-25'>
       <FadeInAnim direction='' toggleActions='play none restart none'>
-        <div className='flex flex-col justify-start gap-2'>
-          <p className='uppercase h8 max-sm:font-normal'>Our Services</p>
-          <h2 className='uppercase max-sm:text-[1.25rem]'>
+        <div className='flex flex-col justify-start max-sm:gap-0 gap-2'>
+          <p className='uppercase h8 max-sm:font-light max-sm:text-[0.75rem]'>
+            Our Services
+          </p>
+          <h2 className='uppercase max-sm:text-[1.5rem]'>
             What We Can <br /> Do For You?
           </h2>
         </div>
@@ -69,7 +71,7 @@ function WhatWeDoSection() {
 
 function Card({ title, text, image, id, bgColor }) {
   return (
-    <div className='flex px-8 py-8 gap-9 rounded-2xl border border-gray-400 flex-wrap flex-col md:flex-row'>
+    <div className='flex px-5 py-5 sm:px-8 sm:py-8 gap-5 sm:gap-9 rounded-2xl border border-gray-400 flex-wrap flex-col md:flex-row'>
       <div className='flex basis-1/3'>
         <div className='flex items-start mx-auto max-lg:flex-col'>
           <p className='font-semibold lg:text-xl mr-8 max-lg:mb-6'>0{id}</p>

@@ -27,7 +27,7 @@ function Home() {
       {/* <Preloader /> */}
       <Header />
       <HeroSection />
-      {/* <WhatWeDoSection /> */}
+      <WhatWeDoSection />
       {/* <ProjectSection /> */}
       {/* <BenefitSection />
       <FaqSection />
