@@ -46,7 +46,7 @@ function Header() {
         xPercent: 0,
         opacity: 1,
         width: '100vw',
-        height: '100vh',
+        height: '80vh',
         duration: 0.6,
         ease: 'power2.out',
       }
