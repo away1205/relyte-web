@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   scrollbar-width: thin;
@@ -188,7 +188,7 @@ body {
     .font-l4 {
       /* Label/L4 | 12/medium */
       font-family: var(--font-urbanist);
-      font-size: 0.75rem;
+      font-size: 0.875rem;
       font-style: normal;
       font-weight: 500;
       line-height: 125%; /* 0.9375rem */
