@@ -26,11 +26,11 @@ function Home() {
     >
       {/* <Preloader /> */}
       <Header />
-      <HeroSection />
+      {/* <HeroSection /> */}
       <WhatWeDoSection />
       {/* <ProjectSection /> */}
-      {/* <BenefitSection />
-      <FaqSection />
+      <BenefitSection />
+      {/* <FaqSection />
       <CTASection />
       <Footer /> */}
     </main>
