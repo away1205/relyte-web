@@ -24,9 +24,9 @@ function BenefitSection() {
         </FadeInAnim>
 
         <FadeInAnim direction='down' duration={1.5}>
-          <div className='grid grid-cols-2 lg:grid-cols-3 sm:grid-rows-2 gap-6'>
+          <div className='grid grid-cols-2 lg:grid-cols-3 sm:grid-rows-2 gap-4 sm:gap-6'>
             <div
-              className='.custom-design-card bg-green max-sm:col-span-2 sm:row-span-2 rounded-[0.4rem] sm:rounded-2xl px-2 py-4 sm:px-6 sm:py-6 h-fit sm:h-[35rem] lg:h-[80vh] bg-no-repeat sm:bg-[center_bottom_30%] bg-[right_top_45%] bg-[length:10rem_10rem] sm:bg-[length:24rem]'
+              className='.custom-design-card bg-green max-sm:col-span-2 sm:row-span-2 rounded-[0.4rem] sm:rounded-2xl px-2 py-4 sm:px-6 sm:py-6 h-fit sm:h-[35rem] lg:h-[80vh] xl:max-h-[40rem] bg-no-repeat sm:bg-[center_bottom_30%] bg-[right_top_45%] bg-[length:10rem_10rem] sm:bg-[length:24rem]'
               style={{
                 backgroundImage: `url(${bgDesign.src})`,
               }}
