@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 
-import HoverWords from '../ui/HoverWords';
-import HoverFlipWords from '../ui/HoverFlipWords';
-import MagneticAnim from '../ui/MagneticAnim';
+import HoverWords from "../ui/HoverWords";
+import HoverFlipWords from "../ui/HoverFlipWords";
+import MagneticAnim from "../ui/MagneticAnim";
 
 function CTASection() {
   const [buttonHeight, setButtonHeight] = useState(0);
@@ -15,42 +15,42 @@ function CTASection() {
 
   return (
     <section
-      id='CTA-section'
-      className='w-screen h-screen bg-[#111] flex flex-col items-center justify-center rounded-tl-[0.7rem] rounded-tr-[0.7rem] sm:rounded-tl-[3.125rem] sm:rounded-tr-[3.125rem'
+      id="CTA-section"
+      className="sm:rounded-tr-[3.125rem flex h-screen w-screen flex-col items-center justify-center rounded-tl-[0.7rem] rounded-tr-[0.7rem] bg-[#111] sm:rounded-tl-[3.125rem]"
     >
-      <div className='relative' id='cursor-card'>
-        <div className='relative w-fit h-fit px-[4rem] sm:px-[6rem] lg:px-[8rem] py-[8rem] border border-dashed'>
-          <div className='relative px-4 py-4 flex flex-col justify-center items-center'>
-            <h2 className='text-center text-white font-semibold md:text-[2.25rem] lg:text-[4.5rem] uppercase max-md:font-h5'>
-              <div className='flex gap-[0.5rem] lg:gap-6'>
-                <HoverWords words='READY' />
-                <HoverWords words='TO' />
-                <HoverWords words='BUILD' />
+      <div className="relative" id="cursor-card">
+        <div className="relative h-fit w-fit border border-dashed px-[4rem] py-[8rem] sm:px-[6rem] lg:px-[8rem]">
+          <div className="relative flex flex-col items-center justify-center px-4 py-4">
+            <h2 className="max-md:font-h5 text-center font-semibold uppercase text-white md:text-[2.25rem] lg:text-[4.5rem]">
+              <div className="flex gap-[0.5rem] lg:gap-6">
+                <HoverWords words="READY" />
+                <HoverWords words="TO" />
+                <HoverWords words="BUILD" />
               </div>
 
-              <div className='flex items-center justify-center gap-[0.5rem] lg:gap-6'>
+              <div className="flex items-center justify-center gap-[0.5rem] lg:gap-6">
                 <span>Your</span>
-                <HoverFlipWords inText='WEBSITE?' upText='PROJECT?' />
+                <HoverFlipWords inText="WEBSITE?" upText="PROJECT?" />
               </div>
             </h2>
 
-            <div className='w-4 h-4 lg:w-6 lg:h-6 bg-primary absolute top-0 -right-0 lg:-right-2 rounded-full' />
-            <p className='uppercase text-green mt-2 sm:mt-4 max-sm:font-b5'>
+            <div className="absolute -right-0 top-0 h-4 w-4 rounded-full bg-primary lg:-right-2 lg:h-6 lg:w-6" />
+            <p className="max-sm:font-b5 mt-2 uppercase text-green sm:mt-4">
               3 SLOTS AVAILABLE
             </p>
           </div>
         </div>
 
-        <div className='w-4 h-4 bg-white absolute -top-2 -left-2'></div>
-        <div className='w-4 h-4 bg-white absolute -bottom-2 -left-2'></div>
-        <div className='w-4 h-4 bg-white absolute -top-2 -right-2'></div>
-        <div className='w-4 h-4 bg-white absolute -bottom-2 -right-2'></div>
+        <div className="absolute -left-2 -top-2 h-4 w-4 bg-white"></div>
+        <div className="absolute -bottom-2 -left-2 h-4 w-4 bg-white"></div>
+        <div className="absolute -right-2 -top-2 h-4 w-4 bg-white"></div>
+        <div className="absolute -bottom-2 -right-2 h-4 w-4 bg-white"></div>
 
         <MagneticAnim>
           <div>
             <button
               ref={buttonRef}
-              className={`px-4 py-2 sm:py-4 sm:px-6 lg:px-10 text-white bg-primary rounded-full font-semibold text-md lg:text-lg absolute left-1/2 -translate-x-1/2 hover:bg-white hover:text-black-100 transition-all duration-500 ease-in-out max-sm:font-[0.7rem]`}
+              className={`text-md absolute left-1/2 -translate-x-1/2 rounded-full bg-primary px-4 py-2 font-normal text-white transition-all duration-500 ease-in-out hover:bg-white hover:text-black-100 max-sm:font-[0.7rem] sm:px-6 sm:py-4 sm:font-semibold lg:px-10 lg:text-lg`}
               style={{ bottom: `-${buttonHeight}px` }}
             >
               Let's make it happen
