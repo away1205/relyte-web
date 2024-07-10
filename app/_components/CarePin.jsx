@@ -28,7 +28,7 @@ const careList = [
   {
     title: 'Engage Leads',
     isDown: false,
-    text: "We closely consider your visitors' needs and preferences, ensuring an engaging and intuitive experience that increases conversion rates",
+    text: 'We closely consider your target audience needs and preferences, ensuring an engaging and intuitive experience that increases conversion rates',
     bgColor: 'bg-[#9AACEF]',
     bgImg: bgPeople,
     handImg: handPeople,
@@ -188,7 +188,7 @@ function CarePin() {
           </div>
         </div>
 
-        <div className='relative top-0 min-h-[100vh] care-card3 pb-96 bg-black-100'>
+        <div className='relative top-0 min-h-[100vh] care-card3 pb-[36rem] sm:pb-[20rem] bg-black-100'>
           <div className='card-container px-20 py-20 rounded-2xl z-[3] relative w-[100vw] min-h-[100vh] flex flex-col items-center justify-center'>
             <h2 className='text-center text-white leading-[125%] text-[1.25rem] sm:text-[2.5rem] lg:text-[3.5rem] font-normal'>
               <span className='absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 hidden-word'>
@@ -203,7 +203,7 @@ function CarePin() {
               </span>
 
               <span className='opacity-0 absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 unhidden-word2'>
-                here are the 3 steps we take to make it happen.
+                Here are the 3 steps we take to make it happen.
               </span>
             </h2>
 
@@ -276,7 +276,7 @@ function NewCard({ text, title, gif, id }) {
         <h5 className='font-semibold'>{title}</h5>
       </div>
 
-      <p className={`font-normal text-wrap`}>{text}</p>
+      <p className={`font-normal text-pretty`}>{text}</p>
       <div
         className={`absolute -right-[5px] -top-[5px] px-6 py-6 rounded-full ${
           id === 2 ? 'bg-green' : 'bg-[#9AACEF]'
