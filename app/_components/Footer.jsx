@@ -9,7 +9,7 @@ function Footer() {
   return (
     <footer className='bg-black-100 w-screen flex justify-center' id='footer'>
       <div className='max-screen text-[#888888] flex flex-col justify-between w-full mt-16 max-lg:px-glob-25'>
-        <div className='flex justify-between'>
+        <div className='flex justify-between max-sm:flex-col max-sm:gap-12'>
           <div className='flex flex-col gap-2'>
             <a href='tel:6289677900900'>
               <HoverFlipWords inText='+6289677900900' />
