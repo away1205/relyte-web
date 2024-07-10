@@ -84,8 +84,8 @@ function Card({ title, text, image, id, bgColor }) {
       </div>
 
       <div
-        className={`${bgColor} w-auto min-h-[14rem] grow shrink md:bg-[length:400px_300px] lg:bg-auto bg-no-repeat  ${
-          title == 'Coding & Dev' ? 'bg-[left]' : 'bg-[center]'
+        className={`${bgColor} w-auto min-h-[14rem] grow shrink bg-[length:16rem_11rem] md:bg-[length:400px_300px] lg:bg-auto bg-no-repeat  ${
+          title == 'Coding & Dev' ? 'bg-[left_bottom]' : 'bg-[center_bottom]'
         } rounded-2xl`}
         style={{ backgroundImage: `url(${image})` }}
       ></div>
