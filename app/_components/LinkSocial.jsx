@@ -4,7 +4,7 @@ import MagneticAnim from "../ui/MagneticAnim";
 function LinkSocial() {
   return (
     <div
-      className="mt-6 flex gap-5 py-6 sm:gap-10"
+      className="mt-6 flex gap-5 pt-6 sm:gap-10"
       style={{ borderTop: "2px solid #888888" }}
     >
       <MagneticAnim>

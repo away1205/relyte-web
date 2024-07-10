@@ -68,7 +68,9 @@ function Footer() {
           </nav>
         </div>
 
-        <LinkSocial />
+        <div className="mt-6 py-6">
+          <LinkSocial />
+        </div>
 
         <Link href={"#"} className="max-sm:font-l4 mb-10 mt-16 text-nowrap">
           <HoverFlipWords inText="*Privacy & Policy" />
