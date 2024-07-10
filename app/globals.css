@@ -4,6 +4,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #5f7ff8 white;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #5f7ff8;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #c1e693;
+  border-radius: 14px;
+  border: 3px solid #5f7ff8;
+}
+
 :root {
   --foreground-rgb: #fcfcfb;
   --background-color: #ededed;
@@ -162,6 +183,15 @@ body {
       font-style: normal;
       font-weight: 400;
       line-height: 150%; /* 0.9375rem */
+    }
+
+    .font-l4 {
+      /* Label/L4 | 12/medium */
+      font-family: var(--font-urbanist);
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 125%; /* 0.9375rem */
     }
   }
 

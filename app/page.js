@@ -22,11 +22,11 @@ function Home() {
   return (
     <main
       id='main'
-      className='relative flex flex-col items-center max-screen mx-auto cursor-wait'
+      className='relative flex flex-col items-center max-screen mx-auto cursor-wait overflow-x-hidden'
     >
-      <Preloader />
+      {/* <Preloader /> */}
       <Header />
-      <HeroSection />
+      {/* <HeroSection /> */}
       <WhatWeDoSection />
       {/* <ProjectSection /> */}
       <BenefitSection />
