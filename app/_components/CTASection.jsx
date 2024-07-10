@@ -16,12 +16,12 @@ function CTASection() {
   return (
     <section
       id='CTA-section'
-      className='w-screen h-screen bg-[#111] flex flex-col items-center justify-center rounded-tl-[3.125rem] rounded-tr-[3.125rem]'
+      className='w-screen h-screen bg-[#111] flex flex-col items-center justify-center rounded-tl-[0.7rem] rounded-tr-[0.7rem] sm:rounded-tl-[3.125rem] sm:rounded-tr-[3.125rem'
     >
       <div className='relative' id='cursor-card'>
-        <div className='relative w-fit h-fit px-[6rem] lg:px-[8rem] py-[8rem] border border-dashed'>
+        <div className='relative w-fit h-fit px-[4rem] sm:px-[6rem] lg:px-[8rem] py-[8rem] border border-dashed'>
           <div className='relative px-4 py-4 flex flex-col justify-center items-center'>
-            <h2 className='text-center text-white font-semibold md:text-[2.25rem] lg:text-[4.5rem] uppercase'>
+            <h2 className='text-center text-white font-semibold md:text-[2.25rem] lg:text-[4.5rem] uppercase max-md:font-h5'>
               <div className='flex gap-[0.5rem] lg:gap-6'>
                 <HoverWords words='READY' />
                 <HoverWords words='TO' />
@@ -35,7 +35,9 @@ function CTASection() {
             </h2>
 
             <div className='w-4 h-4 lg:w-6 lg:h-6 bg-primary absolute top-0 -right-0 lg:-right-2 rounded-full' />
-            <p className='uppercase text-green mt-4'>3 SLOTS AVAILABLE</p>
+            <p className='uppercase text-green mt-2 sm:mt-4 max-sm:font-b5'>
+              3 SLOTS AVAILABLE
+            </p>
           </div>
         </div>
 
@@ -48,7 +50,7 @@ function CTASection() {
           <div>
             <button
               ref={buttonRef}
-              className={`py-4 px-6 lg:px-10 text-white bg-primary rounded-full font-semibold text-md lg:text-lg absolute left-1/2 -translate-x-1/2 hover:bg-white hover:text-black-100 transition-all duration-500 ease-in-out`}
+              className={`px-4 py-2 sm:py-4 sm:px-6 lg:px-10 text-white bg-primary rounded-full font-semibold text-md lg:text-lg absolute left-1/2 -translate-x-1/2 hover:bg-white hover:text-black-100 transition-all duration-500 ease-in-out max-sm:font-[0.7rem]`}
               style={{ bottom: `-${buttonHeight}px` }}
             >
               Let's make it happen

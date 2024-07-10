@@ -66,24 +66,6 @@ body {
     text-wrap: balance;
   }
 
-  .font-d3 {
-    /* Display/D3 */
-    font-family: var(--font-jakarta);
-    font-size: 5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: -0.05rem;
-  }
-  .font-h5 {
-    /* h5 */
-    font-family: var(--font-jakarta);
-    font-size: 1.75rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%; /* 1.925rem */
-  }
-
   .dot-bg {
     background-size: 100px 100px;
     background-image: linear-gradient(to right, #e0e0e0 2px, transparent 1px),
@@ -101,6 +83,16 @@ body {
       letter-spacing: -1.08px;
     }
 
+    .font-d3 {
+      /* Display/D3 */
+      font-family: var(--font-jakarta);
+      font-size: 5rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%;
+      letter-spacing: -0.05rem;
+    }
+
     .dip-3 {
       /* Display/D3 */
       font-family: var(--font-jakarta);
@@ -113,6 +105,15 @@ body {
 
     .px-glob-25 {
       padding: 0 2.5rem;
+    }
+
+    .font-h5 {
+      /* h5 */
+      font-family: var(--font-jakarta);
+      font-size: 1.75rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%; /* 1.925rem */
     }
 
     .font-h7 {
