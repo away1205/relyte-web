@@ -1,56 +1,58 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Accordion = ({ title, answer, className }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
-    <div className='bg-white border border-black-100 px-5 py-3 rounded-lg h-min'>
+    <div className="h-min rounded-lg border border-black-100 bg-white px-5 py-3">
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
-        className='flex justify-between w-full items-center'
+        className="flex w-full items-center justify-between"
       >
         <h4
           className={`${
-            accordionOpen && 'text-green-700'
-          } max-sm:font-b4 text-start font-semibold`}
+            accordionOpen && "text-green-700"
+          } text-start font-normal max-sm:text-[0.875rem] lg:font-semibold`}
         >
           {title}
         </h4>
         {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
         <svg
-          className='fill-indigo-500 shrink-0 ml-8'
-          width='16'
-          height='16'
-          xmlns='http://www.w3.org/2000/svg'
+          className="ml-8 shrink-0 fill-indigo-500"
+          width="16"
+          height="16"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <rect
-            y='7'
-            width='16'
-            height='2'
-            rx='1'
-            className={`transform origin-center transition duration-200 ease-out ${
-              accordionOpen && '!rotate-180'
+            y="7"
+            width="16"
+            height="2"
+            rx="1"
+            className={`origin-center transform transition duration-200 ease-out ${
+              accordionOpen && "!rotate-180"
             }`}
           />
           <rect
-            y='7'
-            width='16'
-            height='2'
-            rx='1'
-            className={`transform origin-center rotate-90 transition duration-200 ease-out ${
-              accordionOpen && '!rotate-180'
+            y="7"
+            width="16"
+            height="2"
+            rx="1"
+            className={`origin-center rotate-90 transform transition duration-200 ease-out ${
+              accordionOpen && "!rotate-180"
             }`}
           />
         </svg>
       </button>
       <div
-        className={`grid overflow-hidden transition-all duration-300 ease-in-out  text-md ${
+        className={`text-md grid overflow-hidden transition-all duration-300 ease-in-out ${
           accordionOpen
-            ? 'grid-rows-[1fr] opacity-100 pt-4'
-            : 'grid-rows-[0fr] opacity-0'
+            ? "grid-rows-[1fr] pt-4 opacity-100"
+            : "grid-rows-[0fr] opacity-0"
         }`}
       >
-        <p className='overflow-hidden'>{answer}</p>
+        <p className="overflow-hidden max-sm:text-[0.875rem] lg:font-semibold">
+          {answer}
+        </p>
       </div>
     </div>
   );
