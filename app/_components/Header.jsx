@@ -14,6 +14,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef();
   const buttonRef = useRef();
+  const navRef = useRef();
 
   useGSAP(() => {
     const tl = gsap.timeline({
@@ -54,6 +55,11 @@ function Header() {
     buttonRef.current.addEventListener('click', () =>
       tl2.reversed(!tl2.reversed())
     );
+
+    navRef.current.addEventListener('click', () => {
+      tl2.reversed(!tl2.reversed());
+      setIsOpen(false);
+    });
 
     // { dependencies: [isOpen], scope: containerRef }
   }, []);
@@ -174,7 +180,7 @@ function Header() {
               </svg>
             </span>
 
-            <div className='mt-10'>
+            <div className='mt-10' ref={navRef}>
               <NavList isSmallScreen={true} />
             </div>
 
