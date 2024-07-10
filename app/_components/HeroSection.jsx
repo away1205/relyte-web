@@ -123,35 +123,6 @@ function HeroSection() {
                   <p className='max-sm:text-[0.75rem]'>We Create. Not Copy</p>
                 </div>
               ))}
-
-            {/* <div className='flex gap-8 ml-4 max-sm:font-[0.75rem]'>
-              <img src='trending-up.svg' alt='Trending icon' />
-              <p>We Create. Not Copy</p>
-            </div>
-            <div className='flex gap-8 ml-4'>
-              <img src='trending-up.svg' alt='Trending icon' />
-              <p>We Create. Not Copy</p>
-            </div>
-            <div className='flex gap-8 ml-4'>
-              <img src='trending-up.svg' alt='Trending icon' />
-              <p>We Create. Not Copy</p>
-            </div>
-            <div className='flex gap-8 ml-4'>
-              <img src='trending-up.svg' alt='Trending icon' />
-              <p>We Create. Not Copy</p>
-            </div>
-            <div className='flex gap-8 ml-4'>
-              <img src='trending-up.svg' alt='Trending icon' />
-              <p>We Create. Not Copy</p>
-            </div>
-            <div className='flex gap-8 ml-4'>
-              <img src='trending-up.svg' alt='Trending icon' />
-              <p>We Create. Not Copy</p>
-            </div>
-            <div className='flex gap-8 ml-4'>
-              <img src='trending-up.svg' alt='Trending icon' />
-              <p>We Create. Not Copy</p>
-            </div> */}
           </TextTicker>
         </div>
       </div>

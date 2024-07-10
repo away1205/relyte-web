@@ -146,23 +146,23 @@ function CarePin() {
               <div className='w-fit sm:w-[10rem] sm:h-[6rem] text-center'>
                 <FlipWords
                   className={
-                    'font-d3 text-center text-white max-sm:text-[3rem] max-sm:px-0'
+                    'font-d3 text-center text-white max-sm:text-[1.75rem] max-sm:px-0'
                   }
                   words={infoList.map((item) => item.number)}
                   duration={4000}
                 />
               </div>
 
-              <div className=' w-[16rem] sm:w-[20rem] text-wrap flex flex-col gap-2'>
+              <div className='w-[12rem] sm:w-[20rem] text-wrap flex flex-col gap-2'>
                 <FlipSentence
                   words={infoList.map((item) => item.text)}
-                  className={'font-h5 text-white max-sm:text-[1.2rem]'}
+                  className={'font-h5 text-white max-sm:text-[0.875rem]'}
                   duration={4000}
                 />
                 <FlipWords
                   words={infoList.map((item) => item.source)}
                   duration={4000}
-                  className={'text-gray-300 px-0 max-sm:text-[0.875rem]'}
+                  className={'text-gray-300 px-0 max-sm:text-[0.65rem]'}
                 />
               </div>
             </div>
@@ -170,9 +170,9 @@ function CarePin() {
         </div>
 
         <div className='sticky top-0 h-[100vh]'>
-          <div className='care-card2 flex flex-col card-container px-8 py-8 sm:px-20 sm:py-20 bg-black-100 justify-center items-center rounded-2xl gap-8 z-[2] relative top-[20%] md:w-[40rem] mb-[100vh]'>
+          <div className='care-card2 flex flex-col card-container px-8 py-8 sm:px-20 sm:py-20 bg-black-100 justify-center items-center rounded-[0.9rem] sm:rounded-2xl gap-8 z-[2] relative top-[20%] md:w-[40rem] mb-[100vh]'>
             <div className='relative' id='cursor-card'>
-              <h2 className='font-h5 text-center text-white border border-dashed py-20 px-16 sm:px-20 sm:py-20 relative max-sm:text-[1.2rem]'>
+              <h2 className='font-h5 text-center text-white border border-dashed py-[5rem] px-6 sm:px-20 sm:py-20 relative max-sm:text-[0.875rem]'>
                 <span>
                   Seeking someone <br />
                   who can steer clear <br />
@@ -188,7 +188,7 @@ function CarePin() {
           </div>
         </div>
 
-        <div className='relative top-0 min-h-[100vh] care-card3 pb-[46rem] sm:pb-[20rem] bg-black-100'>
+        <div className='relative top-0 min-h-[100vh] care-card3 pb-[4rem] sm:pb-[20rem] bg-black-100'>
           <div className='card-container px-20 py-20 rounded-2xl z-[3] relative w-[100vw] min-h-[100vh] flex flex-col items-center justify-center'>
             <h2 className='text-center text-white leading-[125%] text-[1.25rem] sm:text-[2.5rem] lg:text-[3.5rem] font-normal'>
               <span className='absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 hidden-word'>
@@ -207,7 +207,7 @@ function CarePin() {
               </span>
             </h2>
 
-            <div className='flex max-sm:flex-col max-sm:absolute max-sm:top-32 sm:grid md:max-lg:grid-cols-2 lg:flex lg:flex-row gap-12 md:max-lg:gap-40 w-fit z-10'>
+            <div className='flex max-sm:flex-col max-sm:absolute max-sm:top-32 sm:grid md:max-lg:grid-cols-2 lg:flex lg:flex-row gap-6 sm:gap-12 md:max-lg:gap-40 w-fit z-10'>
               {careList.map(
                 ({ title, isDown, text, bgColor, bgImg, handImg, gif }, i) => {
                   return (
@@ -267,22 +267,31 @@ function Card({
 function NewCard({ text, title, gif, id }) {
   return (
     <div
-      className={`shadow-[-3.538px_3.538px_22.115px_0px_rgba(255,255,255,0.3)] flex flex-col gap-6 w-[17rem] h-[22rem] lg:w-[19.5rem] lg:h-[25rem] py-12 px-6 rounded-[2.5rem] bg-[#fff] justify-end relative care-main-card overflow-hidden ${
+      className={`shadow-[-3.538px_3.538px_22.115px_0px_rgba(255,255,255,0.3)] flex flex-col gap-[0.75rem] sm:gap-6 w-[18rem] h-[8.2rem] sm:h-[22rem] lg:w-[19.5rem] lg:h-[25rem] py-4 px-4 sm:py-12 sm:px-6 rounded-[0.75rem] sm:rounded-[2.5rem] bg-[#fff] justify-end relative care-main-card overflow-hidden ${
         id === 2 && 'md:max-lg:row-span-2 md:max-lg:my-auto'
       }`}
     >
-      <div className='flex flex-col gap-2'>
-        <span className='font-semibold leading-none'>0{id}</span>
-        <h5 className='font-semibold'>{title}</h5>
+      <div className='flex flex-col gap-0 sm:gap-2'>
+        <span className='sm:font-semibold leading-none max-sm:text-[0.625rem]'>
+          0{id}
+        </span>
+        <h5 className='font-semibold max-sm:h8'>{title}</h5>
       </div>
 
-      <p className={`font-normal text-pretty`}>{text}</p>
+      <p className={`font-normal text-pretty max-sm:font-b5 max-sm:opacity-50`}>
+        {text}
+      </p>
+
       <div
-        className={`absolute -right-[5px] -top-[5px] px-6 py-6 rounded-full ${
+        className={`absolute -right-[3px] -top-[3px] sm:-right-[5px] sm:-top-[5px] px-2 py-2 sm:px-6 sm:py-6 rounded-full ${
           id === 2 ? 'bg-green' : 'bg-[#9AACEF]'
         }`}
       >
-        <img src={gif.src} alt={title} className={`w-[3.5rem] h-[3.5rem]`} />
+        <img
+          src={gif.src}
+          alt={title}
+          className='w-[1.4rem] h-[1.4rem] sm:w-[3.5rem] sm:h-[3.5rem]'
+        />
       </div>
     </div>
   );
