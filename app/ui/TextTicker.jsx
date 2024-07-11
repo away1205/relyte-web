@@ -1,13 +1,14 @@
-'use client';
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import React, { useEffect, useRef, useState } from 'react';
+"use client";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React, { useEffect, useRef, useState } from "react";
 
 function TextTicker({ children }) {
   const slider = useRef(null);
   const firstText = useRef(null);
   const secondText = useRef(null);
+  const thirdText = useRef(null);
   let xPercent = 0;
   let direction = -1;
 
@@ -30,7 +31,7 @@ function TextTicker({ children }) {
         scrub: 0.25,
         onUpdate: (e) => (direction = e.direction * 1),
       },
-      x: '+=100px',
+      x: "+=100px",
     });
   }, []);
 
@@ -43,24 +44,35 @@ function TextTicker({ children }) {
     }
     gsap.set(firstText.current, { xPercent: xPercent });
     gsap.set(secondText.current, { xPercent: xPercent });
+    gsap.set(thirdText.current, { xPercent: xPercent });
     xPercent += 0.03 * direction;
     requestAnimationFrame(animation);
   };
 
   // VERY IMPORTANT NOTE: GAP SPACING IS MAKING THE POSITION OF THE TEXT ELEMENT MESSED UP
   return (
-    <div className='bg-primary py-2 sm:py-4 sm:px-8 overflow-x-hidden flex container-ticker -skew-y-1 w-[100vw]'>
-      <div className='flex w-max flex-nowrap whitespace-nowrap' ref={slider}>
+    <div className="container-ticker flex w-[100vw] -skew-y-1 overflow-x-clip bg-primary py-2 sm:px-8 sm:py-4">
+      <div
+        className="relative left-[-50%] flex w-max flex-nowrap whitespace-nowrap"
+        ref={slider}
+      >
         <div
           ref={firstText}
-          className='font-medium text-white text-xl flex text-nowrap w-max'
+          className="flex w-max text-nowrap text-xl font-medium text-white"
         >
           {children}
         </div>
 
         <div
           ref={secondText}
-          className='font-medium text-white text-xl flex text-nowrap w-max'
+          className="flex w-max text-nowrap text-xl font-medium text-white"
+        >
+          {children}
+        </div>
+
+        <div
+          ref={thirdText}
+          className="flex w-max text-nowrap text-xl font-medium text-white"
         >
           {children}
         </div>

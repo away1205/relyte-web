@@ -16,14 +16,21 @@ function Header() {
   const buttonRef = useRef();
   const navRef = useRef();
 
+  const isMobile = window.innerWidth > 640;
+  console.log(isMobile);
+
   useGSAP(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "html",
         start: "top top",
         end: 99999,
-        onUpdate: (self) =>
-          self.direction === -1 ? showHeader.play() : showHeader.reverse(),
+        onUpdate: (self) => {
+          if (isMobile) {
+            self.direction === -1 ? showHeader.play() : showHeader.reverse();
+          }
+          // console.log(velocity);
+        },
       },
     });
 
@@ -31,6 +38,7 @@ function Header() {
       .from("#header", {
         yPercent: -100,
         paused: true,
+        delay: 3,
         duration: 0.3,
       })
       .progress(1);
@@ -45,8 +53,7 @@ function Header() {
       {
         xPercent: 0,
         opacity: 1,
-        width: "100vw",
-        height: "80vh",
+        scale: 1,
         duration: 0.6,
         ease: "power2.out",
       },
@@ -61,6 +68,17 @@ function Header() {
       setIsOpen(false);
     });
 
+    return () => {
+      buttonRef.current.addEventListener("click", () =>
+        tl2.reversed(!tl2.reversed()),
+      );
+
+      navRef.current.addEventListener("click", () => {
+        tl2.reversed(!tl2.reversed());
+        setIsOpen(false);
+      });
+    };
+
     // { dependencies: [isOpen], scope: containerRef }
   }, []);
 
@@ -70,12 +88,12 @@ function Header() {
       id="header"
       ref={containerRef}
     >
-      <div className="max-screen mx-auto flex items-center justify-between py-6">
+      <div className="max-screen mx-auto flex items-center justify-between py-4 sm:py-6">
         <MagneticAnim>
           <img
             src="relyte-logo.svg"
             alt="Relyte Logo"
-            className="h-fit w-fit cursor-pointer"
+            className="h-[2.5rem] w-[6rem] cursor-pointer"
             onClick={() => {
               gsap.to(window, {
                 duration: 1,
@@ -112,7 +130,7 @@ function Header() {
             />
           </div>
 
-          <div className="header-anim absolute -right-8 top-0 flex h-10 w-10 flex-col rounded-xl bg-black-100 px-4 py-4 opacity-5 md:hidden">
+          <div className="header-anim absolute -right-8 top-0 flex h-[80vh] w-[100vw] flex-col rounded-xl bg-black-100 px-4 py-4 opacity-5 md:hidden">
             <span className="text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
