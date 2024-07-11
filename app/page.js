@@ -24,7 +24,7 @@ function Home() {
       id="main"
       className="max-screen relative mx-auto flex cursor-wait flex-col items-center max-sm:overflow-x-clip"
     >
-      {/* <Preloader /> */}
+      <Preloader />
       <Header />
       {/* <HeroSection />
       <WhatWeDoSection /> */}

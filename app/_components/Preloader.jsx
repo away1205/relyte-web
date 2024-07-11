@@ -1,19 +1,19 @@
-'use client';
-import gsap from 'gsap';
-import { useEffect, useRef, useState } from 'react';
+"use client";
+import gsap from "gsap";
+import { useEffect, useRef, useState } from "react";
 
 function Preloader() {
   const [index, setIndex] = useState(0);
   const words = [
-    'Hello',
-    'Ciao',
-    'Guten tag',
-    '안녕',
-    'Bonjour',
-    '你好',
-    'こんにちは',
-    'Hola',
-    'Hello',
+    "Hello",
+    "Ciao",
+    "Guten tag",
+    "안녕",
+    "Bonjour",
+    "你好",
+    "こんにちは",
+    "Hola",
+    "Hello",
   ];
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
   const pathRef = useRef(null);
@@ -39,7 +39,7 @@ function Preloader() {
       () => {
         setIndex(index + 1);
       },
-      index == 0 ? 500 : 150
+      index == 0 ? 500 : 150,
     );
   }, [index]);
 
@@ -49,10 +49,10 @@ function Preloader() {
     setTimeout(() => {
       // Animation on exit
       const timeline = gsap.timeline();
-      timeline.to('#preloader', {
+      timeline.to("#preloader", {
         duration: 2,
         yPercent: -100,
-        ease: 'power4.out',
+        ease: "power4.out",
         // opacity: 0,
       });
       timeline.to(
@@ -61,27 +61,25 @@ function Preloader() {
           attr: { d: targetPath },
           duration: 1,
         },
-        '<'
+        "<",
       );
-      timeline.to('#preloader', { display: 'none' });
+      timeline.to("#preloader", { display: "none" });
 
-      document.getElementById('main').style.cursor = 'default';
+      document.getElementById("main").style.cursor = "default";
       window.scrollTo(0, 0);
     }, 2000);
   }, [initialPath, targetPath]);
 
-  useEffect(() => {}, []);
-
   return (
     <div
-      id='preloader'
-      className='h-[100vh] w-[100vw] bg-black fixed top-0 left-0 text-white text-2xl flex items-center justify-center z-50'
+      id="preloader"
+      className="fixed left-0 top-0 z-50 flex h-[100vh] w-[100vw] items-center justify-center bg-black text-2xl text-white"
     >
       {dimension.height > 0 && (
         <>
-          <p className='z-50'>{words[index]}</p>
-          <svg className='absolute top-0 left-0 w-[100%] h-[120%]'>
-            <path ref={pathRef} id='svg' d={initialPath} fill='black'></path>
+          <p className="z-50">{words[index]}</p>
+          <svg className="absolute left-0 top-0 h-[120%] w-[100%]">
+            <path ref={pathRef} id="svg" d={initialPath} fill="black"></path>
           </svg>
         </>
       )}
