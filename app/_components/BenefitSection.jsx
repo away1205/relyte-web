@@ -3,7 +3,7 @@ import bgDesign from "../../public/illustration-custom-design2.svg";
 import bgChanges from "../../public/illustration-changes.svg";
 import bgCost from "../../public/illustration-cost.svg";
 import bgService from "../../public/illustration-service.svg";
-import { FadeInAnim } from "../ui/Animation";
+import { FadeInAnim } from "../_ui/Animation";
 
 function BenefitSection() {
   return (

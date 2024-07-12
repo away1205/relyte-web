@@ -6,9 +6,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 
 import CarePin from "./CarePin";
-import MagneticAnim from "../ui/MagneticAnim";
-import { FlipWords } from "../ui/FlipWords";
-import TextTicker from "../ui/TextTicker";
+import MagneticAnim from "../_ui/MagneticAnim";
+import { FlipWords } from "../_ui/FlipWords";
+import TextTicker from "../_ui/TextTicker";
 import layersGif from "../../public/wired-outline-12-layers.gif";
 import stairsGif from "../../public/wired-outline-stairs.gif";
 

@@ -1,7 +1,8 @@
+"use client";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import MagneticAnim from "../ui/MagneticAnim";
+import MagneticAnim from "../_ui/MagneticAnim";
 import { Squeeze } from "hamburger-react";
 import { useRef, useState } from "react";
 
@@ -17,7 +18,6 @@ function Header() {
   const navRef = useRef();
 
   const isMobile = window.innerWidth > 640;
-  console.log(isMobile);
 
   useGSAP(() => {
     const tl = gsap.timeline({

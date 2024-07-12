@@ -1,8 +1,8 @@
-'use client';
-import React, { useEffect, useRef, useState } from 'react';
-import { gsap } from 'gsap';
-import { useGSAP } from '@gsap/react';
-import { cn } from '../utils/cn';
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { cn } from "../_utils/cn";
 
 export const FlipWords = ({ words = [], duration = 3000, className }) => {
   const [currentWord, setCurrentWord] = useState(words[0]);
@@ -32,7 +32,7 @@ export const FlipWords = ({ words = [], duration = 3000, className }) => {
       opacity: 0,
       y: 10,
       duration: 0.4,
-      ease: 'easeInOut',
+      ease: "easeInOut",
       // onComplete: () => {
       //   gsap.set(wordRef.current, {
       //     y: -40,
@@ -47,24 +47,24 @@ export const FlipWords = ({ words = [], duration = 3000, className }) => {
         y: 0,
         x: 0,
         scale: 1,
-        filter: 'blur(0px)',
+        filter: "blur(0px)",
         duration: 0.4,
-        ease: 'easeInOut',
+        ease: "easeInOut",
       });
   };
 
   useGSAP(() => {
-    const spans = wordRef.current.querySelectorAll('span');
+    const spans = wordRef.current.querySelectorAll("span");
     gsap.fromTo(
       spans,
-      { opacity: 0, y: 10, filter: 'blur(8px)' },
+      { opacity: 0, y: 10, filter: "blur(8px)" },
       {
         opacity: 1,
         y: 0,
-        filter: 'blur(0px)',
+        filter: "blur(0px)",
         duration: 0.4,
         stagger: 0.1,
-      }
+      },
     );
   }, [currentWord]);
 
@@ -72,13 +72,13 @@ export const FlipWords = ({ words = [], duration = 3000, className }) => {
     <div
       ref={wordRef}
       className={cn(
-        'inline-block relative text-left text-black px-2',
-        className
+        "relative inline-block px-2 text-left text-black",
+        className,
       )}
       key={currentWord}
     >
-      {currentWord.split('').map((letter, index) => (
-        <span key={currentWord + index} className='inline-block'>
+      {currentWord.split("").map((letter, index) => (
+        <span key={currentWord + index} className="inline-block">
           {letter}
         </span>
       ))}

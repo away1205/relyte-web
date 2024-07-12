@@ -1,7 +1,6 @@
+"use client";
 import Link from "next/link";
-import HoverFlipWords from "../ui/HoverFlipWords";
-// import useDeviceType from '../hooks/useDeviceType';
-import MagneticAnim from "../ui/MagneticAnim";
+import HoverFlipWords from "../_ui/HoverFlipWords";
 import ContactAddress from "./ContactAddress";
 import LinkSocial from "./LinkSocial";
 

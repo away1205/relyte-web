@@ -2,8 +2,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
-import { FlipWords } from "../ui/FlipWords";
-import { FlipSentence } from "../ui/FlipSentence";
+import { FlipWords } from "../_ui/FlipWords";
+import { FlipSentence } from "../_ui/FlipSentence";
 
 import bgPeople from "../../public/bg-people.svg";
 import handPeople from "../../public/hand-people.svg";

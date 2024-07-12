@@ -1,4 +1,4 @@
-import HoverFlipWords from "../ui/HoverFlipWords";
+import HoverFlipWords from "../_ui/HoverFlipWords";
 
 function ContactAddress() {
   return (

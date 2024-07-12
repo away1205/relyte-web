@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
-import HoverWords from "../ui/HoverWords";
-import HoverFlipWords from "../ui/HoverFlipWords";
-import MagneticAnim from "../ui/MagneticAnim";
+import HoverWords from "../_ui/HoverWords";
+import HoverFlipWords from "../_ui/HoverFlipWords";
+import MagneticAnim from "../_ui/MagneticAnim";
 
 function CTASection() {
   const [buttonHeight, setButtonHeight] = useState(0);

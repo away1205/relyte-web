@@ -1,5 +1,5 @@
 import Link from "next/link";
-import MagneticAnim from "../ui/MagneticAnim";
+import MagneticAnim from "../_ui/MagneticAnim";
 
 function LinkSocial() {
   return (

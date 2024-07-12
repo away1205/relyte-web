@@ -1,57 +1,57 @@
-import iDesign from '../../public/illustration-design.svg';
-import iCoding from '../../public/illustration-coding.svg';
-import iHosting from '../../public/illustration-hosting.svg';
-import { FadeInAnim } from '../ui/Animation';
+import iDesign from "../../public/illustration-design.svg";
+import iCoding from "../../public/illustration-coding.svg";
+import iHosting from "../../public/illustration-hosting.svg";
+import { FadeInAnim } from "../_ui/Animation";
 
 const cardList = [
   {
     id: 1,
-    title: 'Web Design',
-    text: 'We transform your online presence with custom-designed websites that are not only visually stunning but also incredibly fast and easy to update. We blend functionality with flair, ensuring your website stands out and performs seamlessly.',
+    title: "Web Design",
+    text: "We transform your online presence with custom-designed websites that are not only visually stunning but also incredibly fast and easy to update. We blend functionality with flair, ensuring your website stands out and performs seamlessly.",
     image: iDesign,
-    color: 'bg-[#C6B9EE]',
-    direction: 'left',
+    color: "bg-[#C6B9EE]",
+    direction: "left",
   },
   {
     id: 2,
-    title: 'Coding & Dev',
+    title: "Coding & Dev",
     text: "At Relyte, we craft custom websites coded to perfection, ensuring that every detail reflects your brand's excellence. Our websites are designed with flexibility and ease of management in mind, making future updates a breeze.",
     image: iCoding,
-    color: 'bg-[#C1E693]',
-    direction: 'right',
+    color: "bg-[#C1E693]",
+    direction: "right",
   },
   {
     id: 3,
-    title: 'Hosting & Support',
-    text: 'We provide fast, fully supported, cloud-based hosting and maintenance services in 8 big countries around the world: Lithuania, Australia, Singapore, France, Netherlands, United Kingdom, Indonesia, and United States',
+    title: "Hosting & Support",
+    text: "We provide fast, fully supported, cloud-based hosting and maintenance services in 8 big countries around the world: Lithuania, Australia, Singapore, France, Netherlands, United Kingdom, Indonesia, and United States",
     image: iHosting,
-    color: 'bg-[#F2F2F2]',
-    direction: 'left',
+    color: "bg-[#F2F2F2]",
+    direction: "left",
   },
 ];
 
 function WhatWeDoSection() {
   return (
-    <section className='max-screen w-full flex flex-col items-start gap-5 sm:gap-[4.5rem] my-[3.4rem] sm:my-32 max-lg:px-glob-25'>
-      <FadeInAnim direction='' toggleActions='play none restart none'>
-        <div className='flex flex-col justify-start max-sm:gap-0 gap-2'>
-          <p className='uppercase h8 max-sm:font-light max-sm:text-[0.75rem]'>
+    <section className="max-screen max-lg:px-glob-25 my-[3.4rem] flex w-full flex-col items-start gap-5 sm:my-32 sm:gap-[4.5rem]">
+      <FadeInAnim direction="" toggleActions="play none restart none">
+        <div className="flex flex-col justify-start gap-2 max-sm:gap-0">
+          <p className="h8 uppercase max-sm:text-[0.75rem] max-sm:font-light">
             Our Services
           </p>
-          <h2 className='uppercase max-sm:text-[1.5rem]'>
+          <h2 className="uppercase max-sm:text-[1.5rem]">
             What We Can <br /> Do For You?
           </h2>
         </div>
       </FadeInAnim>
 
-      <div className='flex flex-col w-full gap-8'>
+      <div className="flex w-full flex-col gap-8">
         {cardList.map(({ id, image, text, title, color, direction }) => {
           return (
             <FadeInAnim
               key={id}
               direction={direction}
               duration={1.5}
-              toggleActions='play none none none'
+              toggleActions="play none none none"
             >
               <Card
                 key={id}
@@ -71,16 +71,16 @@ function WhatWeDoSection() {
 
 function Card({ title, text, image, id, bgColor }) {
   return (
-    <div className='flex px-5 py-5 sm:px-8 sm:py-8 gap-5 sm:gap-9 rounded-2xl border border-gray-400 flex-wrap flex-col md:flex-row'>
-      <div className='flex basis-1/3'>
-        <div className='flex items-start mx-auto max-lg:flex-col'>
-          <p className='font-normal sm:font-semibold lg:text-xl mr-8 mb-4 sm:mb-6'>
+    <div className="flex flex-col flex-wrap gap-5 rounded-2xl border border-gray-400 px-5 py-5 sm:gap-9 sm:px-8 sm:py-8 md:flex-row">
+      <div className="flex basis-1/3">
+        <div className="mx-auto flex items-start max-lg:flex-col">
+          <p className="mb-4 mr-8 font-normal sm:mb-6 sm:font-semibold lg:text-xl">
             0{id}
           </p>
 
-          <div className='flex flex-col items-start gap-2 sm:gap-4 lg:gap-8'>
-            <h3 className='uppercase max-lg:text-[20px]'>{title}</h3>
-            <p className='text-balance max-lg:text-[0.75rem] lg:text-[0.9rem]'>
+          <div className="flex flex-col items-start gap-2 sm:gap-4 lg:gap-8">
+            <h3 className="uppercase max-lg:text-[20px]">{title}</h3>
+            <p className="text-balance max-lg:text-[0.75rem] lg:text-[0.9rem]">
               {text}
             </p>
           </div>
@@ -88,8 +88,8 @@ function Card({ title, text, image, id, bgColor }) {
       </div>
 
       <div
-        className={`${bgColor} w-auto min-h-[14rem] grow shrink bg-[length:16rem_11rem] md:bg-[length:400px_300px] lg:bg-auto bg-no-repeat  ${
-          title == 'Coding & Dev' ? 'bg-[left_bottom]' : 'bg-[center_bottom]'
+        className={`${bgColor} min-h-[14rem] w-auto shrink grow bg-[length:16rem_11rem] bg-no-repeat md:bg-[length:400px_300px] lg:bg-auto ${
+          title == "Coding & Dev" ? "bg-[left_bottom]" : "bg-[center_bottom]"
         } rounded-2xl`}
         style={{ backgroundImage: `url(${image})` }}
       ></div>
