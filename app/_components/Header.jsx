@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import MagneticAnim from "../_ui/MagneticAnim";
 import { Squeeze } from "hamburger-react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import LinkSocial from "./LinkSocial";
 import ContactAddress from "./ContactAddress";
@@ -17,7 +17,11 @@ function Header() {
   const buttonRef = useRef();
   const navRef = useRef();
 
-  const isMobile = window.innerWidth > 640;
+  let isMobile;
+
+  useEffect(() => {
+    isMobile = window.innerWidth > 640;
+  }, []);
 
   useGSAP(() => {
     const tl = gsap.timeline({
