@@ -14,56 +14,56 @@ function Footer() {
           <ContactAddress />
 
           <nav className="max-sm:font-l4 flex gap-24 text-nowrap max-sm:gap-16">
-            <div className="flex flex-col gap-2">
-              <ul>
+            <ul className="flex flex-col gap-2">
+              <li>
                 <Link href={"#home"}>
                   <HoverFlipWords inText="Home" />
                 </Link>
-              </ul>
-              <ul>
+              </li>
+              <li>
                 <Link href={"#projects"}>
                   <HoverFlipWords inText="Our Projects" />
                 </Link>
-              </ul>
+              </li>
 
-              <ul className="max-md:hidden">
+              <li className="md:hidden">
                 <Link href={"#blog"}>
                   <HoverFlipWords inText="Our Blog" />
                 </Link>
-              </ul>
-            </div>
+              </li>
+            </ul>
 
-            <div className="flex flex-col gap-2 text-nowrap">
-              <ul>
+            <ul className="flex flex-col gap-2 text-nowrap">
+              <li>
                 <Link href={"#about"}>
                   <HoverFlipWords inText="About Us" />
                 </Link>
-              </ul>
-              <ul className="text-nowrap">
+              </li>
+              <li className="text-nowrap">
                 <Link href={"#service"}>
                   <HoverFlipWords inText="Services" />
                 </Link>
-              </ul>
+              </li>
 
-              <ul className="text-nowrap max-md:hidden">
+              <li className="text-nowrap md:hidden">
                 <Link href={"#faq"}>
                   <HoverFlipWords inText="FAQ" />
                 </Link>
-              </ul>
-            </div>
+              </li>
+            </ul>
 
-            <div className="flex flex-col gap-2 text-nowrap md:hidden">
-              <ul>
+            <ul className="flex flex-col gap-2 text-nowrap max-md:hidden">
+              <li>
                 <Link href={"#blog"}>
                   <HoverFlipWords inText="Our Blog" />
                 </Link>
-              </ul>
-              <ul className="text-nowrap">
+              </li>
+              <li className="text-nowrap">
                 <Link href={"#faq"}>
                   <HoverFlipWords inText="FAQ" />
                 </Link>
-              </ul>
-            </div>
+              </li>
+            </ul>
           </nav>
         </div>
 

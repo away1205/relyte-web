@@ -47,7 +47,7 @@ function HeroSection() {
   return (
     <section
       id="hero-section"
-      className="dot-bg flex h-max w-[100vw] flex-col items-center"
+      className="dot-bg flex h-max w-[100vw] flex-col items-center overflow-x-clip"
     >
       <div
         id="hero-1"
@@ -92,7 +92,7 @@ function HeroSection() {
         </h1>
 
         <MagneticAnim>
-          <a
+          <div
             className="relative mt-20 h-[50px] w-[50px] rounded-3xl font-semibold uppercase text-white md:h-[60px] md:w-[60px] xl:h-[80px] xl:w-[80px]"
             onClick={() => {
               gsap.to(window, {
@@ -105,10 +105,9 @@ function HeroSection() {
             <img
               src="./scroll-anim.gif"
               alt="scroll down"
-              width={75}
-              className="absolute left-[50%] top-0 -translate-x-1/2 cursor-pointer"
+              className="absolute left-[50%] top-0 h-fit w-fit -translate-x-1/2 cursor-pointer"
             />
-          </a>
+          </div>
         </MagneticAnim>
 
         <div className="relative -bottom-8">
@@ -120,7 +119,7 @@ function HeroSection() {
                   <img
                     src="trending-up.svg"
                     alt="Trending icon"
-                    className="max-sm:w-[0.75rem]"
+                    className="h-fit max-sm:w-[0.75rem] sm:w-[1.5rem]"
                   />
                   <p className="max-sm:text-[0.75rem]">We Create. Not Copy</p>
                 </div>

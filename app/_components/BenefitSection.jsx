@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import bgBenefit from "../../public/bg-benefit-fade.svg";
 import bgDesign from "../../public/illustration-custom-design2.svg";
 import bgChanges from "../../public/illustration-changes.svg";
@@ -33,9 +34,9 @@ function BenefitSection() {
                 backgroundImage: `url(${bgDesign.src})`,
               }}
             >
-              <h5 className="max-sm:font-h9 mb-2 font-semibold max-sm:text-[0.875rem]">
+              <h3 className="max-sm:font-h9 sm:font-h5 mb-2 !font-semibold max-sm:text-[0.875rem]">
                 Custom Design
-              </h5>
+              </h3>
               <p className="max-sm:font-b5 max-sm:w-[7.4rem]">
                 Each of your designs is made especially for you and is 100%
                 yours.
@@ -48,9 +49,9 @@ function BenefitSection() {
                 backgroundImage: `url(${bgChanges.src})`,
               }}
             >
-              <h5 className="max-sm:font-h9 mb-2 font-semibold max-sm:text-[0.875rem]">
+              <h3 className="max-sm:font-h9 sm:font-h5 mb-2 !font-semibold max-sm:text-[0.875rem]">
                 Unlimited Changes
-              </h5>
+              </h3>
               <p className="max-sm:font-b5 max-sm:w-[7.4rem]">
                 We'll continue to revise the design until you're 100% satisfied.
               </p>
@@ -62,9 +63,9 @@ function BenefitSection() {
                 backgroundImage: `url(${bgCost.src})`,
               }}
             >
-              <h5 className="max-sm:font-h9 mb-2 font-semibold max-sm:text-[0.875rem]">
+              <h3 className="max-sm:font-h9 sm:font-h5 mb-2 !font-semibold max-sm:text-[0.875rem]">
                 Fixed Cost
-              </h5>
+              </h3>
               <p className="max-sm:font-b5 max-sm:w-[8rem]">
                 Our agreements come with a guarantee: no surprises and no hidden
                 fees. You pay exactly what we agree upon, with no additional
@@ -78,9 +79,9 @@ function BenefitSection() {
                 backgroundImage: `url(${bgService.src})`,
               }}
             >
-              <h5 className="max-sm:font-h9 mb-2 font-semibold max-sm:text-[0.875rem]">
+              <h3 className="max-sm:font-h9 sm:font-h5 mb-2 !font-semibold max-sm:text-[0.875rem]">
                 Exclusive Service
-              </h5>
+              </h3>
               <p className="max-sm:font-b5 w-[60%] text-pretty max-sm:w-[9rem]">
                 <span className="max-sm:hidden">
                   We limit our service to only a handful of clients per month,

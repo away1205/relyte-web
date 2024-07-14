@@ -9,13 +9,13 @@ const Accordion = ({ title, answer, className }) => {
         onClick={() => setAccordionOpen(!accordionOpen)}
         className="flex w-full items-center justify-between"
       >
-        <h4
+        <h3
           className={`${
             accordionOpen && "text-green-700"
           } text-start font-normal max-sm:text-[0.875rem] lg:font-semibold`}
         >
           {title}
-        </h4>
+        </h3>
         {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
         <svg
           className="ml-8 shrink-0 fill-indigo-500"

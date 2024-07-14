@@ -23,7 +23,7 @@ const cardList = [
   {
     id: 3,
     title: "Hosting & Support",
-    text: "We provide fast, fully supported, cloud-based hosting and maintenance services in 8 big countries around the world: Lithuania, Australia, Singapore, France, Netherlands, United Kingdom, Indonesia, and United States",
+    text: "We provide fast, fully supported, cloud-based hosting and maintenance services in 8 big countries around the world: Lithuania, Australia, Singapore, France, Netherlands, United Kingdom, Indonesia, and United States, making your website accessible around the world.",
     image: iHosting,
     color: "bg-[#F2F2F2]",
     direction: "left",
@@ -79,7 +79,7 @@ function Card({ title, text, image, id, bgColor }) {
           </p>
 
           <div className="flex flex-col items-start gap-2 sm:gap-4 lg:gap-8">
-            <h3 className="uppercase max-lg:text-[20px]">{title}</h3>
+            <h3 className="font-h3 uppercase max-lg:text-[20px]">{title}</h3>
             <p className="text-balance max-lg:text-[0.75rem] lg:text-[0.9rem]">
               {text}
             </p>

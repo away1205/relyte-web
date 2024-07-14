@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from "react";
 
 import LinkSocial from "./LinkSocial";
 import ContactAddress from "./ContactAddress";
+import Link from "next/link";
 
 function Header() {
   gsap.registerPlugin(ScrollTrigger);
@@ -94,18 +95,20 @@ function Header() {
     >
       <div className="max-screen mx-auto flex items-center justify-between py-4 sm:py-6">
         <MagneticAnim>
-          <img
-            src="relyte-logo.svg"
-            alt="Relyte Logo"
-            className="h-[2.5rem] w-[6rem] cursor-pointer"
-            onClick={() => {
-              gsap.to(window, {
-                duration: 1,
-                scrollTo: { y: `#home` },
-                ease: "power2",
-              });
-            }}
-          />
+          <Link href={"/"}>
+            <img
+              src="/relyte-logo.svg"
+              alt="Relyte Logo"
+              className="h-[2.5rem] w-[6rem] cursor-pointer"
+              onClick={() => {
+                gsap.to(window, {
+                  duration: 1,
+                  scrollTo: { y: `#home` },
+                  ease: "power2",
+                });
+              }}
+            />
+          </Link>
         </MagneticAnim>
 
         <NavList />
@@ -221,10 +224,9 @@ function Header() {
 
 function NavList({ isSmallScreen = false }) {
   const navList = [
-    { label: "Home", value: "home" },
+    { label: "Home", value: "" },
     { label: "Projects", value: "projects" },
     { label: "Blog", value: "blog" },
-    { label: "FAQ", value: "faq" },
   ];
 
   return (
@@ -239,19 +241,19 @@ function NavList({ isSmallScreen = false }) {
         return (
           <MagneticAnim key={item.value}>
             <li className="h-fit cursor-pointer">
-              <a
-                // href={`#${item.value}`}
-                onClick={() => {
-                  gsap.to(window, {
-                    duration: 1,
-                    scrollTo: { y: `#${item.value}` },
-                    ease: "power2",
-                  });
-                }}
+              <Link
+                href={`/${item.value}`}
+                // onClick={() => {
+                //   gsap.to(window, {
+                //     duration: 1,
+                //     scrollTo: { y: `#${item.value}` },
+                //     ease: "power2",
+                //   });
+                // }}
                 className="h-fit"
               >
                 {item.label}
-              </a>
+              </Link>
             </li>
           </MagneticAnim>
         );

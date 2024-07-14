@@ -6,7 +6,7 @@ function HeroBlog() {
       <div className="relative flex border border-dashed border-black-100 px-8 py-5">
         <div className="relative h-[4.5rem] w-[11.5rem] sm:h-[5rem] sm:w-[16.3rem] lg:h-[6.5rem] lg:w-[21.75rem]">
           <Image
-            src={"./relyte-logo.svg"}
+            src={"/relyte-logo.svg"}
             alt="Relyte"
             layout="fill"
             objectFit="cover"
