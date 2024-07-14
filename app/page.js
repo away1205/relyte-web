@@ -22,7 +22,7 @@ function Home() {
   return (
     <main
       id="main"
-      className="max-screen relative mx-auto flex cursor-wait flex-col items-center max-lg:overflow-x-hidden"
+      className="max-screen relative mx-auto flex cursor-wait flex-col items-center max-lg:overflow-x-clip"
     >
       <Preloader />
       <Header />

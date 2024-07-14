@@ -119,9 +119,11 @@ function HeroSection() {
                   <img
                     src="trending-up.svg"
                     alt="Trending icon"
-                    className="h-fit max-sm:w-[0.75rem] sm:w-[1.5rem]"
+                    className="max-sm:w-[0.75rem] sm:w-[1.5rem]"
                   />
-                  <p className="max-sm:text-[0.75rem]">We Create. Not Copy</p>
+                  <p className="max-sm:text-[0.75rem]">
+                    We can get you clients
+                  </p>
                 </div>
               ))}
           </TextTicker>
