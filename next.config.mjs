@@ -15,6 +15,21 @@ const nextConfig = {
   //     "/about": { page: "/about" },
   //   };
   // },
+
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.webm$/,
+      use: {
+        loader: "file-loader",
+        options: {
+          name: "[name].[hash].[ext]",
+          outputPath: "static/videos",
+          publicPath: "/_next/static/videos",
+        },
+      },
+    });
+    return config;
+  },
 };
 
 export default nextConfig;

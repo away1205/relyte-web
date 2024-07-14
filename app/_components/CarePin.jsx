@@ -11,9 +11,12 @@ import bgWebsite from "../../public/bg-website.svg";
 import handWebsite from "../../public/hand-website.svg";
 import bgTrust from "../../public/bg-trust.svg";
 import handTrust from "../../public/hand-trust.svg";
-import trafficGif from "../../public/traffic-gif.gif";
-import leadGif from "../../public/lead-gif.gif";
-import convertGif from "../../public/convert-gif.gif";
+// import trafficGif from "../../public/traffic-gif.gif";
+// import leadGif from "../../public/lead-gif.gif";
+// import convertGif from "../../public/convert-gif.gif";
+import trafficGif from "../../public/traffic-webm.webm";
+import leadGif from "../../public/lead-webm.webm";
+import convertGif from "../../public/convert-webm.webm";
 
 const careList = [
   {
@@ -234,36 +237,6 @@ function CarePin() {
   );
 }
 
-function Card({
-  isDown = false,
-  text,
-  title,
-  className = "",
-  bgColor = "bg-[#9AACEF]",
-  bgImg,
-  handImg,
-}) {
-  return (
-    <div
-      className={`flex h-[25rem] w-[19.5rem] flex-col gap-4 rounded-3xl px-6 py-12 ${bgColor} ${
-        isDown && "justify-end"
-      } ${className} relative bg-cover bg-no-repeat`}
-      style={{
-        backgroundImage: `url(${bgImg.src})`,
-        // backgroundSize: '24.5rem',
-      }}
-    >
-      <h5 className="fsd font-semibold">{title}</h5>
-      <p className={`text-wrap font-normal`}>{text}</p>
-      <img
-        src={handImg.src}
-        alt="hand image"
-        className={`absolute right-0 ${!isDown ? "bottom-0" : "top-0"}`}
-      />
-    </div>
-  );
-}
-
 function NewCard({ text, title, gif, id }) {
   return (
     <div
@@ -287,11 +260,22 @@ function NewCard({ text, title, gif, id }) {
           id === 2 ? "bg-green" : "bg-[#9AACEF]"
         }`}
       >
-        <img
+        {/* <img
           src={gif.src}
           alt={title}
           className="h-[1.4rem] w-[1.4rem] sm:h-[3.5rem] sm:w-[3.5rem]"
-        />
+        /> */}
+        <video
+          loop
+          autoPlay
+          muted
+          playsInline
+          // preload="auto"
+          className="h-[1.4rem] w-[1.4rem] sm:h-[3.5rem] sm:w-[3.5rem]"
+        >
+          <source src={gif} type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   );
