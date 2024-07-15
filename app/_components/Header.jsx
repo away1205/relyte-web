@@ -134,6 +134,7 @@ function Header() {
               toggled={isOpen}
               toggle={setIsOpen}
               color={isOpen ? "#C1E693" : "black"}
+              label="navigation menu"
             />
           </div>
 

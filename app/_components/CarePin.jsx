@@ -248,7 +248,7 @@ function NewCard({ text, title, gif, id }) {
         <span className="leading-none max-sm:text-[0.625rem] sm:font-semibold">
           0{id}
         </span>
-        <h5 className="max-sm:h8 font-semibold">{title}</h5>
+        <h2 className="max-sm:h8 sm:font-h5 font-semibold">{title}</h2>
       </div>
 
       <p className={`max-sm:font-b5 text-pretty font-normal max-sm:opacity-50`}>
