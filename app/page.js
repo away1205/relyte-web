@@ -1,7 +1,6 @@
 "use client";
 import { useEffect } from "react";
 
-import Header from "./_components/Header";
 import HeroSection from "./_components/HeroSection";
 import Preloader from "./_components/Preloader";
 import WhatWeDoSection from "./_components/WhatWeDoSection";
@@ -22,10 +21,8 @@ function Home() {
   return (
     <main
       id="main"
-      className="max-screen relative mx-auto flex cursor-wait flex-col items-center max-lg:overflow-x-clip"
+      className="max-screen relative mx-auto flex flex-col items-center max-lg:overflow-x-clip"
     >
-      <Preloader />
-      <Header />
       <HeroSection />
       <WhatWeDoSection />
       <ProjectSection />

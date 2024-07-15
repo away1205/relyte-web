@@ -65,7 +65,7 @@ function Preloader() {
       );
       timeline.to("#preloader", { display: "none" });
 
-      document.getElementById("main").style.cursor = "default";
+      // document.getElementById("main").style.cursor = "default";
       window.scrollTo(0, 0);
     }, 2000);
   }, [initialPath, targetPath]);
