@@ -93,7 +93,7 @@ function HeroSection() {
 
         <MagneticAnim>
           <div
-            className="relative mt-20 h-[50px] w-[50px] rounded-3xl font-semibold uppercase text-white md:h-[60px] md:w-[60px] xl:h-[80px] xl:w-[80px]"
+            className="relative mt-20 h-[50px] w-[50px] rounded-3xl font-semibold uppercase text-white md:h-[60px] md:w-[60px]"
             onClick={() => {
               gsap.to(window, {
                 duration: 1,

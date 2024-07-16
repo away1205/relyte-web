@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
@@ -53,7 +54,7 @@ function CTASection() {
               className={`text-md absolute left-1/2 -translate-x-1/2 rounded-full bg-green px-4 py-2 font-normal text-black-100 transition-all duration-500 ease-in-out hover:bg-white hover:text-black-100 max-sm:font-[0.7rem] sm:px-6 sm:py-4 sm:font-semibold lg:px-10 lg:text-lg`}
               style={{ bottom: `-${buttonHeight}px` }}
             >
-              Let's make it happen
+              Let&apos;s make it happen
             </button>
           </div>
         </MagneticAnim>

@@ -3,6 +3,7 @@ import GoogleAnalytics from "./_components/GoogleAnalytics";
 import "./globals.css";
 import Preloader from "./_components/Preloader";
 import Header from "./_components/Header";
+import Footer from "./_components/Footer";
 
 const jakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <Preloader />
         <Header />
         {children}
+        <Footer />
       </body>
       <GoogleAnalytics />
     </html>

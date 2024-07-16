@@ -7,7 +7,6 @@ function page() {
     <main className="max-screen relative mx-auto flex min-h-screen flex-col items-center max-sm:overflow-x-clip">
       <HeroBlog />
       <Blog />
-      <Footer />
     </main>
   );
 }
