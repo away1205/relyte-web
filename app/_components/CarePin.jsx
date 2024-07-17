@@ -200,8 +200,8 @@ function CarePin() {
               </span>
 
               <span className="unhidden-word absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 text-nowrap opacity-0">
-                We're not just building <br /> websites - We're crafting your{" "}
-                <br />
+                We&apos;re not just building <br /> websites - We&apos;re
+                crafting your <br />
                 <span className="anim-green">digital revenue streams</span>
               </span>
 
