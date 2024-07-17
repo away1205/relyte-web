@@ -54,7 +54,7 @@ function LinkSocial() {
           className="flex items-center max-sm:w-6"
           target="_blank"
         >
-          <img src="./behance-logo.svg" alt="behance" />
+          <img src="/behance-logo.svg" alt="behance" />
         </Link>
       </MagneticAnim>
     </div>

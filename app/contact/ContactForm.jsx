@@ -2,14 +2,36 @@
 import { useForm } from "react-hook-form";
 import Chip from "../_components/Chip";
 import MagneticAnim from "../_ui/MagneticAnim";
+import { useRouter } from "next/navigation";
 
 function ContactForm() {
-  const { register, handleSubmit, reset, getValues, formState } = useForm();
+  const { register, handleSubmit, formState } = useForm();
+  const router = useRouter();
 
   const { errors } = formState;
 
-  function onSubmit(data) {
-    console.log(data);
+  async function onSubmit(data) {
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        // Handle successful response
+        console.log("Form submitted successfully", response);
+        router.push("success");
+      } else {
+        // Handle server errors
+        console.error("Form submission failed");
+      }
+    } catch (error) {
+      // Handle network errors
+      console.error("An error occurred:", error);
+    }
   }
 
   return (

@@ -16,18 +16,18 @@ export async function POST(request) {
   console.log(res);
 
   try {
-    // const { data, error } = await resend.emails.send({
-    //   from: "Acme <hello@relyte.space>",
-    //   to: ["agwamayatullah@gmail.com"],
-    //   subject: "There is a new client",
-    //   react: EmailContactTemplate({
-    //     newClientName: obj.newClientName,
-    //     email: obj.email,
-    //     service: obj.service,
-    //     budget: obj.budget,
-    //     message: obj.message,
-    //   }),
-    // });
+    const { data, error } = await resend.emails.send({
+      from: "Relyte Space <hello@relyte.space>",
+      to: ["agwamayatullah@gmail.com"],
+      subject: "There is a new client",
+      react: EmailContactTemplate({
+        newClientName: res.name,
+        email: res.email,
+        service: res.service,
+        budget: res.budget,
+        message: res.message,
+      }),
+    });
 
     if (error) {
       return Response.json({ error }, { status: 500 });

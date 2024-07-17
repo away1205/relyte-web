@@ -8,7 +8,6 @@ import ProjectSection from "./_components/ProjectSection";
 import BenefitSection from "./_components/BenefitSection";
 import FaqSection from "./_components/FaqSection";
 import CTASection from "./_components/CTASection";
-import Footer from "./_components/Footer";
 
 function Home() {
   useEffect(() => {
@@ -29,7 +28,6 @@ function Home() {
       <BenefitSection />
       <FaqSection />
       <CTASection />
-      <Footer />
     </main>
   );
 }
