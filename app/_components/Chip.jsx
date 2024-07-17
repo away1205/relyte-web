@@ -5,8 +5,9 @@ function Chip({
   uniqueNum,
   required = false,
   type = "checkbox" || "radio",
-  name = "",
+  name = null,
   defaultChecked = false,
+  register = () => {},
 }) {
   const peerVariant = [
     {
@@ -67,6 +68,17 @@ function Chip({
         aria-required={required}
         name={name}
         defaultChecked={defaultChecked}
+        {...register(
+          name,
+          type === "checkbox"
+            ? {
+                validate: (value) =>
+                  value.length > 0 || "Please select at least one service",
+              }
+            : {
+                required: "Please select your budget",
+              },
+        )}
       />
       <label
         className={`font-b2 w-fit rounded-full border px-6 py-[0.25rem] text-[#888] transition-all duration-300 ${peerVariant[uniqueNum].peerCheckedBg} ${peerVariant[uniqueNum].peerCheckedColor}`}

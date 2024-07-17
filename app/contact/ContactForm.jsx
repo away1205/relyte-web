@@ -1,20 +1,31 @@
 "use client";
+import { useForm } from "react-hook-form";
 import Chip from "../_components/Chip";
 import MagneticAnim from "../_ui/MagneticAnim";
 
 function ContactForm() {
+  const { register, handleSubmit, reset, getValues, formState } = useForm();
+
+  const { errors } = formState;
+
+  function onSubmit(data) {
+    console.log(data);
+  }
+
   return (
     <section className="flex w-screen justify-center bg-[#111]">
       <div className="max-screen relative w-full px-4 py-[4.5rem] sm:px-10 sm:py-[6.75rem]">
-        <div className="absolute right-6 top-0 h-16 w-16 -translate-y-1/2 rounded-full bg-white sm:h-[5rem] sm:w-[5rem]">
-          <img
-            src="/scroll-anim.gif"
-            alt="scroll down"
-            className="h-fit w-fit rotate-45"
-          />
-        </div>
+        <MagneticAnim>
+          <div className="absolute right-6 top-0 h-16 w-16 -translate-y-1/2 rounded-full bg-white sm:h-[5rem] sm:w-[5rem]">
+            <img
+              src="/scroll-anim.gif"
+              alt="scroll down"
+              className="h-fit w-fit rotate-45"
+            />
+          </div>
+        </MagneticAnim>
 
-        <form className="flex flex-col">
+        <form className="flex flex-col" onSubmit={handleSubmit(onSubmit)}>
           <fieldset className="mb-[3.5rem] flex flex-col border-t border-[#888] pt-6 sm:flex-row sm:gap-6">
             <span className="font-h9 sm:font-h8 text-[#888888]">01</span>
 
@@ -29,15 +40,16 @@ function ContactForm() {
                 className="bg-transparent text-[#888]"
                 aria-required
                 name="name"
+                {...register("name", { required: "Please enter your name" })}
               />
             </div>
           </fieldset>
 
           <fieldset className="mb-[3.5rem] flex w-full flex-col border-t border-[#888] pt-6 sm:flex-row sm:gap-6">
-            <span className="font-h9 sm:font-h8 text-[#888888]">01</span>
+            <span className="font-h9 sm:font-h8 text-[#888888]">02</span>
 
             <div className="flex w-full flex-col gap-4">
-              <label htmlFor="name" className="font-h7 sm:font-h6 text-white">
+              <label htmlFor="email" className="font-h7 sm:font-h6 text-white">
                 What&apos;s your email? *
               </label>
               <input
@@ -48,6 +60,9 @@ function ContactForm() {
                 aria-required
                 name="email"
                 type="email"
+                {...register("email", {
+                  required: "Please enter your valid email address",
+                })}
               />
             </div>
           </fieldset>
@@ -67,7 +82,9 @@ function ContactForm() {
                   value="web"
                   uniqueNum={1}
                   type="checkbox"
-                  required
+                  defaultChecked={true}
+                  register={register}
+                  name={"service"}
                 />
                 <Chip
                   label="seo"
@@ -75,9 +92,14 @@ function ContactForm() {
                   value="seo"
                   uniqueNum={0}
                   type="checkbox"
-                  required
+                  register={register}
+                  name={"service"}
                 />
               </div>
+
+              {errors?.service?.message && (
+                <p className="text-red-400">{errors.service.message}</p>
+              )}
             </div>
           </fieldset>
 
@@ -98,6 +120,8 @@ function ContactForm() {
                   name="budget"
                   required={true}
                   defaultChecked={true}
+                  register={register}
+                  value={"$100 - $500"}
                 />
                 <Chip
                   type="radio"
@@ -106,6 +130,8 @@ function ContactForm() {
                   uniqueNum={3}
                   name="budget"
                   required={true}
+                  register={register}
+                  value={"$500 - $1000"}
                 />
                 <Chip
                   type="radio"
@@ -114,6 +140,8 @@ function ContactForm() {
                   uniqueNum={4}
                   name="budget"
                   required={true}
+                  register={register}
+                  value={"$1000 - $3000"}
                 />
                 <Chip
                   type="radio"
@@ -122,13 +150,15 @@ function ContactForm() {
                   uniqueNum={5}
                   name="budget"
                   required={true}
+                  register={register}
+                  value={"> $3000"}
                 />
               </div>
             </div>
           </fieldset>
 
           <fieldset className="flex flex-col border-b border-t border-[#888] pb-[2rem] pt-6 sm:flex-row sm:gap-4">
-            <span className="font-h9 sm:font-h8 text-[#888888]">05</span>
+            <span className="font-h9 sm:font-h8 text-[#888888]">06</span>
             <div className="flex flex-grow flex-col gap-4">
               <label
                 htmlFor="message"
@@ -144,12 +174,18 @@ function ContactForm() {
                 placeholder="Hello, I’m looking for website with clean aesthetic and..."
                 required
                 aria-required
+                {...register("message", {
+                  required: "Please enter your message about this project",
+                })}
               />
             </div>
           </fieldset>
 
           <MagneticAnim>
-            <button className="mt-[2.5rem] w-full rounded-full bg-primary px-[3.5rem] py-2 text-[0.875rem] font-semibold uppercase text-white transition-colors duration-500 ease-in-out hover:bg-white hover:text-black-100 sm:py-4 sm:text-xl xl:mt-[4rem] xl:max-w-[15rem] xl:place-self-end">
+            <button
+              className="mt-[2.5rem] w-full rounded-full bg-primary px-[3.5rem] py-2 text-[0.875rem] font-semibold uppercase text-white transition-colors duration-500 ease-in-out hover:bg-white hover:text-black-100 sm:py-4 sm:text-xl xl:mt-[4rem] xl:max-w-[15rem] xl:place-self-end"
+              type="submit"
+            >
               Lets start
             </button>
           </MagneticAnim>
