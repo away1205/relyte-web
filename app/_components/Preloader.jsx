@@ -1,5 +1,6 @@
 "use client";
 import gsap from "gsap";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
@@ -7,6 +8,8 @@ function Preloader() {
   const [index, setIndex] = useState(0);
   const pathname = usePathname();
   const isHome = pathname === "/";
+
+  gsap.registerPlugin(ScrollToPlugin);
 
   const words = [
     "Hello",
@@ -50,34 +53,38 @@ function Preloader() {
   useEffect(() => {
     const pathElement = pathRef.current;
 
-    setTimeout(() => {
-      // Animation on exit
-      const timeline = gsap.timeline();
-      timeline.to("#preloader", {
-        duration: 2,
-        yPercent: -100,
-        ease: "power4.out",
-        // opacity: 0,
-      });
-      timeline.to(
-        pathElement,
-        {
-          attr: { d: targetPath },
-          duration: 1,
-        },
-        "<",
-      );
-      timeline.to("#preloader", { display: "none" });
+    setTimeout(
+      () => {
+        // Animation on exit
+        const timeline = gsap.timeline();
+        timeline.to("#preloader", {
+          duration: 2,
+          yPercent: -100,
+          ease: "power4.out",
+          // opacity: 0,
+        });
+        timeline.to(
+          pathElement,
+          {
+            attr: { d: targetPath },
+            duration: 1,
+          },
+          "<",
+        );
+        timeline.to("#preloader", { display: "none" });
+        timeline.to(window, { scrollTo: { y: 0, x: 0 } });
 
-      // document.getElementById("main").style.cursor = "default";
-      window.scrollTo(0, 0);
-    }, 2000);
-  }, [initialPath, targetPath]);
+        // document.getElementById("main").style.cursor = "default";
+        // window.scrollTo(0, 0);
+      },
+      isHome ? 2000 : 10,
+    );
+  }, [initialPath, targetPath, isHome]);
 
-  return pathname === "/" ? (
+  return (
     <div
       id="preloader"
-      className="fixed left-0 top-0 z-50 flex h-[100vh] w-[100vw] items-center justify-center bg-black text-2xl text-white"
+      className={`fixed left-0 top-0 z-50 flex h-[100vh] w-[100vw] items-center justify-center bg-black text-2xl text-white ${pathname !== "/" && "hidden"}`}
     >
       {dimension.height > 0 && (
         <>
@@ -88,7 +95,7 @@ function Preloader() {
         </>
       )}
     </div>
-  ) : null;
+  );
 }
 
 export default Preloader;
