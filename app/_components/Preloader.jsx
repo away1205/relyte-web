@@ -8,6 +8,7 @@ function Preloader() {
   const [index, setIndex] = useState(0);
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const pathRef = useRef();
 
   gsap.registerPlugin(ScrollToPlugin);
 
@@ -23,7 +24,6 @@ function Preloader() {
     "Hello",
   ];
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
-  const pathRef = useRef(null);
 
   const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${
     dimension.height
@@ -48,7 +48,7 @@ function Preloader() {
       },
       index == 0 ? 500 : 150,
     );
-  }, [index, words.length]);
+  }, [index]);
 
   useEffect(() => {
     const pathElement = pathRef.current;

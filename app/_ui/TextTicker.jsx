@@ -11,6 +11,9 @@ function TextTicker({ children }) {
   const thirdText = useRef(null);
   let xPercent = 0;
   let direction = -1;
+  let animationFrameId;
+
+  gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
     // gsap.to('.text-ticker', {
@@ -20,8 +23,22 @@ function TextTicker({ children }) {
     //   duration: 7,
     //   ease: 'none',
     // });
-    gsap.registerPlugin(ScrollTrigger);
-    requestAnimationFrame(animation);
+
+    const animation = () => {
+      if (xPercent <= -100) {
+        xPercent = 0;
+      }
+      if (xPercent > 0) {
+        xPercent = -100;
+      }
+      gsap.set(firstText.current, { xPercent: xPercent });
+      gsap.set(secondText.current, { xPercent: xPercent });
+      gsap.set(thirdText.current, { xPercent: xPercent });
+      xPercent += 0.03 * direction;
+      animationFrameId = requestAnimationFrame(animation);
+    };
+
+    animation();
 
     gsap.to(slider.current, {
       scrollTrigger: {
@@ -33,21 +50,11 @@ function TextTicker({ children }) {
       },
       x: "+=100px",
     });
-  }, []);
 
-  const animation = () => {
-    if (xPercent <= -100) {
-      xPercent = 0;
-    }
-    if (xPercent > 0) {
-      xPercent = -100;
-    }
-    gsap.set(firstText.current, { xPercent: xPercent });
-    gsap.set(secondText.current, { xPercent: xPercent });
-    gsap.set(thirdText.current, { xPercent: xPercent });
-    xPercent += 0.03 * direction;
-    requestAnimationFrame(animation);
-  };
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, []);
 
   // VERY IMPORTANT NOTE: GAP SPACING IS MAKING THE POSITION OF THE TEXT ELEMENT MESSED UP
   return (
