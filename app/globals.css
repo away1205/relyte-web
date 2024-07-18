@@ -84,6 +84,10 @@ body {
     flex: 0 0 auto;
     min-width: 0;
   }
+
+  transition-property: opacity, background, transform, filter;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
 }
 
 @layer utilities {
@@ -257,4 +261,10 @@ body {
   .max-screen {
     max-width: 1200px;
   }
+}
+
+.page-transition {
+  opacity: 0;
+  transform: translateY(40px);
+  filter: blur(6px);
 }

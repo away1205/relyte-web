@@ -2,13 +2,14 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import MagneticAnim from "../_ui/MagneticAnim";
 import { Squeeze } from "hamburger-react";
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
+import MagneticAnim from "../_ui/MagneticAnim";
 import LinkSocial from "./LinkSocial";
 import ContactAddress from "./ContactAddress";
-import Link from "next/link";
+import AnimatedLink from "../_ui/AnimatedLink";
 
 function Header() {
   gsap.registerPlugin(ScrollTrigger);
@@ -242,7 +243,7 @@ function NavList({ isSmallScreen = false }) {
         return (
           <MagneticAnim key={item.value}>
             <li className="h-fit cursor-pointer">
-              <Link
+              <AnimatedLink
                 href={`/${item.value}`}
                 // onClick={() => {
                 //   gsap.to(window, {
@@ -251,10 +252,9 @@ function NavList({ isSmallScreen = false }) {
                 //     ease: "power2",
                 //   });
                 // }}
-                className="h-fit"
               >
                 {item.label}
-              </Link>
+              </AnimatedLink>
             </li>
           </MagneticAnim>
         );
