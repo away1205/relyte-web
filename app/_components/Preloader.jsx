@@ -1,9 +1,13 @@
 "use client";
 import gsap from "gsap";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 function Preloader() {
   const [index, setIndex] = useState(0);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
   const words = [
     "Hello",
     "Ciao",
@@ -41,7 +45,7 @@ function Preloader() {
       },
       index == 0 ? 500 : 150,
     );
-  }, [index]);
+  }, [index, words.length]);
 
   useEffect(() => {
     const pathElement = pathRef.current;
@@ -70,7 +74,7 @@ function Preloader() {
     }, 2000);
   }, [initialPath, targetPath]);
 
-  return (
+  return pathname === "/" ? (
     <div
       id="preloader"
       className="fixed left-0 top-0 z-50 flex h-[100vh] w-[100vw] items-center justify-center bg-black text-2xl text-white"
@@ -84,7 +88,7 @@ function Preloader() {
         </>
       )}
     </div>
-  );
+  ) : null;
 }
 
 export default Preloader;

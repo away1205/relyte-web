@@ -1,8 +1,10 @@
 "use client";
 import { useForm } from "react-hook-form";
+import { useFormStatus } from "react-dom";
+import { useRouter } from "next/navigation";
+
 import Chip from "../_components/Chip";
 import MagneticAnim from "../_ui/MagneticAnim";
-import { useRouter } from "next/navigation";
 
 function ContactForm() {
   const { register, handleSubmit, formState } = useForm();
@@ -12,7 +14,7 @@ function ContactForm() {
 
   async function onSubmit(data) {
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://resend.relyte.space/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -23,7 +25,7 @@ function ContactForm() {
       if (response.ok) {
         // Handle successful response
         console.log("Form submitted successfully", response);
-        router.push("success");
+        router.push("/contact/success");
       } else {
         // Handle server errors
         console.error("Form submission failed");
@@ -47,7 +49,11 @@ function ContactForm() {
           </div>
         </MagneticAnim>
 
-        <form className="flex flex-col" onSubmit={handleSubmit(onSubmit)}>
+        <form
+          className="flex flex-col"
+          // onSubmit={handleSubmit(onSubmit)}
+          action={handleSubmit(onSubmit)}
+        >
           <fieldset className="mb-[3.5rem] flex flex-col border-t border-[#888] pt-6 sm:flex-row sm:gap-6">
             <span className="font-h9 sm:font-h8 text-[#888888]">01</span>
 
@@ -56,13 +62,15 @@ function ContactForm() {
                 What&apos;s your name? *
               </label>
               <input
-                id="name"
+                id="newClientName"
                 placeholder="Charlotte"
                 required
                 className="bg-transparent text-[#888]"
                 aria-required
-                name="name"
-                {...register("name", { required: "Please enter your name" })}
+                name="newClientName"
+                {...register("newClientName", {
+                  required: "Please enter your name",
+                })}
               />
             </div>
           </fieldset>
@@ -203,17 +211,26 @@ function ContactForm() {
             </div>
           </fieldset>
 
-          <MagneticAnim>
-            <button
-              className="mt-[2.5rem] w-full rounded-full bg-primary px-[3.5rem] py-2 text-[0.875rem] font-semibold uppercase text-white transition-colors duration-500 ease-in-out hover:bg-white hover:text-black-100 sm:py-4 sm:text-xl xl:mt-[4rem] xl:max-w-[15rem] xl:place-self-end"
-              type="submit"
-            >
-              Lets start
-            </button>
-          </MagneticAnim>
+          <SubmitButton />
         </form>
       </div>
     </section>
+  );
+}
+
+function SubmitButton() {
+  const { pending } = useFormStatus();
+
+  return (
+    <MagneticAnim>
+      <button
+        className="mt-[2.5rem] w-full rounded-full bg-primary px-[3.5rem] py-2 text-[0.875rem] font-semibold uppercase text-white transition-colors duration-500 ease-in-out hover:bg-white hover:text-black-100 sm:py-4 sm:text-xl xl:mt-[4rem] xl:max-w-[15rem] xl:place-self-end"
+        type="submit"
+        disabled={pending}
+      >
+        {pending ? "Loading..." : "Lets start"}
+      </button>
+    </MagneticAnim>
   );
 }
 

@@ -17,7 +17,7 @@ const urbanist = Urbanist({
 export const metadata = {
   title: "Relyte - Website for Architect",
   description:
-    "Relyte Space is a website design and development specialize in Architectural website.",
+    "Relyte Space is a digital agency that specializes in website design and development, as well as search engine optimization services for the architectural and construction industries.",
 };
 
 export default function RootLayout({ children }) {

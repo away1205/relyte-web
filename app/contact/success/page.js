@@ -2,8 +2,8 @@ import Link from "next/link";
 
 function page() {
   return (
-    <main className="container flex h-screen items-center justify-center">
-      <div class="my-auto bg-gray-100">
+    <main className="container mx-auto flex h-screen items-center justify-center">
+      <div class="mx-auto my-auto bg-gray-100">
         <div class="bg-white p-6 md:mx-auto">
           <svg
             viewBox="0 0 24 24"
@@ -16,9 +16,12 @@ function page() {
           </svg>
           <div class="text-center">
             <h3 class="text-center text-base font-semibold text-gray-900 md:text-2xl">
-              Your message is sent safely to us!
+              We have safely received your message!
             </h3>
-            <p class="my-2 text-gray-600">Thank you for trusting us.</p>
+            <p class="my-2 text-gray-600">
+              Thank you so much for trusting us! <br /> We&apos;re excited to
+              connect with you and will be in touch very soon!
+            </p>
             <p> Have a great day! </p>
             <div class="py-10 text-center">
               <Link
