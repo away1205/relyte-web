@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import HoverWords from "../_ui/HoverWords";
 import HoverFlipWords from "../_ui/HoverFlipWords";
 import MagneticAnim from "../_ui/MagneticAnim";
+import AnimatedLink from "../_ui/AnimatedLink";
 
 function CTASection() {
   const [buttonHeight, setButtonHeight] = useState(0);
@@ -49,7 +50,7 @@ function CTASection() {
 
         <MagneticAnim>
           <div>
-            <Link href={"/contact"}>
+            <AnimatedLink href={"/contact"}>
               <button
                 ref={buttonRef}
                 className={`text-md absolute left-1/2 -translate-x-1/2 rounded-full bg-green px-4 py-2 font-normal text-black-100 transition-all duration-500 ease-in-out hover:bg-white hover:text-black-100 max-sm:font-[0.7rem] sm:px-6 sm:py-4 sm:font-semibold lg:px-10 lg:text-lg`}
@@ -57,7 +58,7 @@ function CTASection() {
               >
                 Let&apos;s make it happen
               </button>
-            </Link>
+            </AnimatedLink>
           </div>
         </MagneticAnim>
       </div>

@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -7,25 +9,24 @@ function sleep(ms) {
 
 function AnimatedLink({ children, href }) {
   const router = useRouter();
+  const pathname = usePathname();
 
   async function handleTransition(e) {
     e.preventDefault();
 
-    const body = document.querySelector("body");
+    if (pathname === href) return;
 
-    body?.classList.add("page-transition");
+    const body = document.querySelector("#transition-page");
+
+    body?.classList.add("animate-page-out");
 
     await sleep(300);
 
     router.push(href);
-
-    await sleep(300);
-
-    body?.classList.remove("page-transition");
   }
 
   return (
-    <Link onClick={(e) => handleTransition(e)} href={href}>
+    <Link onClick={handleTransition} href={href}>
       {children}
     </Link>
   );

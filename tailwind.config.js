@@ -12,6 +12,7 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+
       colors: {
         black: {
           DEFAULT: "#000",
@@ -30,6 +31,22 @@ module.exports = {
         tertiary: {
           DEFAULT: "#C6B9EE",
         },
+      },
+
+      keyframes: {
+        "page-in": {
+          from: { transform: "translateY(40px)", opacity: 0 },
+          to: { transform: "translateY(0px)", opacity: 1 },
+        },
+        "page-out": {
+          from: { transform: "translateY(0px)" },
+          to: { transform: "translateY(40px)", opacity: 0 },
+        },
+      },
+
+      animation: {
+        "page-in": "page-in 650ms ease-in-out",
+        "page-out": "page-out 500ms ease-in-out",
       },
     },
   },

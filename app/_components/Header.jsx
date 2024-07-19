@@ -96,37 +96,43 @@ function Header() {
     >
       <div className="max-screen mx-auto flex items-center justify-between py-4 sm:py-6">
         <MagneticAnim>
-          <Link href={"/"}>
-            <img
-              src="/relyte-logo.svg"
-              alt="Relyte Logo"
-              className="h-[2.5rem] w-[6rem] cursor-pointer"
-              onClick={() => {
-                gsap.to(window, {
-                  duration: 1,
-                  scrollTo: { y: `#home` },
-                  ease: "power2",
-                });
-              }}
-            />
-          </Link>
+          <div>
+            <AnimatedLink href={"/"}>
+              <img
+                src="/relyte-logo.svg"
+                alt="Relyte Logo"
+                className="h-[2.5rem] w-[6rem] cursor-pointer"
+                onClick={() => {
+                  gsap.to(window, {
+                    duration: 1,
+                    scrollTo: { y: `#home` },
+                    ease: "power2",
+                  });
+                }}
+              />
+            </AnimatedLink>
+          </div>
         </MagneticAnim>
 
         <NavList />
 
         <MagneticAnim>
-          <button
-            className="rounded-3xl border border-black max-md:hidden md:px-4 md:py-1 lg:px-6 lg:py-2"
-            onClick={() => {
-              gsap.to(window, {
-                duration: 1,
-                scrollTo: { y: `#CTA-section` },
-                ease: "power2",
-              });
-            }}
-          >
-            Start A Project
-          </button>
+          <div>
+            <AnimatedLink href={"/contact"}>
+              <button
+                className="rounded-3xl border border-black max-md:hidden md:px-4 md:py-1 lg:px-6 lg:py-2"
+                // onClick={() => {
+                //   gsap.to(window, {
+                //     duration: 1,
+                //     scrollTo: { y: `#CTA-section` },
+                //     ease: "power2",
+                //   });
+                // }}
+              >
+                Start A Project
+              </button>
+            </AnimatedLink>
+          </div>
         </MagneticAnim>
 
         <div className="relative md:hidden">
