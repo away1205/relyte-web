@@ -30,7 +30,7 @@ const cardList = [
   },
 ];
 
-function WhatWeDoSection() {
+function ServiceSection() {
   return (
     <section className="max-screen max-lg:px-glob-25 my-[3.4rem] flex w-full flex-col items-start gap-5 sm:my-32 sm:gap-[4.5rem]">
       <FadeInAnim direction="" toggleActions="play none restart none">
@@ -97,4 +97,4 @@ function Card({ title, text, image, id, bgColor }) {
   );
 }
 
-export default WhatWeDoSection;
+export default ServiceSection;

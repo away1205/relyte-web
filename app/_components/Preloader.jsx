@@ -72,7 +72,8 @@ function Preloader() {
           "<",
         );
         timeline.to("#preloader", { display: "none" });
-        timeline.to(window, { scrollTo: { y: 0, x: 0 } });
+
+        gsap.to(window, { scrollTo: { y: 0, x: 0 } });
 
         // document.getElementById("main").style.cursor = "default";
         // window.scrollTo(0, 0);
