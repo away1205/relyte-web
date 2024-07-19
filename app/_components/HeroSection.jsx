@@ -121,9 +121,7 @@ function HeroSection() {
                     alt="Trending icon"
                     className="max-sm:w-[0.75rem] sm:w-[1.5rem]"
                   />
-                  <p className="max-sm:text-[0.75rem]">
-                    We can get you clients
-                  </p>
+                  <p className="max-sm:text-[0.75rem]">We Create. Not Copy</p>
                 </div>
               ))}
           </TextTicker>

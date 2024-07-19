@@ -6,16 +6,16 @@ import { FadeInAnim } from "../_ui/Animation";
 const cardList = [
   {
     id: 1,
-    title: "Web Design",
-    text: "We transform your online presence with custom-designed websites that are not only visually stunning but also incredibly fast and easy to update. We blend functionality with flair, ensuring your website stands out and performs seamlessly.",
+    title: "Web Design & Development",
+    text: "Imagine a website that captures your brand’s essence while providing an exceptional user experience. Our design and development services focus on creating sites that are both eye-catching and highly functional, making updates a breeze and leaving a lasting impression on your visitors.",
     image: iDesign,
     color: "bg-[#C6B9EE]",
     direction: "left",
   },
   {
     id: 2,
-    title: "Coding & Dev",
-    text: "At Relyte, we craft custom websites coded to perfection, ensuring that every detail reflects your brand's excellence. Our websites are designed with flexibility and ease of management in mind, making future updates a breeze.",
+    title: "Search Engine Optimization",
+    text: "Imagine having a strategy that not only understands your industry but also addresses your unique challenges and goals. With our SEO services, you’ll see significant improvements in your online visibility, leading to more traffic, leads, and ultimately, more business.",
     image: iCoding,
     color: "bg-[#C1E693]",
     direction: "right",
@@ -23,7 +23,7 @@ const cardList = [
   {
     id: 3,
     title: "Hosting & Support",
-    text: "We provide fast, fully supported, cloud-based hosting and maintenance services in 8 big countries around the world: Lithuania, Australia, Singapore, France, Netherlands, United Kingdom, Indonesia, and United States, making your website accessible around the world.",
+    text: "We offer fast, fully supported, cloud-based hosting and maintenance services in eight major countries: Lithuania, Australia, Singapore, France, Netherlands, United Kingdom, Indonesia, and the United States. Our global presence ensures your website is accessible and performing optimally, no matter where your audience is located.",
     image: iHosting,
     color: "bg-[#F2F2F2]",
     direction: "left",
