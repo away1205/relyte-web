@@ -1,4 +1,5 @@
 import Accordion from "../_ui/Accordion";
+import CircleShape from "../_ui/CircleShape";
 
 const faqList = [
   {
@@ -43,8 +44,7 @@ function FaqSection() {
     >
       <div className="max-screen relative my-24 flex flex-col items-center gap-20 sm:gap-28">
         <h2 className="relative max-sm:text-[1.5rem]">
-          Frequently Asked Questions?{" "}
-          <div className="absolute -right-4 -top-4 h-4 w-4 rounded-full bg-primary sm:-right-6 sm:h-6 sm:w-6" />
+          Frequently Asked Questions? <CircleShape />
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24"
