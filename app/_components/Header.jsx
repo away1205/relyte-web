@@ -233,7 +233,7 @@ function Header() {
 function NavList({ isSmallScreen = false }) {
   const navList = [
     { label: "Home", value: "" },
-    { label: "Projects", value: "projects" },
+    // { label: "Projects", value: "projects" },
     { label: "Blog", value: "blog" },
   ];
 
