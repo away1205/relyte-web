@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function HeroBlog() {
   return (
-    <section className="dot-bg my-auto mt-[4.5rem] flex w-screen items-center justify-center px-8 py-16">
+    <section className="dot-bg my-auto mt-[4.5rem] flex w-screen items-center justify-center border-b border-[#111] px-8 py-16">
       <div className="relative flex border border-dashed border-black-100 px-8 py-5">
         <div className="relative h-[4.5rem] w-[11.5rem] sm:h-[5rem] sm:w-[16.3rem] lg:h-[6.5rem] lg:w-[21.75rem]">
           <Image src={"/relyte-logo-min.svg"} alt="Relyte" fill />

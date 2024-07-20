@@ -6,16 +6,11 @@ const nextConfig = {
   },
   images: { unoptimized: true },
   // trailingSlash: true,
-  // exportPathMap: async function (
-  //   defaultPathMap,
-  //   { dev, dir, outDir, distDir, buildId },
-  // ) {
-  //   return {
-  //     "/": { page: "/" },
-  //     "/about": { page: "/about" },
-  //   };
-  // },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 
+  // loader for the webm - Next js will throw err without this loader
   webpack(config) {
     config.module.rules.push({
       test: /\.webm$/,

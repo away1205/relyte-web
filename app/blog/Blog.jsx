@@ -1,18 +1,41 @@
-import Image from "next/image";
+import AnimatedLink from "../_ui/AnimatedLink";
 
 function Blog() {
   return (
-    <section className="border-t-2 border-[#111] px-4">
-      <div className="mt-12 flex w-full flex-col gap-12 sm:grid sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-20">
+    <section className="my-auto px-4">
+      {/* <div className="mt-12 flex w-full flex-col gap-12 sm:grid sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-20">
         <Card />
         <Card />
         <Card />
         <Card />
         <Card />
         <Card />
-      </div>
+      </div> */}
 
-      <button className="py-8">More Article</button>
+      {/* <button className="py-8">More Article</button> */}
+
+      <div className="flex flex-col items-center gap-8 py-10">
+        <img
+          src="/blog.jpg"
+          alt="a woman working a blog post for her lovely audience"
+          className="h-auto w-[17.5rem] rounded-xl"
+        />
+
+        <p className="text-wrap text-center text-sm md:text-xl xl:w-[34rem]">
+          Hi there! We&apos;re still crafting some great content for you. <br />
+          <span className="font-semibold">
+            Stay tuned, and we&apos;ll be sharing with you soon!
+          </span>
+        </p>
+
+        <div class="pb-10 text-center">
+          <AnimatedLink href="/">
+            <button class="rounded-full bg-indigo-600 px-12 py-3 font-semibold text-white hover:bg-indigo-500">
+              HOME
+            </button>
+          </AnimatedLink>
+        </div>
+      </div>
     </section>
   );
 }
