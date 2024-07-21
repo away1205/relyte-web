@@ -48,7 +48,7 @@ function Preloader() {
       },
       index == 0 ? 500 : 150,
     );
-  }, [index]);
+  }, [index, words.length]);
 
   useEffect(() => {
     const pathElement = pathRef.current;
