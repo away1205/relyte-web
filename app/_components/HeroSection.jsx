@@ -88,8 +88,11 @@ function HeroSection() {
         </div>
 
         <h1 className="hero-anim-card max-sm:font-b4">
-          Website For Architectural Company
+          Digital Presence For Your Company
         </h1>
+        {/* <h1 className="hero-anim-card max-sm:font-b4">
+          Digital Presence For Architectural Company
+        </h1> */}
 
         <MagneticAnim>
           <div

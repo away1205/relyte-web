@@ -37,14 +37,14 @@ function BenefitSection() {
               <h3 className="max-sm:font-h9 sm:font-h5 mb-2 !font-semibold max-sm:text-[0.875rem]">
                 Custom Design
               </h3>
-              <p className="max-sm:font-b5 max-sm:w-[7.4rem]">
+              <p className="max-sm:font-b5 max-sm:w-[7.4rem] xl:w-[16rem]">
                 Each of your designs is made especially for you and is 100%
                 yours.
               </p>
             </div>
 
             <div
-              className=".unlimited-changes-card rounded-[0.4rem] bg-tertiary bg-[length:8rem_6.4rem] bg-[right_bottom_0.6rem] bg-no-repeat px-2 py-4 max-sm:h-[13rem] sm:rounded-2xl sm:bg-[length:14rem] sm:bg-[right_bottom_-3rem] sm:px-6 sm:py-6 lg:bg-[right_bottom_0rem]"
+              className=".unlimited-changes-card rounded-[0.4rem] bg-tertiary bg-[length:8rem_6.4rem] bg-[right_bottom_0.6rem] bg-no-repeat px-2 py-4 max-sm:h-[13rem] sm:rounded-2xl sm:bg-[length:12rem] sm:bg-[right_bottom_-3rem] sm:px-6 sm:py-6 lg:bg-[right_bottom_0rem]"
               style={{
                 backgroundImage: `url(${bgChanges.src})`,
               }}

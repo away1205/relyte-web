@@ -50,7 +50,7 @@ const careList = [
 
 const infoList = [
   {
-    text: "architectural websites have poor design, hurting conversion.",
+    text: "MSMEs websites have poor design, hurting its conversion.",
     number: "70%",
     source: "- Launch North",
   },
