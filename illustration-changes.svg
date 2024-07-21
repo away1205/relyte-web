@@ -1,0 +1,87 @@
+<svg width="282" height="244" viewBox="0 0 282 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.5 15L39.5 239" stroke="#111111" stroke-linecap="round"/>
+<path d="M18 43L60 43" stroke="#111111" stroke-linecap="round"/>
+<path d="M18 90L60 90" stroke="#111111" stroke-linecap="round"/>
+<path d="M18 101L60 101" stroke="#111111" stroke-linecap="round"/>
+<path d="M18 156L60 156" stroke="#111111" stroke-linecap="round"/>
+<path d="M18 167L60 167" stroke="#111111" stroke-linecap="round"/>
+<ellipse cx="76" cy="241" rx="70" ry="3" fill="#111111"/>
+<path d="M201.5 15H60V241H201.5V15Z" fill="white" stroke="#111111" stroke-linecap="round"/>
+<rect x="78.5" y="170.5" width="106" height="56" stroke="#111111" stroke-dasharray="5 5"/>
+<rect x="180.5" y="166.5" width="7.22642" height="7" fill="#C6B9EE" stroke="#111111"/>
+<rect x="180.5" y="222.5" width="7.22642" height="7" fill="#C6B9EE" stroke="#111111"/>
+<rect x="74.5" y="166.5" width="7.22642" height="7" fill="#C6B9EE" stroke="#111111"/>
+<rect x="74.5" y="222.5" width="7.22642" height="7" fill="#C6B9EE" stroke="#111111"/>
+<rect x="60.5" y="15.5" width="141" height="15" fill="#111111" stroke="#111111"/>
+<path d="M125.5 43.5H186.5V89.5H125.5V43.5Z" stroke="#111111"/>
+<path d="M74.5 100.5H117.5V155.5H74.5V100.5Z" stroke="#111111"/>
+<path d="M125.5 100.5H186.5V155.5H125.5V100.5Z" stroke="#111111"/>
+<rect x="211.5" y="34.5" width="64" height="28" fill="#C6B9EE" stroke="#111111"/>
+<circle cx="244" cy="48" r="3.5" fill="white" stroke="#111111"/>
+<rect x="211.5" y="193.5" width="64" height="28" fill="#C6B9EE" stroke="#111111"/>
+<circle cx="244" cy="207" r="3.5" fill="white" stroke="#111111"/>
+<path d="M216.356 73.3568C213.236 69.8499 213.549 64.4771 217.056 61.3564C220.563 58.2356 225.936 58.5487 229.056 62.0557L248.002 83.3464L235.303 94.6476L216.356 73.3568Z" fill="#111111" stroke="#111111"/>
+<circle cx="222" cy="67" r="8.5" fill="white" stroke="#111111"/>
+<path d="M246.488 51.7254C245.976 51.5172 245.393 51.7631 245.184 52.2746L231.092 86.8927C230.884 87.4042 231.13 87.9877 231.641 88.1959L243.559 93.0474C244.071 93.2556 244.654 93.0097 244.862 92.4982L258.954 57.8801C259.163 57.3686 258.917 56.7851 258.405 56.5768L246.488 51.7254Z" fill="white" stroke="#111111"/>
+<path d="M250.5 58.5L257.5 61.5" stroke="#111111" stroke-linecap="round"/>
+<path d="M247 67L254 70" stroke="#111111" stroke-linecap="round"/>
+<path d="M243 76L250 79" stroke="#111111" stroke-linecap="round"/>
+<path d="M248.5 73L252 74.5" stroke="#111111" stroke-linecap="round"/>
+<path d="M252 64L255.5 65.5" stroke="#111111" stroke-linecap="round"/>
+<path d="M270.15 57.9821C269.75 57.6016 269.117 57.6176 268.736 58.0179L242.983 85.106C242.603 85.5063 242.619 86.1392 243.019 86.5198L252.344 95.3857C252.745 95.7663 253.378 95.7503 253.758 95.35L279.511 68.2619C279.892 67.8616 279.876 67.2286 279.476 66.8481L270.15 57.9821Z" fill="white" stroke="#111111"/>
+<path d="M271.412 65.7537L276.835 71.1013" stroke="#111111" stroke-linecap="round"/>
+<path d="M265.053 72.3904L270.475 77.738" stroke="#111111" stroke-linecap="round"/>
+<path d="M258.043 79.3101L263.465 84.6576" stroke="#111111" stroke-linecap="round"/>
+<path d="M264.26 78.5239L266.971 81.1977" stroke="#111111" stroke-linecap="round"/>
+<path d="M270.803 71.4219L273.514 74.0957" stroke="#111111" stroke-linecap="round"/>
+<rect x="205" y="82" width="77" height="30" fill="white" stroke="#111111"/>
+<circle cx="243.5" cy="96.5" r="4" fill="#C6B9EE" stroke="#111111"/>
+<path d="M282 112H205L212 120.5H273.5L282 112Z" fill="#111111" stroke="#111111" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M290.303 171.398L291.484 170.5H290H198.5H196.921L198.212 171.409L211.712 180.909L211.842 181H212H277.5H277.668L277.803 180.898L290.303 171.398Z" fill="#111111" stroke="#111111" stroke-linecap="round"/>
+<mask id="path-40-inside-1_11669_4006" fill="white">
+<rect x="206" y="125.245" width="22" height="29" rx="0.5" transform="rotate(-27.755 206 125.245)"/>
+</mask>
+<rect x="206" y="125.245" width="22" height="29" rx="0.5" transform="rotate(-27.755 206 125.245)" fill="#C6B9EE" stroke="#111111" stroke-width="2" mask="url(#path-40-inside-1_11669_4006)"/>
+<mask id="path-41-inside-2_11669_4006" fill="white">
+<rect x="246.316" y="129.646" width="30.7924" height="20.8618" rx="0.5" transform="rotate(-27.755 246.316 129.646)"/>
+</mask>
+<rect x="246.316" y="129.646" width="30.7924" height="20.8618" rx="0.5" transform="rotate(-27.755 246.316 129.646)" fill="white" stroke="#111111" stroke-width="2" mask="url(#path-41-inside-2_11669_4006)"/>
+<mask id="path-42-inside-3_11669_4006" fill="white">
+<rect x="229" y="124" width="22" height="21" rx="0.5"/>
+</mask>
+<rect x="229" y="124" width="22" height="21" rx="0.5" fill="white" stroke="#111111" stroke-width="2" mask="url(#path-42-inside-3_11669_4006)"/>
+<mask id="path-43-inside-4_11669_4006" fill="white">
+<rect x="246.316" y="129.646" width="23.419" height="20.8618" rx="0.5" transform="rotate(-27.755 246.316 129.646)"/>
+</mask>
+<rect x="246.316" y="129.646" width="23.419" height="20.8618" rx="0.5" transform="rotate(-27.755 246.316 129.646)" fill="#111111" stroke="#111111" stroke-width="2" mask="url(#path-43-inside-4_11669_4006)"/>
+<rect x="196" y="131" width="96" height="39" fill="white" stroke="#111111"/>
+<circle cx="244.25" cy="150.25" r="4.25" fill="#C6B9EE" stroke="#111111"/>
+<rect x="16.5" y="214.5" width="52" height="27" fill="#C6B9EE" stroke="#111111"/>
+<rect x="20.5" y="207.5" width="9" height="7" fill="#C6B9EE" stroke="#111111"/>
+<rect x="37.5" y="207.5" width="9" height="7" fill="#C6B9EE" stroke="#111111"/>
+<rect x="50.5" y="187.5" width="36" height="27" fill="#C6B9EE" stroke="#111111"/>
+<rect x="54.5" y="180.5" width="9" height="7" fill="#C6B9EE" stroke="#111111"/>
+<rect x="71.5" y="180.5" width="9" height="7" fill="#C6B9EE" stroke="#111111"/>
+<rect x="89.5" y="207.5" width="9" height="7" fill="white" stroke="#111111"/>
+<rect x="106.5" y="207.5" width="9" height="7" fill="white" stroke="#111111"/>
+<rect x="123.5" y="207.5" width="9" height="7" fill="white" stroke="#111111"/>
+<rect x="68.5" y="214.5" width="68" height="27" fill="white" stroke="#111111"/>
+<circle cx="70" cy="23" r="3" fill="white"/>
+<circle cx="82" cy="23" r="3" fill="#C6B9EE"/>
+<rect x="73" y="40" width="59" height="23" rx="11.5" fill="#111111"/>
+<rect x="75.5" y="38.5" width="58" height="22" rx="11" fill="#C6B9EE" stroke="#111111"/>
+<rect x="75.5" y="38.5" width="22" height="22" rx="11" fill="white" stroke="#111111"/>
+<rect x="73.5" y="72.5" width="44" height="17" rx="8.5" fill="#111111" stroke="#111111"/>
+<rect x="73.5" y="72.5" width="17" height="17" rx="8.5" fill="white" stroke="#111111"/>
+<path d="M125 75.5L112 49.5L138 61.5L128 65.5L125 75.5Z" fill="white" stroke="#111111" stroke-linejoin="round"/>
+<path d="M143.231 21.6195C142.163 18.6408 139.791 16.306 136.787 15.2892C139.784 14.2605 142.16 11.8971 143.238 8.92526C144.048 11.9829 146.378 14.3873 149.37 15.3099C146.42 16.2679 144.103 18.6306 143.231 21.6195ZM136.177 15.4777L136.177 15.4779L136.177 15.4777Z" fill="white" stroke="#111111" stroke-linejoin="round"/>
+<path d="M40.0057 138.986C38.7383 134.262 35.0048 130.58 30.3057 129.318C35.0114 128.167 38.7286 124.527 39.9628 119.815L40.122 119.207L40.2116 119.583C41.3595 124.404 45.116 128.154 49.9042 129.312C45.0528 130.572 41.2441 134.428 40.0973 139.327L40.0057 138.986ZM40.0094 139.722C40.0094 139.722 40.0094 139.722 40.0094 139.722L40.0094 139.722Z" fill="white" stroke="#111111" stroke-linejoin="round"/>
+<rect x="194.353" y="21.8247" width="31.7871" height="4" rx="2" transform="rotate(-21.1545 194.353 21.8247)" fill="white" stroke="#111111"/>
+<rect x="31.8615" y="193.037" width="22.5571" height="4" rx="2" transform="rotate(-162.309 31.8615 193.037)" fill="white" stroke="#111111"/>
+<circle cx="213" cy="240" r="3.5" fill="white" stroke="#111111"/>
+<circle cx="16" cy="72" r="3.5" fill="white" stroke="#111111"/>
+<circle cx="31.5" cy="53.5" r="2" fill="white" stroke="#111111"/>
+<circle cx="197" cy="3" r="2.5" fill="white" stroke="#111111"/>
+<circle cx="239.5" cy="20.5" r="2" fill="white" stroke="#111111"/>
+<circle cx="2.5" cy="208.5" r="2" fill="white" stroke="#111111"/>
+</svg>
