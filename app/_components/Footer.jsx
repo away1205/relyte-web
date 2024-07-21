@@ -71,8 +71,11 @@ function Footer() {
           <LinkSocial />
         </div>
 
-        <Link href={"#"} className="max-sm:font-l4 mb-10 mt-16 text-nowrap">
-          <HoverFlipWords inText="*Privacy & Policy" />
+        <Link
+          href={"/terms-conditions"}
+          className="max-sm:font-l4 mb-10 mt-16 text-nowrap"
+        >
+          <HoverFlipWords inText="*Terms & Conditions" />
         </Link>
       </div>
     </footer>
