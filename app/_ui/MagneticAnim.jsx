@@ -1,22 +1,23 @@
-import gsap from 'gsap';
-import React from 'react';
-import { useEffect } from 'react';
-import { useRef } from 'react';
+"use client";
+import gsap from "gsap";
+import React from "react";
+import { useEffect } from "react";
+import { useRef } from "react";
 
 function MagneticAnim({ children }) {
   const magnetic = useRef(null);
 
   useEffect(() => {
-    const xTo = gsap.quickTo(magnetic.current, 'x', {
+    const xTo = gsap.quickTo(magnetic.current, "x", {
       duration: 1,
-      ease: 'elastic.out(1, 0.3)',
+      ease: "elastic.out(1, 0.3)",
     });
-    const yTo = gsap.quickTo(magnetic.current, 'y', {
+    const yTo = gsap.quickTo(magnetic.current, "y", {
       duration: 1,
-      ease: 'elastic.out(1, 0.3)',
+      ease: "elastic.out(1, 0.3)",
     });
 
-    magnetic.current.addEventListener('mousemove', (e) => {
+    magnetic.current.addEventListener("mousemove", (e) => {
       const { clientX, clientY } = e;
       const { width, height, left, top } =
         magnetic.current.getBoundingClientRect();
@@ -26,7 +27,7 @@ function MagneticAnim({ children }) {
       yTo(y * 0.5);
     });
 
-    magnetic.current.addEventListener('mouseleave', () => {
+    magnetic.current.addEventListener("mouseleave", () => {
       xTo(0);
       yTo(0);
     });

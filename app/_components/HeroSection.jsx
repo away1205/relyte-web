@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 
 import CarePin from "./CarePin";
-import MagneticAnim from "../_ui/MagneticAnim";
+import ScrollDown from "../_ui/ScrollDown";
 import { FlipWords } from "../_ui/FlipWords";
 import TextTicker from "../_ui/TextTicker";
 import layersGif from "../../public/wired-outline-12-layers.gif";
@@ -94,31 +94,21 @@ function HeroSection() {
           Digital Presence For Architectural Company
         </h1> */}
 
-        <MagneticAnim>
-          <div
-            className="relative mt-20 h-[50px] w-[50px] rounded-3xl font-semibold uppercase text-white md:h-[60px] md:w-[60px]"
-            onClick={() => {
-              gsap.to(window, {
-                duration: 1,
-                scrollTo: { y: "#care-section" },
-                ease: "power2",
-              });
-            }}
-          >
-            <img
-              src="./scroll-anim.gif"
-              alt="scroll down"
-              className="absolute left-[50%] top-0 h-fit w-fit -translate-x-1/2 cursor-pointer"
-            />
-          </div>
-        </MagneticAnim>
+        <div
+          className="relative mt-20"
+          onClick={() =>
+            gsap.to(window, { scrollTo: ".care-card1", duration: 1 })
+          }
+        >
+          <ScrollDown />
+        </div>
 
         <div className="relative -bottom-8">
           <TextTicker>
             {Array(7)
               .fill()
               .map((_, index) => (
-                <div className="ml-2 flex gap-2 sm:ml-4 sm:gap-8" key={index}>
+                <div className="ml-2 flex gap-2 lg:ml-6 lg:gap-6" key={index}>
                   <img
                     src="trending-up.svg"
                     alt="Trending icon"
