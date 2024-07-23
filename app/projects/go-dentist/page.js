@@ -1,8 +1,13 @@
-import HeroSection from "./HeroSection";
+import HeroProject from "./HeroProject";
+import AboutProject from "./AboutProject";
+import OutputProject from "./OutputProject";
+
 function Page() {
   return (
     <main className="pt-[5rem]">
-      <HeroSection />
+      <HeroProject />
+      <AboutProject />
+      <OutputProject />
     </main>
   );
 }

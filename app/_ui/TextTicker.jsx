@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useEffect, useRef, useState } from "react";
 
-function TextTicker({ children }) {
+function TextTicker({ children, isSkew = true, bgPrimary = "primary" }) {
   const slider = useRef(null);
   const firstText = useRef(null);
   const secondText = useRef(null);
@@ -58,28 +58,30 @@ function TextTicker({ children }) {
 
   // VERY IMPORTANT NOTE: GAP SPACING IS MAKING THE POSITION OF THE TEXT ELEMENT MESSED UP
   return (
-    <div className="container-ticker flex w-[100vw] -skew-y-1 overflow-x-clip bg-primary py-2 sm:px-8 sm:py-4">
+    <div
+      className={`container-ticker flex w-[100vw] ${isSkew && "-skew-y-1"} overflow-x-clip ${bgPrimary === "primary" && "bg-primary"} py-2 sm:px-8 sm:py-4 ${bgPrimary === "primary" ? "text-white" : "text-black"}`}
+    >
       <div
         className="relative left-[-50%] flex w-max flex-nowrap whitespace-nowrap"
         ref={slider}
       >
         <div
           ref={firstText}
-          className="flex w-max text-nowrap text-xl font-medium text-white"
+          className="flex w-max text-nowrap text-xl font-medium"
         >
           {children}
         </div>
 
         <div
           ref={secondText}
-          className="flex w-max text-nowrap text-xl font-medium text-white"
+          className="flex w-max text-nowrap text-xl font-medium"
         >
           {children}
         </div>
 
         <div
           ref={thirdText}
-          className="flex w-max text-nowrap text-xl font-medium text-white"
+          className="flex w-max text-nowrap text-xl font-medium"
         >
           {children}
         </div>

@@ -51,7 +51,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: var(--background-color);
+  background: #fff;
   overflow-x: hidden;
 
   h2 {
@@ -235,6 +235,15 @@ body {
       font-weight: 600;
       line-height: 110%; /* 0.825rem */
       letter-spacing: 0.015rem;
+    }
+
+    .font-b1 {
+      /* Body/B1 | 20/regular */
+      font-family: var(--font-urbanist);
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 1.875rem */
     }
 
     .font-b2 {

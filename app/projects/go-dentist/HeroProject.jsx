@@ -18,9 +18,9 @@ function HeroProject() {
           </div>
 
           <img
-            src="/project-featured-1.png"
+            src="/project-godentist.png"
             alt="Go dentist in desktop version"
-            className="aspect-[4/3] xl:aspect-auto"
+            className="aspect-[6/4]"
           />
 
           <div className="mb-[7.3rem] mt-8 grid grid-cols-3 text-white lg:max-xl:mb-0 lg:max-xl:flex lg:max-xl:flex-col lg:max-xl:gap-8 xl:mb-8 xl:w-[23rem]">
