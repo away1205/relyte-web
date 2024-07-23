@@ -3,7 +3,7 @@ function sitemap() {
     {
       url: "https://relyte.space/",
       lastModified: new Date(),
-      changeFrequency: "yearly",
+      changeFrequency: "weekly",
       priority: 1,
     },
     {
@@ -16,6 +16,12 @@ function sitemap() {
       url: "https://relyte.space/blog",
       lastModified: new Date(),
       changeFrequency: "weekly",
+      priority: 0.5,
+    },
+    {
+      url: "https://relyte.space/projects/go-dentist",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
       priority: 0.5,
     },
   ];
