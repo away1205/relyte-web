@@ -9,12 +9,12 @@ import { FadeInAnim } from "../_ui/Animation";
 function BenefitSection() {
   return (
     <section
-      className="max-lg:px-glob-25 flex min-h-screen w-screen flex-col items-center justify-center bg-[#111] bg-[length:48rem_20rem] bg-[center_bottom_-4rem] bg-no-repeat lg:bg-[length:90rem_37rem] lg:bg-[center_bottom_-10rem]"
+      className="max-lg:px-glob-25 flex min-h-screen w-screen flex-col items-center justify-center bg-[#111] bg-[length:48rem_20rem] bg-[center_bottom_-4rem] bg-no-repeat lg:mx-8 lg:bg-[length:90rem_37rem] lg:bg-[center_bottom_-10rem]"
       style={{
         backgroundImage: `url(${bgBenefit.src})`,
       }}
     >
-      <div className="max-screen flex flex-col items-center justify-center gap-8 pb-28 pt-12 sm:gap-[4rem] sm:py-28 lg:py-40">
+      <div className="max-screen flex flex-col items-center justify-center gap-8 pb-28 pt-12 sm:gap-[4rem] sm:py-28 lg:mx-8 lg:py-40">
         <FadeInAnim direction="" duration={1.5}>
           <div className="flex flex-col items-center gap-2">
             <p className="max-sm:font-b5 text-white max-sm:text-[0.75rem]">
@@ -29,7 +29,7 @@ function BenefitSection() {
         <FadeInAnim direction="down" duration={1.5}>
           <div className="grid grid-cols-2 gap-4 max-sm:w-[20rem] sm:grid-rows-2 sm:gap-6 lg:grid-cols-3">
             <div
-              className=".custom-design-card h-fit rounded-[0.4rem] bg-green bg-[length:10rem_10rem] bg-[right_top_45%] bg-no-repeat px-2 py-4 max-sm:col-span-2 sm:row-span-2 sm:h-[35rem] sm:rounded-2xl sm:bg-[length:24rem] sm:bg-[center_bottom_30%] sm:px-6 sm:py-6 lg:h-[80vh] xl:max-h-[40rem]"
+              className=".custom-design-card h-fit rounded-[0.4rem] bg-green bg-[length:10rem_10rem] bg-[right_top_45%] bg-no-repeat px-2 py-4 max-sm:col-span-2 sm:row-span-2 sm:h-[35rem] sm:rounded-2xl sm:bg-[length:24rem] sm:bg-[center_bottom_30%] sm:px-6 sm:py-6 lg:h-[80vh] lg:max-h-[40rem]"
               style={{
                 backgroundImage: `url(${bgDesign.src})`,
               }}
@@ -37,7 +37,7 @@ function BenefitSection() {
               <h3 className="max-sm:font-h9 sm:font-h5 mb-2 !font-semibold max-sm:text-[0.875rem]">
                 Custom Design
               </h3>
-              <p className="max-sm:font-b5 max-sm:w-[7.4rem] xl:w-[16rem]">
+              <p className="max-sm:font-b5 max-sm:w-[7.4rem] lg:w-[16rem]">
                 Each of your designs is made especially for you and is 100%
                 yours.
               </p>

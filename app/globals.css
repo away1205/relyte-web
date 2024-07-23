@@ -93,8 +93,8 @@ body {
 
   .dot-bg {
     background-size: 100px 100px;
-    background-image: linear-gradient(to right, #e0e0e0 2px, transparent 1px),
-      linear-gradient(to bottom, #e0e0e0 2px, #ededed 1px);
+    background-image: linear-gradient(to right, #e0e0e0 1px, transparent 1px),
+      linear-gradient(to bottom, #e0e0e0 1px, #ffffff 1px);
   }
 
   @variants responsive {
@@ -291,9 +291,9 @@ body {
       font-weight: 500;
       line-height: 125%; /* 0.9375rem */
     }
-  }
 
-  .max-screen {
-    max-width: 1200px;
+    .max-screen {
+      max-width: 1200px;
+    }
   }
 }

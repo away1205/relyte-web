@@ -37,7 +37,7 @@ function ProjectSection() {
       id="projects-section"
     >
       <div
-        className="absolute left-0 top-0 -z-10 h-[15rem] w-screen bg-[#111111] bg-cover bg-[left] bg-no-repeat sm:h-[22rem] xl:h-[35rem]"
+        className="absolute left-0 top-0 -z-10 h-[15rem] w-screen bg-[#111111] bg-cover bg-[left] bg-no-repeat sm:h-[22rem] lg:h-[35rem]"
         style={{
           backgroundImage: `url(${bgProject.src})`,
           backgroundSize: "105rem",
@@ -111,7 +111,7 @@ function Card({ id = 0, title, text, year, link }) {
       ) : (
         <div
           onClick={() => gsap.to(window, { scrollTo: "#CTA-section" })}
-          className="relative z-10 my-6 flex aspect-[4/3] h-full w-full cursor-pointer flex-col items-center justify-center gap-4 rounded-md bg-white outline-dashed outline-4 outline-[#888] transition-colors duration-300 hover:text-blue-400 hover:outline-blue-500"
+          className="relative z-10 my-6 flex aspect-[4/3] h-full w-full cursor-pointer flex-col items-center justify-center gap-2 rounded-md bg-white outline-dashed outline-4 outline-[#888] transition-colors duration-300 hover:text-blue-400 hover:outline-blue-500 sm:gap-4 xl:gap-5"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@ function Card({ id = 0, title, text, year, link }) {
             />
           </svg>
 
-          <p className="font-h9 sm:font-h8 xl:font-h5"> Your Project</p>
+          <p className="font-h9 sm:font-h8 lg:font-h5"> Your Project</p>
         </div>
       )}
     </div>

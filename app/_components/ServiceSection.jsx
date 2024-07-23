@@ -32,7 +32,7 @@ const cardList = [
 
 function ServiceSection() {
   return (
-    <section className="max-screen max-lg:px-glob-25 my-[3.4rem] flex w-full flex-col items-start gap-5 sm:my-32 sm:gap-[4.5rem]">
+    <section className="max-screen max-lg:px-glob-25 my-[3.4rem] flex flex-col items-start gap-5 sm:my-32 sm:gap-[4.5rem] lg:mx-8 xl:mx-auto">
       <FadeInAnim direction="" toggleActions="play none restart none">
         <div className="flex flex-col justify-start gap-2 max-sm:gap-0">
           <p className="h8 uppercase max-sm:text-[0.75rem] max-sm:font-light">

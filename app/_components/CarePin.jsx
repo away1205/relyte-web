@@ -210,7 +210,7 @@ function CarePin() {
               </span>
             </h2>
 
-            <div className="z-10 flex w-fit gap-6 max-sm:absolute max-sm:top-32 max-sm:flex-col sm:grid sm:gap-12 md:max-lg:grid-cols-2 md:max-lg:gap-40 lg:flex lg:flex-row">
+            <div className="z-10 flex w-fit gap-6 max-sm:absolute max-sm:top-32 max-sm:flex-col sm:grid sm:gap-12 md:max-lg:grid-cols-2 md:max-lg:gap-40 lg:mx-8 lg:flex lg:flex-row xl:mx-auto">
               {careList.map(
                 ({ title, isDown, text, bgColor, bgImg, handImg, gif }, i) => {
                   return (
