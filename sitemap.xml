@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://relyte.space/</loc>
-<lastmod>2024-07-23T08:48:15.529Z</lastmod>
+<lastmod>2024-07-23T23:30:26.968Z</lastmod>
 <changefreq>yearly</changefreq>
 <priority>1</priority>
 </url>
 <url>
 <loc>https://relyte.space/projects</loc>
-<lastmod>2024-07-23T08:48:15.529Z</lastmod>
+<lastmod>2024-07-23T23:30:26.968Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://relyte.space/blog</loc>
-<lastmod>2024-07-23T08:48:15.529Z</lastmod>
+<lastmod>2024-07-23T23:30:26.968Z</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
