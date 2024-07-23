@@ -18,6 +18,22 @@ export const metadata = {
   title: "Relyte Space",
   description:
     "Relyte Space is a digital agency that specializes in website design and development, as well as search engine optimization services for the architectural and construction industries.",
+
+  metadataBase: new URL("https://relyte.space"),
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    images: "/relyte-og.png",
+    title: "Relyte Space",
+    description:
+      "Relyte Space is a digital agency that specializes in website design and development, as well as search engine optimization services for the architectural and construction industries.",
+    url: "https://relyte.space",
+    siteName: "Relyte Space",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
