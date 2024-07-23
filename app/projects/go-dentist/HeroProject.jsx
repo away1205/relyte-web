@@ -1,7 +1,7 @@
 import ScrollDown from "../../_ui/ScrollDown";
 function HeroProject() {
   return (
-    <section className="flex min-h-screen w-full justify-center bg-[#111]">
+    <section className="flex w-full justify-center bg-[#111] pb-16 sm:pb-24 lg:pb-[7.5rem]">
       <div className="max-screen flex flex-col items-center justify-center gap-[4rem] pl-4 sm:pl-10 xl:pl-0">
         <div className="pt-[3rem] text-white sm:pt-[5rem]">
           <span className="font-b3 sm:font-b2">
@@ -23,7 +23,7 @@ function HeroProject() {
             className="aspect-[6/4]"
           />
 
-          <div className="mb-[7.3rem] mt-8 grid grid-cols-3 text-white lg:max-xl:mb-0 lg:max-xl:flex lg:max-xl:flex-col lg:max-xl:gap-8 xl:mb-8 xl:w-[23rem]">
+          <div className="mt-8 grid grid-cols-3 text-white lg:max-xl:mb-0 lg:max-xl:flex lg:max-xl:flex-col lg:max-xl:gap-8 xl:mb-8 xl:w-[23rem]">
             <div className="col-span-2">
               <h2 className="font-h9 mb-2 w-9/12 border-b pb-1">Services</h2>
               <p className="font-b3 sm:font-b2 xl:font-b1 uppercase">
