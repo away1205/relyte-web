@@ -23,7 +23,7 @@ function Home() {
     >
       <HeroSection />
       <ServiceSection />
-      {/* <ProjectSection /> */}
+      <ProjectSection />
       <BenefitSection />
       <FaqSection />
       <CTASection />

@@ -139,7 +139,7 @@ const list = [
     keyword: "privacy-policy",
     title: "17. Privacy Policy",
     content:
-      'We are dedicated to protecting the privacy of this website"s users. The following details our privacy policy and how we will handle your personal data. Nothing in this privacy statement will restrict your legal rights regarding your personal information. By using www.discoveroutpost.com (this "site" or "website") to submit personal information to us, you agree that we may process that information in line with this policy and our Terms of Use. The definitions used in our Terms of Use will apply to any terms used in this Privacy Policy. Relyte, whose business address is Jl. Al-Ikhlas Blok HK No. 10, Makassar, 90245, shall be the entity that holds your information. Relyte is the data controller for the purposes of the Data Protection Act 1998 (the "Act").',
+      'We are dedicated to protecting the privacy of this website"s users. The following details our privacy policy and how we will handle your personal data. Nothing in this privacy statement will restrict your legal rights regarding your personal information. By using relyte.space (this "site" or "website") to submit personal information to us, you agree that we may process that information in line with this policy and our Terms of Use. The definitions used in our Terms of Use will apply to any terms used in this Privacy Policy. Relyte, whose business address is Jl. Al-Ikhlas No. 10, Makassar, 90245, shall be the entity that holds your information. Relyte is the data controller for the purposes of the Data Protection Act 1998.',
   },
   {
     keyword: "info-we-collect",

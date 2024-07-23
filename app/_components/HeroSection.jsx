@@ -95,12 +95,12 @@ function HeroSection() {
         </h1> */}
 
         <div
-          className="relative mt-20"
+          className="relative mt-20 h-[3rem] w-[3rem] sm:h-[4.5rem] sm:w-[4.5rem]"
           onClick={() =>
             gsap.to(window, { scrollTo: ".care-card1", duration: 1 })
           }
         >
-          <ScrollDown />
+          <ScrollDown transparent={true} />
         </div>
 
         <div className="relative -bottom-8">

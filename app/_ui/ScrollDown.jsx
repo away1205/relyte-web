@@ -1,10 +1,12 @@
 "use client";
 import MagneticAnim from "../_ui/MagneticAnim";
 
-function ScrollDown() {
+function ScrollDown({ transparent = false }) {
   return (
     <MagneticAnim>
-      <div className="h-full w-full rounded-full bg-white">
+      <div
+        className={`h-full w-full rounded-full ${transparent ? null : "bg-white"}`}
+      >
         <img
           src="/scroll-anim.gif"
           alt="scroll down"

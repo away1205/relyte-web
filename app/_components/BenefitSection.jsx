@@ -15,7 +15,7 @@ function BenefitSection() {
       }}
     >
       <div className="max-screen flex flex-col items-center justify-center gap-8 pb-28 pt-12 sm:gap-[4rem] sm:py-28 lg:py-40">
-        <FadeInAnim direction="up" duration={1.5}>
+        <FadeInAnim direction="" duration={1.5}>
           <div className="flex flex-col items-center gap-2">
             <p className="max-sm:font-b5 text-white max-sm:text-[0.75rem]">
               We help to provide
