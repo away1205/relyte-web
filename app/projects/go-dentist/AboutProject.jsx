@@ -104,7 +104,7 @@ function AboutProject() {
         <img
           src="/project-godentist-about2.png"
           alt="godentist in laptop"
-          className="aspect-auto"
+          className="aspect-auto w-full"
         />
 
         <div className="max-screen mx-4 mt-16 flex flex-col gap-10 sm:mx-12 sm:gap-20 xl:mx-auto xl:flex-row xl:gap-[24rem]">

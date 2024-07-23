@@ -8,7 +8,7 @@ function OutputProject() {
       <img
         src="/project-godentist-output.png"
         alt="godentist web in desktop"
-        className="aspect-auto"
+        className="aspect-auto w-full"
       />
 
       <div className="mt-28 sm:mt-40">
