@@ -4,6 +4,7 @@ import AnimatedLink from "../_ui/AnimatedLink";
 import gsap from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 import { FadeInAnim } from "../_ui/Animation";
+import goDentistImg from "../../public/project-godentist.png";
 
 const projectList = [
   {
@@ -11,6 +12,7 @@ const projectList = [
     year: 2024,
     text: "The Relyte team is thorough and visionary, understanding our business, user, and developer concepts to create product designs backed by data. This data-driven approach ensures that our websites are not just visually appealing but also highly effective, making them easy to trust and incredibly useful for our company.",
     link: "/projects/go-dentist",
+    image: goDentistImg.src,
   },
   {
     title: "Managerial Company",
@@ -60,6 +62,7 @@ function ProjectSection() {
               text={projectList[0].text}
               year={projectList[0].year}
               link={projectList[0].link}
+              image={projectList[0].image}
             />
             <Card id={1} />
           </div>
@@ -74,7 +77,7 @@ function ProjectSection() {
   );
 }
 
-function Card({ id = 0, title, text, year, link }) {
+function Card({ id = 0, title, text, year, link, image }) {
   return (
     <div className="flex w-full flex-col gap-4">
       {text ? (
@@ -87,7 +90,7 @@ function Card({ id = 0, title, text, year, link }) {
             className={`relative z-10 flex flex-col transition-transform duration-500 hover:-translate-y-4`}
           >
             <img
-              src="/projects-placeholder.png"
+              src={image}
               alt="projects image"
               className="aspect-[4/3] rounded-xl shadow-lg"
             />
