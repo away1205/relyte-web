@@ -1,6 +1,7 @@
 import Link from "next/link";
 import MagneticAnim from "../../_ui/MagneticAnim";
 import TextTicker from "../../_ui/TextTicker";
+import ProjectButton from "../ProjectButton";
 
 function OutputProject() {
   return (
@@ -45,7 +46,7 @@ function OutputProject() {
           <img
             src="/project-godentist-output2.png"
             alt="godentist web in mobile"
-            className="aspect-auto -translate-y-1/2"
+            className="aspect-auto -translate-y-1/2 lg:max-xl:-translate-y-40"
           />
 
           <div className="flex flex-col gap-4 sm:gap-6 xl:mt-[-7rem] xl:flex-row xl:gap-32">
@@ -103,17 +104,9 @@ function OutputProject() {
             engaging experience across all devices.
           </p>
 
-          <MagneticAnim>
-            <Link
-              href={"https://godentist.co.id/"}
-              target="_blank"
-              className="w-fit"
-            >
-              <button className="w-fit rounded-full border border-black bg-black px-6 py-[0.38rem] uppercase text-white transition-colors duration-500 hover:bg-white hover:font-semibold hover:text-black sm:px-16">
-                Visit site
-              </button>
-            </Link>
-          </MagneticAnim>
+          <ProjectButton href={"https://godentist.co.id/"}>
+            Visit Site
+          </ProjectButton>
         </div>
 
         <img

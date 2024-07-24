@@ -1,6 +1,5 @@
-import Link from "next/link";
+import ProjectButton from "../ProjectButton";
 import TextTicker from "../../_ui/TextTicker";
-import MagneticAnim from "../../_ui/MagneticAnim";
 
 const businessGoals = [
   "Building Brand trust and Credibility for Business Growth with investors, partners, and customers.",
@@ -38,17 +37,9 @@ function AboutProject() {
             practitioner capabilities.
           </p>
 
-          <MagneticAnim>
-            <Link
-              href={"https://godentist.co.id/"}
-              target="_blank"
-              className="w-fit"
-            >
-              <button className="w-fit rounded-full border border-black bg-black px-6 py-[0.38rem] uppercase text-white transition-colors duration-500 hover:bg-white hover:font-semibold hover:text-black sm:px-16">
-                Visit site
-              </button>
-            </Link>
-          </MagneticAnim>
+          <ProjectButton href={"https://godentist.co.id/"}>
+            Visit Site
+          </ProjectButton>
         </div>
 
         <div className="mt-[5rem] flex flex-col gap-8 sm:flex-row-reverse sm:items-end">
@@ -74,7 +65,7 @@ function AboutProject() {
           </h2>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col xl:mt-6">
           <p className="font-b2 sm:font-b1 mt-12 sm:w-[85%] xl:mt-0 xl:w-full">
             Struggles with lack of trust, poor website engagement due to
             confusing navigation, and underutilization of its AI-based
