@@ -89,11 +89,10 @@ function Card({ id = 0, title, text, year, link, image }) {
           <div
             className={`relative z-10 flex flex-col transition-transform duration-500 hover:-translate-y-4`}
           >
-            <img
-              src={image}
-              alt="projects image"
-              className="aspect-[4/3] rounded-xl shadow-lg"
-            />
+            <div
+              className="aspect-[4/3] rounded-xl bg-cover bg-center bg-no-repeat shadow-lg"
+              style={{ backgroundImage: `url(${image})` }}
+            ></div>
 
             <div className="flex flex-col px-2 py-6">
               <div className="flex justify-between gap-3">
