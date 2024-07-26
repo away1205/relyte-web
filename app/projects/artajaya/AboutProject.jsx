@@ -119,8 +119,8 @@ function AboutProject() {
               Based on the specific needs of the clients, our primary goal was
               to deliver a fast website that accelerates business operations and
               fosters significant growth. This approach not only enhances the
-              company&apos;4s credibility but also builds a strong foundation
-              for long-term success.
+              company&apos;s credibility but also builds a strong foundation for
+              long-term success.
             </p>
           </div>
         </div>

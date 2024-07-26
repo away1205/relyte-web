@@ -39,7 +39,7 @@ const faqList = [
 function FaqSection() {
   return (
     <section
-      className="dot-bg max-lg:px-glob-25 relative flex h-screen max-h-[64rem] w-screen justify-center"
+      className="dot-bg max-lg:px-glob-25 relative flex w-screen justify-center max-md:min-h-screen xl:max-h-[64rem]"
       id="faq-section"
     >
       <div className="max-screen relative my-24 flex flex-col items-center gap-20 sm:gap-28 lg:mx-8">

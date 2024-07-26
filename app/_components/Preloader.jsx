@@ -61,6 +61,7 @@ function Preloader() {
           duration: 2,
           yPercent: -100,
           ease: "power4.out",
+          backgroundColor: "transparent",
           // opacity: 0,
         });
         timeline.to(
@@ -73,12 +74,14 @@ function Preloader() {
         );
         timeline.to("#preloader", { display: "none" });
 
-        gsap.to(window, { scrollTo: { y: 0, x: 0 } });
+        if (isHome) {
+          gsap.to(window, { scrollTo: { y: 0, x: 0 } });
+        }
 
         // document.getElementById("main").style.cursor = "default";
         // window.scrollTo(0, 0);
       },
-      isHome ? 2000 : 10,
+      isHome ? 2000 : 1,
     );
   }, [initialPath, targetPath, isHome]);
 
