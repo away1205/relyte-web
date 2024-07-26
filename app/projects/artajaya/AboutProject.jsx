@@ -116,10 +116,12 @@ function AboutProject() {
             </div>
 
             <p className="font-b2 sm:font-b1">
-              Based on the specific needs of the clients, our primary goal was
-              to deliver a fast website that accelerates business operations and
-              fosters significant growth. This approach not only enhances the
-              company&apos;s credibility but also builds a strong foundation for
+              Focusing on our clients&apos; specific needs, our primary goal was
+              to quickly deliver a website that met their tight deadline for
+              presenting to potential partners. We ensured the site was highly
+              accessible, making it easy for everyone to read and understand the
+              data, fostering significant growth. This approach enhances the
+              company&apos;s credibility and builds a strong foundation for
               long-term success.
             </p>
           </div>
