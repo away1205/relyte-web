@@ -57,7 +57,10 @@ function ProjectSection() {
               link={projectList[0].link}
               image={projectList[0].image}
             />
-            <Card id={1} />
+
+            <div className="max-sm:hidden">
+              <Card id={1} />
+            </div>
           </div>
 
           <div className="flex w-full flex-col gap-8 sm:mt-[15%]">
