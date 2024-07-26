@@ -100,7 +100,7 @@ function OutputProject() {
             experience, and efficiently organizes content.
           </p>
 
-          <ProjectButton href={"https://artajaya.co.id/"}>
+          <ProjectButton href={"https://artajaya.id/"}>
             Visit Site
           </ProjectButton>
         </div>
