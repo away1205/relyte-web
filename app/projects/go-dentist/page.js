@@ -6,13 +6,13 @@ import CTASection from "../../_components/CTASection";
 export const metadata = {
   title: "Relyte x GoDentist",
   description:
-    "GoDentist is an AI-based teledentistry startup, needs a compelling website to build trust, engage users, and attract partnerships with industry giant like Google. A strong online presence will highlighttheir innovative approach, improve patient access, and enhance practitioner capabilities.",
+    "The Relyte team is thorough and visionary, understanding business, user, and developer concepts to create product designs backed by data. This data-driven approach ensures that our websites are not just visually appealing but also highly effective, making them easy to trust and incredibly useful for our company.",
 
   openGraph: {
     images: "https://relyte.space/project-godentist.png",
     title: "Relyte x GoDentist",
     description:
-      "GoDentist is an AI-based teledentistry startup, needs a compelling website to build trust, engage users, and attract partnerships with industry giant like Google. A strong online presence will highlighttheir innovative approach, improve patient access, and enhance practitioner capabilities.",
+      "The Relyte team is thorough and visionary, understanding business, user, and developer concepts to create product designs backed by data. This data-driven approach ensures that our websites are not just visually appealing but also highly effective, making them easy to trust and incredibly useful for our company.",
     url: "https://relyte.space/projects/go-dentist",
     locale: "en_US",
     type: "article",

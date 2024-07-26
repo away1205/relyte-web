@@ -5,29 +5,22 @@ import gsap from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 import { FadeInAnim } from "../_ui/Animation";
 import goDentistImg from "../../public/project-godentist.png";
+import artajayaImg from "../../public/project-artajaya.png";
 
 const projectList = [
   {
     title: "GoDentist",
     year: 2024,
-    text: "The Relyte team is thorough and visionary, understanding our business, user, and developer concepts to create product designs backed by data. This data-driven approach ensures that our websites are not just visually appealing but also highly effective, making them easy to trust and incredibly useful for our company.",
+    text: "GoDentist is an AI-based teledentistry startup, needs a compelling website to build trust, engage users, and attract partnerships with industry giant like Google. A strong online presence will highlight their innovative approach, improve patient access, and enhance practitioner capabilities.",
     link: "/projects/go-dentist",
     image: goDentistImg.src,
   },
   {
-    title: "Managerial Company",
-    year: 2000,
-    text: "We decided to go with Relyte as our web designer due to their ability to make beautiful things happen",
-  },
-  {
-    title: "Managerial Company",
-    year: 2000,
-    text: "We decided to go with Relyte as our web designer due to their ability to make beautiful things happen",
-  },
-  {
-    title: "Managerial Company",
-    year: 2000,
-    text: "We decided to go with Relyte as our web designer due to their ability to make beautiful things happen",
+    title: "Artajaya",
+    year: 2023,
+    text: "Artajaya is a company that encourage the increase of plastic waste collection in Aceh and North Sumatra with over 128 collecting partners (waste banks, TPS 3R and waste vendors).",
+    image: artajayaImg.src,
+    link: "/projects/artajaya",
   },
 ];
 
@@ -68,7 +61,14 @@ function ProjectSection() {
           </div>
 
           <div className="flex w-full flex-col gap-8 sm:mt-[15%]">
-            <Card id={2} />
+            <Card
+              id={2}
+              title={projectList[1].title}
+              text={projectList[1].text}
+              year={projectList[1].year}
+              link={projectList[1].link}
+              image={projectList[1].image}
+            />
             <Card id={3} />
           </div>
         </div>
