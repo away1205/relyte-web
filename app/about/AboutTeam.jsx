@@ -5,14 +5,14 @@ const teamMember = [
     name: "Agwam",
     position: "Web Developer",
     description:
-      "Meet Agwam, our night-owl developer who codes under the moonlight and seeks inspiration at dawn. With six years in drafting and graphic design before switching to web development in 2021, Agwam blends creativity and technical skill to craft exceptional digital experiences.",
+      "Meet Agwam, our night-owl developer who codes under the moonlight and seeks inspiration at dawn. With six years in drafting and architectural design before switching to web development in 2021, Agwam blends creativity and technical skill to craft exceptional digital experiences.",
     image: "/about-agwam.png",
   },
   {
     name: "Charlene",
     position: "Product Designer",
     description:
-      "Artajaya struggled with effectively communicating their activities in a digital format, which hindered their digital presence and",
+      "Meet Charlene, our talented Product Designer. With over five years of experience in user-centric and data-driven design, she excels in product design, focusing on both aesthetics and user pain points. Charlene is adaptable, solving problems across various domains, with a special knack for business-related design thinking.",
     image: "/about-charlene.png",
   },
   {

@@ -5,9 +5,12 @@ import ContactAddress from "./ContactAddress";
 import LinkSocial from "./LinkSocial";
 import gsap from "gsap";
 import AnimatedLink from "../_ui/AnimatedLink";
+import { usePathname } from "next/navigation";
 
 function Footer() {
   // const { isMediumDevice } = useDeviceType();
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   return (
     <footer className="flex w-screen justify-center bg-[#191918]" id="footer">
@@ -15,7 +18,9 @@ function Footer() {
         <div className="flex justify-between max-sm:flex-col max-sm:gap-12">
           <ContactAddress />
 
-          <nav className="max-sm:font-l4 flex gap-24 text-nowrap max-sm:gap-16">
+          <nav
+            className={`max-sm:font-l4 flex gap-24 text-nowrap max-sm:gap-16 ${!isHome && "hidden"}`}
+          >
             <ul className="flex flex-col gap-2">
               <li>
                 <Link href={"/"}>
@@ -84,16 +89,35 @@ function Footer() {
                 <Link
                   href={"/#faq-section"}
                   onClick={(e) => {
-                    // e.preventDefault();
+                    e.preventDefault();
                     gsap.to(window, { scrollTo: "#faq-section" });
                   }}
-                  // scroll={false}
                 >
                   <HoverFlipWords inText="FAQ" />
                 </Link>
               </li>
             </ul>
           </nav>
+
+          {/* <nav className="max-sm:font-l4 flex gap-24 text-nowrap max-sm:gap-16">
+            <ul className="flex flex-col gap-2 sm:flex-row sm:gap-10">
+              <li>
+                <AnimatedLink href={"/"}>
+                  <HoverFlipWords inText="Home" />
+                </AnimatedLink>
+              </li>
+              <li>
+                <AnimatedLink href={"/about"}>
+                  <HoverFlipWords inText="About Us" />
+                </AnimatedLink>
+              </li>
+              <li>
+                <AnimatedLink href={"/blog"}>
+                  <HoverFlipWords inText="Our Blog" />
+                </AnimatedLink>
+              </li>
+            </ul>
+          </nav> */}
         </div>
 
         <div className="mt-6 py-6">
