@@ -8,7 +8,7 @@ function AboutHero() {
       <div className="max-screen pt-36 sm:pt-[17rem] lg:pt-[10rem] xl:mx-auto">
         <div className="flex flex-col gap-4 px-4 sm:px-8 lg:gap-12">
           <img
-            src="about-hero.png"
+            src="/about-hero.png"
             alt="cubicle image"
             className="h-[3.2rem] w-[9.6rem] rounded-full object-cover sm:h-[5.25rem] sm:w-[17.3rem] xl:h-auto xl:w-full"
           />
@@ -33,7 +33,7 @@ function AboutHero() {
             .map((_, index) => (
               <div className="ml-2 flex gap-2 lg:ml-6 lg:gap-6" key={index}>
                 <img
-                  src="trending-up.svg"
+                  src="/trending-up.svg"
                   alt="Trending icon"
                   className="max-sm:w-[0.75rem] sm:w-[1.5rem]"
                 />

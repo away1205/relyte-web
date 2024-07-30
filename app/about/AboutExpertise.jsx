@@ -37,7 +37,7 @@ function AboutExpertise() {
 
       <div className="flex flex-col sm:w-[85%] sm:place-self-end">
         <img
-          src="about-expertise.png"
+          src="/about-expertise.png"
           alt="illustration of building a website"
           className="my-12 aspect-auto sm:mt-16"
         />
