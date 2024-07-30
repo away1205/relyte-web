@@ -59,7 +59,7 @@ function TextTicker({ children, isSkew = true, bgPrimary = "primary" }) {
   // VERY IMPORTANT NOTE: GAP SPACING IS MAKING THE POSITION OF THE TEXT ELEMENT MESSED UP
   return (
     <div
-      className={`container-ticker flex w-[100vw] ${isSkew && "-skew-y-1"} overflow-x-clip ${bgPrimary === "primary" && "bg-primary"} py-2 sm:px-8 sm:py-4 ${bgPrimary === "primary" ? "text-white" : "text-black"}`}
+      className={`container-ticker flex w-[100vw] ${isSkew && "-skew-y-1"} overflow-x-clip ${bgPrimary === "primary" && "bg-primary"} py-2 sm:px-8 sm:py-4 ${bgPrimary === "primary" ? "text-white" : "text-black"} ${bgPrimary === "black" && "bg-black text-white"}`}
     >
       <div
         className="relative left-[-50%] flex w-max flex-nowrap whitespace-nowrap"

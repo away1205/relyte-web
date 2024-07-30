@@ -81,7 +81,7 @@ body {
   }
 
   .embla__slide {
-    flex: 0 0 auto;
+    flex: 0 0 100%;
     min-width: 0;
   }
 }
@@ -144,6 +144,15 @@ body {
       font-size: 4rem;
       font-style: normal;
       font-weight: 600;
+      line-height: 120%; /* 4.8rem */
+      letter-spacing: -0.04rem;
+    }
+    .font-d4-reg {
+      /* Display/D4 | BOLD */
+      font-family: var(--font-jakarta);
+      font-size: 4rem;
+      font-style: normal;
+      font-weight: 400;
       line-height: 120%; /* 4.8rem */
       letter-spacing: -0.04rem;
     }
@@ -272,6 +281,14 @@ body {
       font-style: normal;
       font-weight: 300;
       line-height: 125%; /* 0.9375rem */
+    }
+    .font-b4-bold {
+      /* Body/B4 | 12/regular */
+      font-family: var(--font-urbanist);
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 0.9375rem */
     }
 
     .font-b5 {

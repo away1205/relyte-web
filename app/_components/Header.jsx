@@ -10,6 +10,7 @@ import MagneticAnim from "../_ui/MagneticAnim";
 import LinkSocial from "./LinkSocial";
 import ContactAddress from "./ContactAddress";
 import AnimatedLink from "../_ui/AnimatedLink";
+import { usePathname } from "next/navigation";
 
 function Header() {
   gsap.registerPlugin(ScrollTrigger);
@@ -119,16 +120,7 @@ function Header() {
         <MagneticAnim>
           <div>
             <AnimatedLink href={"/contact"}>
-              <button
-                className="rounded-3xl border border-black max-md:hidden md:px-4 md:py-1 lg:px-6 lg:py-2"
-                // onClick={() => {
-                //   gsap.to(window, {
-                //     duration: 1,
-                //     scrollTo: { y: `#CTA-section` },
-                //     ease: "power2",
-                //   });
-                // }}
-              >
+              <button className="rounded-3xl border border-black max-md:hidden md:px-4 md:py-1 lg:px-6 lg:py-2">
                 Start A Project
               </button>
             </AnimatedLink>
@@ -231,10 +223,13 @@ function Header() {
 }
 
 function NavList({ isSmallScreen = false }) {
+  const pathname = usePathname();
+  // console.log(pathname);
+
   const navList = [
-    { label: "Home", value: "" },
-    // { label: "Projects", value: "projects" },
-    { label: "Blog", value: "blog" },
+    { label: "Home", value: "/" },
+    { label: "About", value: "/about" },
+    { label: "Blog", value: "/blog" },
   ];
 
   return (
@@ -248,19 +243,10 @@ function NavList({ isSmallScreen = false }) {
       {navList.map((item) => {
         return (
           <MagneticAnim key={item.value}>
-            <li className="h-fit cursor-pointer">
-              <AnimatedLink
-                href={`/${item.value}`}
-                // onClick={() => {
-                //   gsap.to(window, {
-                //     duration: 1,
-                //     scrollTo: { y: `#${item.value}` },
-                //     ease: "power2",
-                //   });
-                // }}
-              >
-                {item.label}
-              </AnimatedLink>
+            <li
+              className={`h-fit cursor-pointer ${item.value === pathname && "max-sm:text-green"} transition-all duration-300`}
+            >
+              <AnimatedLink href={`${item.value}`}>{item.label}</AnimatedLink>
             </li>
           </MagneticAnim>
         );

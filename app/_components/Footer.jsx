@@ -3,6 +3,8 @@ import Link from "next/link";
 import HoverFlipWords from "../_ui/HoverFlipWords";
 import ContactAddress from "./ContactAddress";
 import LinkSocial from "./LinkSocial";
+import gsap from "gsap";
+import AnimatedLink from "../_ui/AnimatedLink";
 
 function Footer() {
   // const { isMediumDevice } = useDeviceType();
@@ -16,37 +18,56 @@ function Footer() {
           <nav className="max-sm:font-l4 flex gap-24 text-nowrap max-sm:gap-16">
             <ul className="flex flex-col gap-2">
               <li>
-                <Link href={"#home"}>
+                <Link href={"/"}>
                   <HoverFlipWords inText="Home" />
                 </Link>
               </li>
               <li>
-                <Link href={"#projects"}>
+                <Link
+                  href={"#projects-section"}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    gsap.to(window, { scrollTo: "#projects-section" });
+                  }}
+                >
                   <HoverFlipWords inText="Our Projects" />
                 </Link>
               </li>
 
               <li className="md:hidden">
-                <Link href={"#blog"}>
+                <AnimatedLink href={"/blog"}>
                   <HoverFlipWords inText="Our Blog" />
-                </Link>
+                </AnimatedLink>
               </li>
             </ul>
 
             <ul className="flex flex-col gap-2 text-nowrap">
               <li>
-                <Link href={"#about"}>
+                <AnimatedLink href={"/about"}>
                   <HoverFlipWords inText="About Us" />
-                </Link>
+                </AnimatedLink>
               </li>
               <li className="text-nowrap">
-                <Link href={"#service"}>
+                <Link
+                  href={"#service-section"}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    gsap.to(window, { scrollTo: "#service-section" });
+                  }}
+                >
                   <HoverFlipWords inText="Services" />
                 </Link>
               </li>
 
+              {/* MOBILE */}
               <li className="text-nowrap md:hidden">
-                <Link href={"#faq"}>
+                <Link
+                  href={"/#faq-section"}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    gsap.to(window, { scrollTo: "#faq-section" });
+                  }}
+                >
                   <HoverFlipWords inText="FAQ" />
                 </Link>
               </li>
@@ -54,12 +75,20 @@ function Footer() {
 
             <ul className="flex flex-col gap-2 text-nowrap max-md:hidden">
               <li>
-                <Link href={"#blog"}>
+                <AnimatedLink href={"/blog"}>
                   <HoverFlipWords inText="Our Blog" />
-                </Link>
+                </AnimatedLink>
               </li>
+
               <li className="text-nowrap">
-                <Link href={"#faq"}>
+                <Link
+                  href={"/#faq-section"}
+                  onClick={(e) => {
+                    // e.preventDefault();
+                    gsap.to(window, { scrollTo: "#faq-section" });
+                  }}
+                  // scroll={false}
+                >
                   <HoverFlipWords inText="FAQ" />
                 </Link>
               </li>

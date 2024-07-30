@@ -2,6 +2,7 @@ import HeroProject from "./HeroProject";
 import AboutProject from "./AboutProject";
 import OutputProject from "./OutputProject";
 import CTASection from "../../_components/CTASection";
+import Footer from "../../_components/Footer";
 
 export const metadata = {
   title: "Relyte x GoDentist",
@@ -26,6 +27,7 @@ function Page() {
       <AboutProject />
       <OutputProject />
       <CTASection />
+      <Footer />
     </main>
   );
 }
