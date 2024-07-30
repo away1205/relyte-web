@@ -19,6 +19,7 @@ function Header() {
   const containerRef = useRef();
   const buttonRef = useRef();
   const navRef = useRef();
+  const projectRef = useRef();
 
   let isMobile;
 
@@ -75,12 +76,22 @@ function Header() {
       setIsOpen(false);
     });
 
+    projectRef.current.addEventListener("click", () => {
+      tl2.reversed(!tl2.reversed());
+      setIsOpen(false);
+    });
+
     return () => {
       buttonRef.current.addEventListener("click", () =>
         tl2.reversed(!tl2.reversed()),
       );
 
       navRef.current.addEventListener("click", () => {
+        tl2.reversed(!tl2.reversed());
+        setIsOpen(false);
+      });
+
+      projectRef.current.addEventListener("click", () => {
         tl2.reversed(!tl2.reversed());
         setIsOpen(false);
       });
@@ -137,7 +148,7 @@ function Header() {
             />
           </div>
 
-          <div className="header-anim absolute -right-8 top-0 flex h-[80vh] w-[100vw] flex-col rounded-xl bg-black-100 px-4 py-4 opacity-5 md:hidden">
+          <div className="header-anim absolute -right-8 top-0 flex h-[35rem] w-[100vw] flex-col rounded-xl bg-black-100 px-4 py-4 opacity-5 md:hidden">
             <span className="text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -213,7 +224,24 @@ function Header() {
               <div className="text-white">
                 <ContactAddress />
               </div>
-              <LinkSocial />
+
+              <div className="relative flex">
+                <div className="w-full">
+                  <LinkSocial />
+                </div>
+
+                <div className="absolute bottom-1 right-4">
+                  <AnimatedLink href={"/contact"}>
+                    <button
+                      className="rounded-3xl border border-white px-4 py-1 text-white"
+                      onClick={() => setIsOpen(false)}
+                      ref={projectRef}
+                    >
+                      Start A Project
+                    </button>
+                  </AnimatedLink>
+                </div>
+              </div>
             </div>
           </div>
         </div>
