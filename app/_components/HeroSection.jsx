@@ -95,7 +95,7 @@ function HeroSection() {
         </h1> */}
 
         <div
-          className="relative mt-20 h-[4rem] w-[4rem] sm:h-[6rem] sm:w-[6rem]"
+          className="relative mt-20 h-[4rem] w-[4rem] sm:h-[5.25rem] sm:w-[5.25rem]"
           onClick={() =>
             gsap.to(window, { scrollTo: ".care-card1", duration: 1 })
           }

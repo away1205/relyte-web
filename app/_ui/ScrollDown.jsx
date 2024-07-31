@@ -10,7 +10,7 @@ function ScrollDown({ transparent = false }) {
         <img
           src="/scroll-anim.gif"
           alt="scroll down"
-          className="absolute left-[50%] top-0 h-fit w-fit -translate-x-1/2 cursor-pointer px-2 py-2"
+          className="absolute left-[50%] top-0 h-fit w-fit -translate-x-1/2 cursor-pointer px-1 py-1"
         />
       </div>
     </MagneticAnim>

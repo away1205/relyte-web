@@ -13,7 +13,7 @@ function HeroProject() {
         </div>
 
         <div className="relative flex w-full flex-col pl-10 sm:pl-[8rem] lg:flex-row-reverse lg:items-end lg:justify-between lg:pl-0 xl:-top-[8rem]">
-          <div className="absolute right-4 top-0 h-[3rem] w-[3rem] -translate-y-1/2 rotate-45 sm:right-10 sm:h-[6rem] sm:w-[6rem]">
+          <div className="absolute right-4 top-0 h-[4rem] w-[4rem] -translate-y-1/2 rotate-45 sm:right-10 sm:h-[6rem] sm:w-[6rem]">
             <ScrollDown />
           </div>
 
