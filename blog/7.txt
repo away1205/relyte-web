@@ -1,0 +1,76 @@
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[9212,["922","static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js","231","static/chunks/231-40d3e3c6ecc744d5.js","78","static/chunks/78-8b128d9ee8dd16a6.js","852","static/chunks/852-2d76d1ba9e3480ca.js","105","static/chunks/105-283442a33184b34d.js","460","static/chunks/460-c4ba2ff689dd8736.js","185","static/chunks/app/layout-784912f7e085af75.js"],"default"]
+7:I[2826,["922","static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js","231","static/chunks/231-40d3e3c6ecc744d5.js","78","static/chunks/78-8b128d9ee8dd16a6.js","852","static/chunks/852-2d76d1ba9e3480ca.js","105","static/chunks/105-283442a33184b34d.js","460","static/chunks/460-c4ba2ff689dd8736.js","185","static/chunks/app/layout-784912f7e085af75.js"],"default"]
+8:I[4080,["922","static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js","231","static/chunks/231-40d3e3c6ecc744d5.js","78","static/chunks/78-8b128d9ee8dd16a6.js","852","static/chunks/852-2d76d1ba9e3480ca.js","105","static/chunks/105-283442a33184b34d.js","460","static/chunks/460-c4ba2ff689dd8736.js","185","static/chunks/app/layout-784912f7e085af75.js"],""]
+4:["postId","7","d"]
+0:["m1U9qS6dtbNOJgKqBnZIV",[[["",{"children":["blog",{"children":[["postId","7","d"],{"children":["__PAGE__?{\"postId\":\"7\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["blog",{"children":[["postId","7","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1.0"}]}],["$","body",null,{"className":"__className_4806ca","children":[["$","$L6",null,{}],["$","$L7",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","div",null,{"className":"animate-page-in","id":"transition-page","children":["$","$L5",null,{}]}],"templateStyles":[],"templateScripts":[],"notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]]}],[["$","$L8",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-G74TDXL09B"}],["$","$L8",null,{"children":"\n              window.dataLayer = window.dataLayer || [];\n              function gtag(){dataLayer.push(arguments);}\n              gtag('js', new Date());\n              gtag('config', 'G-G74TDXL09B', {\n              page_path: window.location.pathname,\n              });\n          "}]]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/7e8a2238865b2df4.css","precedence":"next","crossOrigin":"$undefined"}]],"$L9"]]]]
+b:I[8183,["922","static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js","231","static/chunks/231-40d3e3c6ecc744d5.js","78","static/chunks/78-8b128d9ee8dd16a6.js","460","static/chunks/460-c4ba2ff689dd8736.js","442","static/chunks/app/blog/%5BpostId%5D/page-4f7fdefefecb3bb6.js"],"default"]
+c:I[2460,["922","static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js","231","static/chunks/231-40d3e3c6ecc744d5.js","78","static/chunks/78-8b128d9ee8dd16a6.js","460","static/chunks/460-c4ba2ff689dd8736.js","442","static/chunks/app/blog/%5BpostId%5D/page-4f7fdefefecb3bb6.js"],"default"]
+a:T1329,
+<p>In today&#8217;s digital landscape, having a strong online presence is crucial for architectural and construction firms, with a professional, user-friendly website being the cornerstone of this presence. </p>
+
+
+
+<p>Research shows that 81% of customers perform online research before engaging with a service provider, and for architects and construction firms, this means that the website is often the first point of contact potential clients have with your business. According to a survey conducted by Clutch, 94% of people say web design is the top reason they mistrust or reject a website, emphasizing the importance of a well-designed website for capturing and converting leads.</p>
+
+
+
+<p>A website serves multiple purposes: it provides essential information about your services, establishes your firm&#8217;s credibility, and showcases your portfolio, which is crucial for clients assessing the professionalism and reliability of an architect. A thoughtfully crafted website that effectively communicates your expertise, showcases past projects, and offers insights into your design philosophy can significantly influence a client&#8217;s decision. In fact, a study by Adobe found that 38% of people will stop engaging with a website if the content or layout is unattractive.</p>
+
+
+
+<p>In a highly competitive market, a well-designed website offers a substantial competitive edge. Architect firms that invest in an engaging, informative, and visually appealing online platform are 50% more likely to attract and retain clients compared to those without a strong online presence. Optimizing the website for user experience, ensuring it is mobile-friendly, and easy to navigate enhances visitors&#8217; ability to find the information they need, thereby increasing lead conversion rates by up to 200%, according to a report by Forrester.</p>
+
+
+
+<p>Incorporating social proof, such as case studies and client reviews, directly on the website can also enhance credibility. According to BrightLocal, 87% of consumers read online reviews for local businesses, including those in the construction and architectural sectors. By prominently displaying positive reviews and industry awards, firms can build trust with potential clients even before the first point of contact.</p>
+
+
+
+<p>Beyond the website itself, a robust online presence includes social media integration, search engine optimization (SEO), and online reviews, all of which are crucial for enhancing visibility and credibility. Architect firms that effectively leverage these digital tools can reach a broader audience, with SEO alone potentially increasing organic traffic by 14.6%, and build a stronger online footprint. It not only helps capture more leads but also lays the groundwork for long-term success and growth, with firms that invest in their online presence seeing a 70% increase in revenue within five years, according to research by McKinsey &amp; Company.</p>
+
+
+
+<p>In a competitive market where first impressions are increasingly made online, architectural and construction firms must prioritize their digital presence. A website that is well-designed, optimized for SEO, and integrated with social media platforms can serve as a powerful tool for lead generation, client retention, and long-term business growth. Embracing these digital strategies not only helps firms stay ahead of the competition but also ensures they meet the evolving expectations of today&#8217;s tech-savvy consumers.</p>
+
+
+
+<p></p>
+
+
+
+<h2 class="wp-block-heading has-large-font-size">Source:</h2>
+
+
+
+<ul class="wp-block-list">
+<li>Pew Research Center. (2013). <em>81% of customers do online research before making big purchases</em>. Pew Research Center. Retrieved from <a href="https://www.pewresearch.org">https://www.pewresearch.org</a></li>
+
+
+
+<li>Clutch. (2018). <em>How web design impacts trust and mistrust</em>. Clutch. Retrieved from <a href="https://clutch.co">https://clutch.co</a></li>
+
+
+
+<li>Adobe. (2015). <em>The Adobe 2015 Consumer Content Survey: How mobile is transforming consumer engagement with brands</em>. Adobe. Retrieved from <a href="https://www.adobe.com">https://www.adobe.com</a></li>
+
+
+
+<li>HubSpot. (2020). <em>How website design impacts customer engagement and retention</em>. HubSpot. Retrieved from <a href="https://www.hubspot.com">https://www.hubspot.com</a></li>
+
+
+
+<li>Forrester. (2016). <em>The Impact of Website Design on Lead Conversion Rates</em>. Forrester Research. Retrieved from <a>https://go.forrester.com</a></li>
+
+
+
+<li>BrightEdge. (2019). <em>The SEO Impact on Organic Traffic: A Study</em>. BrightEdge. Retrieved from <a href="https://www.brightedge.com">https://www.brightedge.com</a></li>
+
+
+
+<li>McKinsey &amp; Company. (2019). <em>The State of Digital Transformation in 2019</em>. McKinsey &amp; Company. Retrieved from <a href="https://www.mckinsey.com">https://www.mckinsey.com</a></li>
+</ul>
+2:["$","main",null,{"className":"animate-page-in pt-[8rem] sm:pt-[10rem]","children":[["$","div",null,{"className":"mx-auto max-w-[45rem] px-6 pb-20 sm:px-10 sm:pb-40","children":[["$","img",null,{"src":"https://cms.relyte.space/diego-ph-fiq0tet6llw-unsplash/","alt":"Photo","className":"mb-8 aspect-video rounded-xl object-cover"}],["$","div",null,{"className":"mb-12 flex flex-col gap-3 sm:mb-16","children":[["$","h1",null,{"className":"text-wrap text-[1.875rem] sm:text-[2rem] xl:text-[2.25rem]","children":"The Importance of a Digital Presence for Architectural and Construction Companies"}],["$","div",null,{"className":"flex gap-2","children":[["$","time",null,{"className":"text-[#888]","children":"July 31, 2024"}],["$","span",null,{"children":"—"}],["$","span",null,{"children":["by ","Agwam"]}]]}]]}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$a"},"className":"font-b2 sm:font-b1 blog-content flex flex-col gap-6 sm:gap-8"}]]}],["$","$Lb",null,{}],["$","$Lc",null,{}]]}]
+9:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"The Importance of a Digital Presence for Architectural and Construction Companies"}],["$","meta","3",{"name":"description","content":"<p>In today&#8217;s digital landscape, having a strong online presence is crucial for architectural and construction firms, with a professional, user-friendly website being the cornerstone of this presence.</p>\n"}],["$","link","4",{"rel":"canonical","href":"https://relyte.space"}],["$","meta","5",{"property":"og:title","content":"The Importance of a Digital Presence for Architectural and Construction Companies"}],["$","meta","6",{"property":"og:description","content":"<p>In today&#8217;s digital landscape, having a strong online presence is crucial for architectural and construction firms, with a professional, user-friendly website being the cornerstone of this presence.</p>\n"}],["$","meta","7",{"property":"og:url","content":"https://relyte.space/blog/7"}],["$","meta","8",{"property":"og:locale","content":"en_US"}],["$","meta","9",{"property":"og:image","content":"https://cms.relyte.space/diego-ph-fiq0tet6llw-unsplash/"}],["$","meta","10",{"property":"og:type","content":"article"}],["$","meta","11",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","12",{"name":"twitter:title","content":"The Importance of a Digital Presence for Architectural and Construction Companies"}],["$","meta","13",{"name":"twitter:description","content":"<p>In today&#8217;s digital landscape, having a strong online presence is crucial for architectural and construction firms, with a professional, user-friendly website being the cornerstone of this presence.</p>\n"}],["$","meta","14",{"name":"twitter:image","content":"https://cms.relyte.space/diego-ph-fiq0tet6llw-unsplash/"}],["$","link","15",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"32x32"}],["$","link","16",{"rel":"icon","href":"/icon.png?4316cfb4d7082629","type":"image/png","sizes":"271x271"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?4316cfb4d7082629","type":"image/png","sizes":"271x271"}],["$","meta","18",{"name":"next-size-adjust"}]]
+1:null
