@@ -36,6 +36,12 @@ function sitemap() {
       changeFrequency: "yearly",
       priority: 0.5,
     },
+    {
+      url: "https://relyte.space/blog/7",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
   ];
 }
 

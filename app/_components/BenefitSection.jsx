@@ -87,13 +87,13 @@ function BenefitSection() {
                   We limit our service to only a handful of clients per month,
                   ensuring each client receives the personalized attention and
                   quality they deserve. We're not just another website agency —
-                  we're your dedicated website partner.
+                  we're your dedicated digital partner.
                 </span>
 
                 <span className="sm:hidden">
                   We limit our service to a few clients each month, ensuring
                   personalized attention and top quality. We're not just another
-                  agency — we're your dedicated website partner.
+                  agency — we're your dedicated digital partner.
                 </span>
               </p>
             </div>
