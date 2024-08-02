@@ -184,6 +184,16 @@ body {
       letter-spacing: -0.025rem;
     }
 
+    .font-d6 {
+      /* Display/D5 */
+      font-family: var(--font-jakarta);
+      font-size: 1.5rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 3rem */
+      letter-spacing: -0.015rem;
+    }
+
     .px-glob-25 {
       padding: 0 1rem;
     }

@@ -11,7 +11,6 @@ function sleep(ms) {
 function AnimatedLink({ children, href }) {
   const router = useRouter();
   const pathname = usePathname();
-  console.log(pathname);
 
   useEffect(() => {
     // To fix the opacity 0 in dynamic routes

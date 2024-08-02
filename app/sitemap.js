@@ -19,6 +19,18 @@ function sitemap() {
       priority: 0.8,
     },
     {
+      url: "https://relyte.space/contact",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
+      url: "https://relyte.space/contact/success",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.5,
+    },
+    {
       url: "https://relyte.space/projects",
       lastModified: new Date(),
       changeFrequency: "monthly",
