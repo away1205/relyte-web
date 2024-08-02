@@ -39,20 +39,22 @@ function Card({ excerpt, title, date, image, id }) {
   const readableDate = datePost.toLocaleString("en-US", options);
 
   return (
-    <Link className="flex flex-col gap-5" href={`/blog/${id}`}>
-      <div className="w-[full] border-b border-black pb-5 sm:pb-[1.75rem]">
-        <img src={image} alt="Relyte" className="aspect-video object-cover" />
-      </div>
+    <AnimatedLink href={`/blog/${id}`}>
+      <div className="flex flex-col gap-5">
+        <div className="w-[full] border-b border-black pb-5 sm:pb-[1.75rem]">
+          <img src={image} alt="Relyte" className="aspect-video object-cover" />
+        </div>
 
-      <article className="flex flex-col gap-2">
-        <time>{readableDate}</time>
-        <h1 className="font-h7 text-left">{title}</h1>
-        <div
-          className="font-b3 line-clamp-2 text-[#888888]"
-          dangerouslySetInnerHTML={{ __html: excerpt }}
-        />
-      </article>
-    </Link>
+        <article className="flex flex-col gap-2">
+          <time>{readableDate}</time>
+          <h1 className="font-h7 text-left">{title}</h1>
+          <div
+            className="font-b3 line-clamp-2 text-[#888888]"
+            dangerouslySetInnerHTML={{ __html: excerpt }}
+          />
+        </article>
+      </div>
+    </AnimatedLink>
   );
 }
 

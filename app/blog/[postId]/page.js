@@ -75,4 +75,9 @@ async function Page({ params }) {
   );
 }
 
+Page.getInitialProps = ({ query }) => ({
+  initialCounter: 0,
+  key: query.count, // add this line can fix the issue
+});
+
 export default Page;

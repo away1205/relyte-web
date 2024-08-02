@@ -40,7 +40,7 @@ module.exports = {
           to: { transform: "translateY(0px)", opacity: 1 },
         },
         "page-out": {
-          from: { transform: "translateY(0px)" },
+          from: { transform: "translateY(0px)", opacity: 1 },
           to: { transform: "translateY(40px)", opacity: 0 },
         },
       },
