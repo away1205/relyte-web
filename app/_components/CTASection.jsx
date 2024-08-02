@@ -18,7 +18,7 @@ function CTASection() {
   return (
     <section
       id="CTA-section"
-      className="sm:rounded-tr-[3.125rem flex h-screen w-screen flex-col items-center justify-center rounded-tl-[0.7rem] rounded-tr-[0.7rem] bg-[#111] sm:rounded-tl-[3.125rem]"
+      className="flex h-screen w-screen flex-col items-center justify-center rounded-tl-[0.7rem] rounded-tr-[0.7rem] bg-[#111] sm:rounded-tl-[3.125rem] sm:rounded-tr-[3.125rem]"
     >
       <div className="relative" id="cursor-card">
         <div className="relative h-fit w-fit border border-dashed px-[4rem] py-[8rem] sm:px-[6rem] lg:px-[8rem]">

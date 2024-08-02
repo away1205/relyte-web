@@ -43,7 +43,7 @@ async function Page({ params }) {
   const readableDate = datePost.toLocaleString("en-US", options);
 
   return (
-    <main className="animate-page-in pt-[8rem] sm:pt-[10rem]">
+    <main className="w-screen animate-page-in overflow-x-clip pt-[8rem] sm:pt-[10rem]">
       <div className="mx-auto max-w-[45rem] px-6 pb-20 sm:px-10 sm:pb-40">
         <img
           src={postDetail?._embedded?.["wp:featuredmedia"]?.[0]?.link}
