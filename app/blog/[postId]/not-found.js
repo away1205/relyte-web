@@ -1,7 +1,7 @@
 "use client";
 
-import MagneticAnim from "../_ui/MagneticAnim";
-import AnimatedLink from "../_ui/AnimatedLink";
+import MagneticAnim from "../../_ui/MagneticAnim";
+import AnimatedLink from "../../_ui/AnimatedLink";
 
 function NotFound({ error, reset }) {
   return (
