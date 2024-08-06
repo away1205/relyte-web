@@ -1,16 +1,15 @@
 import AnimatedLink from "../_ui/AnimatedLink";
 import { getPost } from "../_lib/data-service";
-import Link from "next/link";
 
-export const revalidate = 3600;
+export const revalidate = 0;
 
 async function Blog() {
-  const post = await getPost();
+  const posts = await getPost();
 
   return (
     <section className="mb-[5.5rem] px-4 sm:mb-[8.75rem] xl:mb-[10rem]">
       <div className="mt-12 flex w-full flex-col gap-12 sm:grid sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-20">
-        {post?.map((item) => {
+        {posts?.map((item) => {
           return (
             <Card
               key={item.id}
