@@ -1,0 +1,102 @@
+3:I[9275,[],""]
+5:I[1343,[],""]
+6:I[4939,["922","static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js","231","static/chunks/231-40d3e3c6ecc744d5.js","78","static/chunks/78-8b128d9ee8dd16a6.js","4","static/chunks/app/blog/%5BpostId%5D/not-found-2b351fbee2a616f5.js"],"default"]
+7:I[4453,["922","static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js","231","static/chunks/231-40d3e3c6ecc744d5.js","78","static/chunks/78-8b128d9ee8dd16a6.js","774","static/chunks/app/blog/error-27637c3cf2c5ddc9.js"],"default"]
+8:I[9212,["922","static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js","231","static/chunks/231-40d3e3c6ecc744d5.js","78","static/chunks/78-8b128d9ee8dd16a6.js","852","static/chunks/852-2d76d1ba9e3480ca.js","105","static/chunks/105-283442a33184b34d.js","460","static/chunks/460-c421ba88cf5d25d9.js","185","static/chunks/app/layout-473ab373acbbc393.js"],"default"]
+9:I[2826,["922","static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js","231","static/chunks/231-40d3e3c6ecc744d5.js","78","static/chunks/78-8b128d9ee8dd16a6.js","852","static/chunks/852-2d76d1ba9e3480ca.js","105","static/chunks/105-283442a33184b34d.js","460","static/chunks/460-c421ba88cf5d25d9.js","185","static/chunks/app/layout-473ab373acbbc393.js"],"default"]
+a:I[4080,["922","static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js","231","static/chunks/231-40d3e3c6ecc744d5.js","78","static/chunks/78-8b128d9ee8dd16a6.js","852","static/chunks/852-2d76d1ba9e3480ca.js","105","static/chunks/105-283442a33184b34d.js","460","static/chunks/460-c421ba88cf5d25d9.js","185","static/chunks/app/layout-473ab373acbbc393.js"],""]
+4:["postId","26","d"]
+0:["nim2gEkKIXmnr0_68gu9y",[[["",{"children":["blog",{"children":[["postId","26","d"],{"children":["__PAGE__?{\"postId\":\"26\"}",{}]}]}]},"$undefined","$undefined",true],["",{"children":["blog",{"children":[["postId","26","d"],{"children":["__PAGE__",{},[["$L1","$L2"],null],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":["$","$L6",null,{}],"notFoundStyles":[],"styles":null}],null]},["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$7","errorStyles":[],"errorScripts":[],"template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","styles":null}],null]},[["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1.0"}]}],["$","body",null,{"className":"__className_4806ca","children":[["$","$L8",null,{}],["$","$L9",null,{}],["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","div",null,{"className":"animate-page-in","id":"transition-page","children":["$","$L5",null,{}]}],"templateStyles":[],"templateScripts":[],"notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]]}],[["$","$La",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-G74TDXL09B"}],["$","$La",null,{"children":"\n              window.dataLayer = window.dataLayer || [];\n              function gtag(){dataLayer.push(arguments);}\n              gtag('js', new Date());\n              gtag('config', 'G-G74TDXL09B', {\n              page_path: window.location.pathname,\n              });\n          "}]]]}],null],null],[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/87c19113e5062698.css","precedence":"next","crossOrigin":"$undefined"}]],"$Lb"]]]]
+d:I[6931,["922","static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js","231","static/chunks/231-40d3e3c6ecc744d5.js","78","static/chunks/78-8b128d9ee8dd16a6.js","460","static/chunks/460-c421ba88cf5d25d9.js","442","static/chunks/app/blog/%5BpostId%5D/page-62f773acea682151.js"],"default"]
+e:I[2460,["922","static/chunks/c15bf2b0-c5f2ab0c4ce668d5.js","231","static/chunks/231-40d3e3c6ecc744d5.js","78","static/chunks/78-8b128d9ee8dd16a6.js","460","static/chunks/460-c421ba88cf5d25d9.js","442","static/chunks/app/blog/%5BpostId%5D/page-62f773acea682151.js"],"default"]
+c:T1331,
+<p>In the rapidly evolving world of digital marketing, many businesses rely heavily on social media platforms like Instagram to showcase their products and services and attract customers. However, is Instagram enough to sustain and grow a business in the long run?</p>
+
+
+
+<h4 class="wp-block-heading">The Role of Instagram in Digital Marketing</h4>
+
+
+
+<p>Instagram has become a powerful visual platform, perfect for businesses to display their offerings, share stories, and engage with potential customers. The platform&#8217;s emphasis on high-quality imagery and visual storytelling aligns well with the needs of various industries. However, while Instagram is excellent for initial engagement, it might not be sufficient as a standalone digital marketing strategy.</p>
+
+
+
+<p>According to data from Sprout Social, around 70% of people will search for more information on Google after seeing something on Instagram. This statistic highlights a critical point: Instagram serves as a trigger for interest but not necessarily the place where final decisions are made.</p>
+
+
+
+<h4 class="wp-block-heading">The Importance of a Strong Google Presence</h4>
+
+
+
+<p>Moreover, the Pew Research Center indicates that about 81% of people conduct online research on Google before making significant purchases. This behaviour underscores the importance of having a robust digital presence on Google. Without it, businesses could miss out on numerous opportunities.</p>
+
+
+
+<p>Google is often the first stop for potential customers conducting detailed research. They look for comprehensive information about products or services, reviews, case studies, and contact details. A well-optimized website can significantly enhance Google&#8217;s visibility and attract more qualified leads.</p>
+
+
+
+<h4 class="wp-block-heading">Risks of Relying Solely on Instagram</h4>
+
+
+
+<p>Currently, the trend in digital marketing is still dominated by Instagram. Many businesses use ads on the platform to reach their audience. However, there&#8217;s a significant risk if this consumer behaviour is not addressed properly. Why? Because potential customers who have seen an Instagram ad or profile will likely conduct further research on Google. They might switch their interest if they find a competitor with a more informative and professional website.</p>
+
+
+
+<h4 class="wp-block-heading">The Power of a Comprehensive Website</h4>
+
+
+
+<p>Instagram ads remain effective, especially in areas where not many businesses utilize or have websites that rank well on Google. Yet, as awareness about the importance of websites and SEO grows among businesses, this trend is expected to change. Companies that do not adapt quickly may find themselves at a disadvantage.</p>
+
+
+
+<p>A comprehensive website can serve as a powerful tool to convert initial interest generated from Instagram into actual business. Here are key elements that a business&#8217;s website should include:</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Product or Service Showcase:</strong> A detailed display of products or services with high-quality images and descriptions.</li>
+
+
+
+<li><strong>Case Studies:</strong> In-depth looks at specific projects or success stories, including challenges faced and solutions provided.</li>
+
+
+
+<li><strong>About Us:</strong> Information about the company&#8217;s history, team members, and mission.</li>
+
+
+
+<li><strong>Services or Product Details:</strong> A clear description of what is offered, including any special features.</li>
+
+
+
+<li><strong>Client Testimonials:</strong> Reviews and feedback from past customers to build credibility.</li>
+
+
+
+<li><strong>Contact Information:</strong> Easy-to-find contact details and a contact form to facilitate inquiries.</li>
+</ul>
+
+
+
+<h4 class="wp-block-heading">SEO and Content Marketing</h4>
+
+
+
+<p>In addition to a well-designed website, businesses should invest in search engine optimization (SEO) and content marketing. SEO helps improve the website&#8217;s visibility on Google, making it easier for potential customers to find. Content marketing, such as blog posts, articles, and videos, can establish the business as a thought leader in the industry, providing valuable information to customers and boosting the website&#8217;s SEO.</p>
+
+
+
+<p>In conclusion, while Instagram is a valuable tool for businesses, it should be part of a broader digital marketing strategy. A strong presence on Google, backed by a comprehensive website and effective SEO, can significantly enhance a business&#8217;s ability to attract and convert customers. By embracing a multi-channel approach, businesses can ensure they are not only visible but also credible and compelling to potential customers at every stage of their decision-making process.</p>
+
+
+
+<p>Don&#8217;t wait until it&#8217;s too late. Enhance your digital strategy today and prepare your business to meet the evolving demands of the market.</p>
+2:["$","main",null,{"className":"w-screen animate-page-in overflow-x-clip pt-[8rem] sm:pt-[10rem]","children":[["$","div",null,{"className":"mx-auto max-w-[45rem] px-6 pb-20 sm:px-10 sm:pb-40","children":[["$","img",null,{"src":"https://cms.relyte.space/the-importance-of-expanding-digital-marketing-beyond-instagram-for-businesses/kenny-eliason-nzjbt4gqlki-unsplash/","alt":"Photo","className":"mb-8 aspect-video rounded-xl object-cover"}],["$","div",null,{"className":"mb-12 flex flex-col gap-3 sm:mb-16","children":[["$","h1",null,{"className":"text-wrap text-[1.875rem] sm:text-[2rem] xl:text-[2.25rem]","children":"The Importance of Expanding Digital Marketing Beyond Instagram for Businesses"}],["$","div",null,{"className":"flex gap-2","children":[["$","time",null,{"className":"text-[#888]","children":"August 6, 2024"}],["$","span",null,{"children":"—"}],["$","span",null,{"children":["by ","Agwam"]}]]}]]}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$c"},"className":"font-b2 sm:font-b1 blog-content flex flex-col gap-6 sm:gap-8"}]]}],["$","$Ld",null,{}],["$","$Le",null,{}]]}]
+b:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"The Importance of Expanding Digital Marketing Beyond Instagram for Businesses"}],["$","meta","3",{"name":"description","content":"<p>In the rapidly evolving world of digital marketing, many businesses rely heavily on social media platforms like Instagram to showcase their products and services and attract customers. However, is Instagram enough to sustain and grow a business in the long run? The Role of Instagram in Digital Marketing Instagram has become a powerful visual platform, [&hellip;]</p>\n"}],["$","link","4",{"rel":"canonical","href":"https://relyte.space"}],["$","meta","5",{"property":"og:title","content":"The Importance of Expanding Digital Marketing Beyond Instagram for Businesses"}],["$","meta","6",{"property":"og:description","content":"<p>In the rapidly evolving world of digital marketing, many businesses rely heavily on social media platforms like Instagram to showcase their products and services and attract customers. However, is Instagram enough to sustain and grow a business in the long run? The Role of Instagram in Digital Marketing Instagram has become a powerful visual platform, [&hellip;]</p>\n"}],["$","meta","7",{"property":"og:url","content":"https://relyte.space/blog/26"}],["$","meta","8",{"property":"og:locale","content":"en_US"}],["$","meta","9",{"property":"og:image","content":"https://cms.relyte.space/the-importance-of-expanding-digital-marketing-beyond-instagram-for-businesses/kenny-eliason-nzjbt4gqlki-unsplash/"}],["$","meta","10",{"property":"og:type","content":"article"}],["$","meta","11",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","12",{"name":"twitter:title","content":"The Importance of Expanding Digital Marketing Beyond Instagram for Businesses"}],["$","meta","13",{"name":"twitter:description","content":"<p>In the rapidly evolving world of digital marketing, many businesses rely heavily on social media platforms like Instagram to showcase their products and services and attract customers. However, is Instagram enough to sustain and grow a business in the long run? The Role of Instagram in Digital Marketing Instagram has become a powerful visual platform, [&hellip;]</p>\n"}],["$","meta","14",{"name":"twitter:image","content":"https://cms.relyte.space/the-importance-of-expanding-digital-marketing-beyond-instagram-for-businesses/kenny-eliason-nzjbt4gqlki-unsplash/"}],["$","link","15",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"32x32"}],["$","link","16",{"rel":"icon","href":"/icon.png?4316cfb4d7082629","type":"image/png","sizes":"271x271"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?4316cfb4d7082629","type":"image/png","sizes":"271x271"}],["$","meta","18",{"name":"next-size-adjust"}]]
+1:null
