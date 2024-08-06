@@ -221,12 +221,22 @@ function ContactForm() {
 function SubmitButton() {
   const { pending } = useFormStatus();
 
+  const submitProjectAnalytics = () => {
+    googleEvent({
+      action: "submit_project",
+      category: "ecommerce",
+      label: "Submit Project",
+      value: "submit_project",
+    });
+  };
+
   return (
     <MagneticAnim>
       <button
         className="mt-[2.5rem] w-full rounded-full bg-primary px-[3.5rem] py-2 text-[0.875rem] font-semibold uppercase text-white transition-colors duration-500 ease-in-out hover:bg-white hover:text-black-100 sm:py-4 sm:text-xl xl:mt-[4rem] xl:max-w-[15rem] xl:place-self-end"
         type="submit"
         disabled={pending}
+        onClick={submitProjectAnalytics}
       >
         {pending ? "Loading..." : "Lets start"}
       </button>

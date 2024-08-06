@@ -1,6 +1,7 @@
 "use client";
-import Link from "next/link";
+
 import { useEffect, useRef, useState } from "react";
+import { googleEvent } from "../_utils/googleEvent";
 
 import HoverWords from "../_ui/HoverWords";
 import HoverFlipWords from "../_ui/HoverFlipWords";
@@ -10,6 +11,15 @@ import AnimatedLink from "../_ui/AnimatedLink";
 function CTASection() {
   const [buttonHeight, setButtonHeight] = useState(0);
   const buttonRef = useRef(null);
+
+  const toProjectAnalytics = () => {
+    googleEvent({
+      action: "to_project_section",
+      category: "ecommerce",
+      label: "Lets Make It Happen",
+      value: "to_project_section",
+    });
+  };
 
   useEffect(() => {
     setButtonHeight(buttonRef.current?.offsetHeight / 2);
@@ -55,6 +65,7 @@ function CTASection() {
                 ref={buttonRef}
                 className={`text-md absolute left-1/2 -translate-x-1/2 rounded-full bg-green px-4 py-2 font-normal text-black-100 transition-all duration-500 ease-in-out hover:bg-white hover:text-black-100 max-sm:font-[0.7rem] sm:px-6 sm:py-4 sm:font-semibold lg:px-10 lg:text-lg`}
                 style={{ bottom: `-${buttonHeight}px` }}
+                onClick={toProjectAnalytics}
               >
                 Let&apos;s make it happen
               </button>
