@@ -20,7 +20,7 @@ export async function getPostById(id) {
   );
   const res = await data.json();
 
-  if (res.data.status === 404) {
+  if (res?.data?.status === 404) {
     console.error("Not Found");
     notFound();
   }
