@@ -261,25 +261,27 @@ function NavList({ isSmallScreen = false }) {
   ];
 
   return (
-    <ul
-      className={`md:flex ${
-        !isSmallScreen
-          ? "hidden gap-14"
-          : "flex flex-col gap-4 text-[2.5rem] font-light uppercase leading-none text-[white] sm:text-[3.75rem]"
-      }`}
-    >
-      {navList.map((item) => {
-        return (
-          <MagneticAnim key={item.value}>
-            <li
-              className={`h-fit cursor-pointer ${item.value === pathname && "max-sm:text-green"} transition-all duration-300`}
-            >
-              <AnimatedLink href={`${item.value}`}>{item.label}</AnimatedLink>
-            </li>
-          </MagneticAnim>
-        );
-      })}
-    </ul>
+    <nav>
+      <ul
+        className={`md:flex ${
+          !isSmallScreen
+            ? "hidden gap-14"
+            : "flex flex-col gap-4 text-[2.5rem] font-light uppercase leading-none text-[white] sm:text-[3.75rem]"
+        }`}
+      >
+        {navList.map((item) => {
+          return (
+            <MagneticAnim key={item.value}>
+              <li
+                className={`h-fit cursor-pointer ${item.value === pathname && "max-sm:text-green"} transition-color`}
+              >
+                <AnimatedLink href={`${item.value}`}>{item.label}</AnimatedLink>
+              </li>
+            </MagneticAnim>
+          );
+        })}
+      </ul>
+    </nav>
   );
 }
 
