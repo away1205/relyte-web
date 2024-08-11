@@ -2,6 +2,8 @@ import Footer from "../_components/Footer";
 import HeroBlog from "./HeroBlog";
 import Blog from "./Blog";
 
+export const revalidate = 3600;
+
 function page() {
   return (
     <main className="max-screen relative mx-auto flex min-h-screen flex-col items-center max-sm:overflow-x-clip">
