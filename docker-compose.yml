@@ -1,0 +1,10 @@
+services:
+  relyte-webpage:
+    build: .
+    container_name: relyte-webpage
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=production
+      - RESEND_API_KEY
+    restart: always
