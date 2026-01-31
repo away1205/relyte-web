@@ -14,7 +14,6 @@ COPY . .
 RUN npm run build
 
 # Set environment
-USER nextjs
 EXPOSE 4000
 ENV PORT 4000
 ENV NODE_ENV production
