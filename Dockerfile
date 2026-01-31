@@ -1,26 +1,19 @@
-FROM node:20-alpine AS builder
+FROM node:22-alpine
 WORKDIR /app
 
 # Install dependencies
 COPY package*.json ./
 RUN npm ci
 
-# Copy files and build
+# Copy all files and build the project
 COPY . .
 RUN npm run build
 
-# Production image
-FROM node:20-alpine AS runner
-WORKDIR /app
-
-# Next.js standalone folder contains its own minimal node_modules
-# We only need these 3 things to run the app
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next/standalone ./
-COPY --from=builder /app/.next/static ./.next/static
-
+# Set environment
+USER nextjs
 EXPOSE 4000
 ENV PORT 4000
 ENV NODE_ENV production
 
+# Run using your custom server.js
 CMD ["node", "server.js"]
