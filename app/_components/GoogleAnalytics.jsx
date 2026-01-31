@@ -1,5 +1,5 @@
-import React from 'react';
-import Script from 'next/script';
+import React from "react";
+import Script from "next/script";
 
 function GoogleAnalytics() {
   return (
@@ -7,9 +7,9 @@ function GoogleAnalytics() {
       {/* <!-- Google tag (gtag.js) --> */}
       <Script
         async
-        src='https://www.googletagmanager.com/gtag/js?id=G-G74TDXL09B'
+        src="https://www.googletagmanager.com/gtag/js?id=G-G74TDXL09B"
       ></Script>
-      <Script>
+      <Script id="1">
         {/* window.dataLayer = window.dataLayer || []; function gtag()
         {dataLayer.push(arguments)}
         gtag('js', new Date()); gtag('config', 'G-G74TDXL09B'); */}
