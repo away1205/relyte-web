@@ -21,15 +21,7 @@ export async function generateMetadata({ params }) {
 }
 
 export const revalidate = 3600;
-
-export async function generateStaticParams() {
-  const post = await getPost();
-
-  // Should have to be string
-  const ids = post.map((item) => ({ postId: String(item.id) }));
-
-  return ids;
-}
+export const dynamicParams = true; // Enable dynamic rendering for new posts
 
 async function Page({ params }) {
   const postDetail = await getPostById(params.postId);
